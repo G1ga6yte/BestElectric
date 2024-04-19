@@ -1,0 +1,52 @@
+@import "../../../source/styles/mixin.scss";
+
+
+.HomeCustomerReviews{
+  margin: 180px auto;
+  max-width: 1720px;
+  width: 100%;
+  padding: 0 16px;
+  @include screen($wide) {
+    margin: 100px auto;
+  }
+  @include screen($tablet-l) {
+    margin: 80px auto;
+  }
+
+  .header{
+    text-align: center;
+    @include screen($tablet-l){
+      margin-bottom: 16px;
+    }
+  }
+
+
+  .reviewsBlock{
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .review{
+      padding: 16px 24px;
+      background-color: #FAFAFA;
+      border-radius: 16px;
+      width: 32%;
+      margin-bottom: 20px;
+      @include screen($wide-s){
+        width: 49%;
+      }
+      @include screen($tablet){
+        width: 100%;
+      }
+
+      .name{
+        font-size: 20px;
+        font-family: 'Inter-Regular', sans-serif;
+        line-height: normal;
+      }
+    }
+
+  }
+
+
+
+}

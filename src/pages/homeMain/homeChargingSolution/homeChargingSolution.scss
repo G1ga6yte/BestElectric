@@ -1,0 +1,68 @@
+@import "../../../source/styles/mixin.scss";
+
+
+.HomeChargingSolution{
+  margin: 180px auto;
+  padding: 0 16px;
+  @include screen($wide) {
+    margin: 100px auto;
+  }
+  @include screen($tablet-l) {
+    margin: 80px auto;
+  }
+
+  .underHeader{
+    margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 130%;
+    font-family: 'Nexa-Light', sans-serif;
+    @include screen($tablet-l){
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+  }
+
+
+
+
+  .contentBlock{
+
+
+    .advantagesBlock{
+      padding-left: 50px;
+      flex-grow: 1;
+
+      @include screen($wide-l){
+        padding-left: 30px;
+      }
+
+      @include screen($wide){
+        display: none;
+      }
+      @include screen($tablet){
+        display: none;
+      }
+
+      .headerPrgCont{
+
+      }
+
+
+
+    }
+
+  }
+
+  .productsCont{
+    overflow-x: auto;
+    max-width: 100%;
+
+    .productsBlock{
+      margin: 0 auto;
+      width: max-content;
+    }
+
+  }
+
+
+}

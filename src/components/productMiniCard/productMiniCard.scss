@@ -1,0 +1,96 @@
+@import "../../source/styles/mixin.scss";
+
+
+.ProductMiniCard{
+  width: 250px;
+  margin: 0 8px;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: #FAFAFA;
+  @include screen($tablet){
+    width: 230px;
+  }
+
+
+  .imgBlock{
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+
+
+    .availablePrg{
+      padding: 2px 10px 2px 22px;
+      position: relative;
+      background-color: white;
+      border-radius: 30px;
+      width: max-content;
+      margin-bottom: 8px;
+      &:before{
+        content: ' ';
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #6ACB91;
+      }
+    }
+    .discountTag{
+      padding: 2px 10px;
+      background-color: #F5C7C7;
+      border-radius: 30px;
+      white-space: nowrap;
+      width: max-content;
+      margin-bottom: 8px;
+
+    }
+    .bestseller{
+      margin-bottom: 8px;
+      padding: 2px 10px;
+      background-color: #FFDE89;
+      border-radius: 30px;
+      white-space: nowrap;
+      width: max-content;
+      @include screen($tablet-l){
+        display: none;
+      }
+    }
+
+  }
+
+  .nameBlock{
+    .name{
+      font-size: 24px;
+      font-family: 'Inter-Regular', sans-serif;
+      color: black;
+    }
+    .desc{
+      color: #B6B6B6;
+      font-size: 20px;
+      font-family: 'Inter-Regular', sans-serif;
+    }
+    button{
+      width: 100%;
+      text-align: center;
+      background-color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 16px 8px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out all;
+      &:hover{
+        background-color: #F2F2F2;
+      }
+      &:active{
+        background-color: #E4E4E4;
+      }
+    }
+  }
+
+
+}

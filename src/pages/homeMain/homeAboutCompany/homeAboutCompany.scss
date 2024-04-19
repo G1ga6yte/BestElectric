@@ -1,0 +1,63 @@
+@import "../../../source/styles/mixin.scss";
+
+.HomeAboutCompany{
+  margin: 180px auto;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0 16px;
+  @include screen($wide){
+    margin: 100px auto;
+  }
+  @include screen($tablet-l){
+    flex-direction: column;
+    align-items: center;
+    margin: 80px auto;
+  }
+
+
+  .header{
+    font-size: 28px;
+    font-family: 'Nexa-Light', sans-serif;
+    line-height: 130%;
+    color: black;
+    width: max-content;
+    white-space: nowrap;
+    margin-right: 30px;
+    @include screen($tablet-l){
+      font-size: 40px;
+      margin-bottom: 8px;
+    }
+    @include screen($tablet-m){
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .prgBlock{
+    max-width: 850px;
+
+    .prg{
+      &:nth-child(2){
+        @include screen($tablet-l){
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+
+    .buttonCont{
+      display: flex;
+      justify-content: end;
+      @include screen($tablet-l){
+        justify-content: center;
+      }
+
+      button{
+        @include screen($tablet-m){
+          width: 100%;
+        }
+      }
+    }
+  }
+
+}

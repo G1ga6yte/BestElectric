@@ -1,0 +1,160 @@
+@import "../../source/styles/mixin.scss";
+.carInfoBlock{
+  padding: 24px;
+  border-radius: 24px;
+  background-color: #FAFAFA;
+  @include screen($wide){
+    width: 100%;
+    justify-content: space-between;
+  }
+  @include screen($tablet){
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .carBlock{
+
+    .carName{
+      margin-bottom: 8px;
+      .availablePrg{
+        padding: 2px 10px 2px 22px;
+        position: relative;
+        background-color: white;
+        border-radius: 30px;
+        &:before{
+          content: ' ';
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: #6ACB91;
+        }
+      }
+    }
+
+    .carCont{
+      background-color: white;
+      width: 500px;
+      min-width: 500px;
+      height: 280px;
+      border-radius: 8px;
+      @include screen($tablet-w){
+        width: 350px;
+        min-width: 350px;
+        height: 250px;
+      }
+      @include screen($tablet){
+        width: 100%;
+      }
+      @include screen($tablet-m){
+        min-width: 300px;
+        height: 220px;
+      }
+    }
+
+
+  }
+  .infoBlock{
+    padding: 0 20px 0 40px;
+    @include screen($wide-l){
+      padding: 0 15px 0 30px;
+    }
+    @include screen($tablet){
+      padding: 10px 20px;
+    }
+
+    .buyRentButtons{
+      justify-content: end;
+      width: 100%;
+
+      button{
+        cursor: pointer;
+        transition: 0.2s ease-in-out all;
+        background-color: transparent;
+        border: none;
+        padding: 8px;
+
+      }
+
+      .rentBtn{
+        &:hover{
+          color: #3BAD69;
+        }
+      }
+
+      .buyBtn{
+        color: #D1D1D1;
+        &:hover{
+          color: #a1a1a1;
+        }
+      }
+    }
+
+    .statisticBlock{
+      margin: 80px auto;
+      @include screen($tablet-l){
+        margin: 20px auto;
+      }
+
+      .statisticLine{
+        margin-bottom: 12px;
+        &:nth-child(3){
+          img{
+            padding: 0 5px;
+          }
+        }
+
+        img{
+          margin-right: 12px;
+        }
+
+        .statusName{
+          margin-right: 40px;
+          text-align: start;
+        }
+
+        .status{
+          text-align: end;
+          white-space: nowrap;
+        }
+
+      }
+
+    }
+
+    .buttonsBlock{
+      @include screen($tablet-l){
+        flex-direction: column;
+      }
+
+      button{
+        min-width: 180px;
+        text-align: center;
+        @include screen($tablet-l){
+          width: 100%;
+          margin: 0 0 16px !important;
+        }
+        @include screen($tablet-w){
+          padding: 8px 14px;
+        }
+      }
+
+      .learnMoreBtn{
+        background-color: white !important;
+        &:hover{
+          background-color: #F2F2F2 !important;
+        }
+        &:active{
+          background-color: #E4E4E4 !important;
+        }
+      }
+
+
+    }
+
+  }
+
+}

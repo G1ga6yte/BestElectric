@@ -1,0 +1,77 @@
+@import "../../../source/styles/mixin.scss";
+
+.HomeRentCar{
+  margin: 90px auto;
+  width: 100%;
+  padding: 0 16px;
+  @include screen($tablet-m){
+    margin: 40px auto;
+  }
+
+  .header{
+    width: 100%;
+  }
+
+  .contentBlock{
+    @include screen($wide){
+      flex-direction: column;
+    }
+  }
+
+
+
+  .carPrgBlock{
+    padding: 10px 40px;
+    @include screen($wide-l){
+      padding: 10px 25px;
+    }
+    @include screen($wide){
+      width: 100%;
+    }
+    @include screen($tablet){
+      display: none;
+    }
+
+    .carPrg{
+      margin-bottom: 40px;
+      max-width: 450px;
+      @include screen($wide){
+        max-width: 100%;
+      }
+    }
+
+    .desc{
+      padding: 2px 10px 2px 22px;
+      border-radius: 30px;
+      border: 1px solid black;
+      position: relative;
+      width: max-content;
+      &:before{
+        content: ' ';
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #6ACB91;
+      }
+    }
+
+    .descBlock{
+      @include screen($wide){
+        flex-direction: row;
+        flex-wrap: wrap;
+        .desc{
+          margin-right: 16px;
+          white-space: nowrap;
+        }
+      }
+    }
+
+
+  }
+
+
+}

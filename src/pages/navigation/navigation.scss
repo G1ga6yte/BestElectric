@@ -1,0 +1,457 @@
+@import "../../source/styles/mixin.scss";
+.Navigation{
+  position: absolute;
+  z-index: 100;
+  top: 0;
+
+  .topBlock{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+
+    .topBlockCont{
+      max-width: 1720px;
+      margin: 0 auto;
+      padding: 12px 15px;
+
+      .settingsCont{
+        text-decoration: none;
+      }
+
+      .rightGroupBlock{
+        a{
+          text-decoration: none;
+          @include screen($tablet-l){
+            margin-right: 20px !important;
+          }
+          @include screen($tablet){
+            display: none;
+          }
+        }
+
+        .addressPrg{
+          @include screen($wide){
+            display: none;
+          }
+        }
+
+        .lngBlock{
+          position: relative;
+          @include screen($tablet-l){
+            display: none;
+          }
+
+          .mainLng{
+            cursor: pointer;
+          }
+
+          .lngMenu{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 34px;
+            background: rgba(44, 44, 44, 0.50);
+            flex-direction: column;
+            align-items: start;
+
+            button{
+              width: 100px;
+              background-color: transparent;
+              border: none;
+              cursor: pointer;
+              padding: 4px 10px;
+              transition: 0.1s ease-in-out all;
+              &:hover{
+                background: rgba(255, 255, 255, 0.5);
+              }
+            }
+          }
+
+        }
+      }
+
+    }
+  }
+
+
+  .navBlockCont{
+    max-width: 1720px;
+    padding: 16px 15px 0;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+
+
+    .homeIconLink{
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .linksBlock{
+      @include screen($tablet-l){
+        display: none;
+      }
+      .link{
+        text-decoration: none;
+        cursor: pointer;
+        @include screen($wide){
+          margin-right: 24px;
+        }
+        @include screen($wide-s){
+          margin-right: 16px;
+        }
+        .linkToPage{
+          width: max-content;
+          &:hover{
+            .line{
+              width: 100% !important;
+            }
+          }
+
+          .lineBlock{
+            height: 1px;
+            width: 100%;
+
+            .line{
+              width: 0;
+              transition: 0.3s ease-in-out all;
+              height: 100%;
+              background-color: white;
+            }
+          }
+        }
+      }
+
+      .searchIcon{
+        cursor: pointer;
+      }
+    }
+    .tabletMenuBtn{
+      display: none;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      @include screen($tablet-l){
+        display: block;
+      }
+    }
+
+
+    .orderCarBtn{
+      padding: 6px 12px;
+      cursor: pointer;
+      border-radius: 50px;
+      border: none;
+      transition: 0.2s ease-in-out all;
+      @include screen($tablet-m){
+        display: none;
+      }
+      span{
+        transition: 0.2s ease-in-out all;
+      }
+      path{
+        transition: 0.2s ease-in-out all;
+      }
+
+    }
+    .loginBtn{
+      margin: 0 20px;
+      min-width: 110px;
+      cursor: pointer;
+      padding: 8px;
+      background-color: transparent;
+      border: none;
+      @include screen($wide){
+        min-width: 80px;
+        margin: 0 16px;
+      }
+      @include screen($tablet-m){
+        display: none;
+      }
+      span{
+        font-family: 'Nexa-Light', sans-serif;
+        color: #6ACB91 !important;
+        &:hover{
+          color: #65C58B !important;
+        }
+        &:active{
+          color: #3BAD69 !important;
+        }
+      }
+    }
+    .cartBtn{
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      position: relative;
+      z-index: 3;
+      .noteDote{
+        position: absolute;
+        right: -3px;
+        top: 1px;
+        width: 8px;
+        height: 8px;
+        background-color: #6ACB91;
+        border-radius: 50%;
+        svg{
+          transition: 0.2s ease-in-out all;
+        }
+      }
+    }
+
+
+  }
+
+  .tabletMenuBlock{
+    position: fixed;
+    z-index: 101;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+
+    .closeBtnCont{
+      padding: 0 18px;
+      justify-content: end;
+      button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    .linksRow{
+      padding: 0 18px;
+      .link{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 8px;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: "Nexa-Regular", sans-serif;
+        margin: 0 !important;
+        &:active{
+          background-color: #FAFAFA;
+        }
+        span{
+          color: black !important;
+        }
+      }
+      .productLink{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .linkToPage{
+          margin-right: 8px;
+        }
+
+        .productsBlock{
+          transition: 0.3s ease-in-out all !important;
+          width: 100%;
+          position: relative;
+          overflow: hidden;
+          .productsInsideBlock{
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .productsLink{
+              text-decoration: none;
+              padding: 4px;
+              span{
+                color: #949494 !important;
+
+              }
+            }
+          }
+        }
+
+
+
+      }
+    }
+    .UnderRow{
+      flex-grow: 1;
+      padding: 16px 0 32px;
+      width: 100%;
+      background: rgba(244, 244, 244, 0.50);
+      .loginBtn{
+        cursor: pointer;
+        padding: 8px;
+        background-color: transparent;
+        border: none;
+
+        span{
+          font-family: 'Nexa-Regular', sans-serif;
+          color: #6ACB91 !important;
+          &:hover{
+            color: #65C58B !important;
+          }
+          &:active{
+            color: #3BAD69 !important;
+          }
+        }
+      }
+      .settingsCont{
+        cursor: pointer;
+        text-decoration: none;
+        path{
+          stroke: black !important;
+        }
+        span{
+          color: black !important;
+        }
+      }
+      .phoneLink{
+        width: 250px;
+        justify-content: center;
+        padding: 14px;
+        border-radius: 8px;
+        background-color: white;
+        cursor: pointer;
+        text-decoration: none;
+        span{
+          color: black !important;
+        }
+      }
+      .orderCarBtn{
+        padding: 6px 12px;
+        cursor: pointer;
+        border-radius: 50px;
+        border: none;
+        transition: 0.2s ease-in-out all;
+        background-color: #6ACB91 !important;
+        &:hover{
+          background-color: #65C58B !important;
+        }
+        &:active{
+          background-color: #3BAD69 !important;
+        }
+        span{
+          color: white !important;
+          transition: 0.2s ease-in-out all;
+        }
+        path{
+          stroke: white !important;
+          transition: 0.2s ease-in-out all;
+        }
+
+      }
+
+
+
+
+    }
+
+
+
+  }
+
+}
+
+.homeTheme{
+
+  .topBlock{
+    background: rgba(44, 44, 44, 0.50);
+
+  }
+  svg{
+    path{
+      stroke: white !important;
+    }
+  }
+  p, span{
+    color: white !important;
+  }
+
+  .orderCarBtn{
+    background-color: white !important;
+    span{
+      color: black !important;
+    }
+    path{
+      stroke: black !important;
+    }
+    &:hover{
+      background-color: #F2F2F2 !important;
+    }
+    &:active{
+      background-color: #E4E4E4 !important;
+    }
+  }
+  .loginBtn{
+    color: #6ACB91 !important;
+    &:hover{
+      color: #65C58B !important;
+    }
+    &:active{
+      color: #3BAD69 !important;
+    }
+  }
+}
+
+.lightTheme{
+  .topBlock{
+    background: rgba(244, 244, 244, 0.50);
+
+  }
+  svg{
+    path{
+      stroke: black !important;
+    }
+  }
+  p, span, a{
+    color: black !important;
+
+  }
+  .line{
+    background-color: black !important;
+  }
+  .lngMenu{
+    background: rgba(244, 244, 244, 0.50) !important;
+    backdrop-filter: blur(10px);
+    button{
+      color: black !important;
+      &:hover{
+        background-color: lightgrey !important;
+      }
+    }
+  }
+
+  .orderCarBtn{
+    background-color: #6ACB91 !important;
+    span{
+      color: white !important;
+    }
+    path{
+      stroke: white !important;
+    }
+    &:hover{
+      background-color: #65C58B !important;
+    }
+    &:active{
+      background-color: #3BAD69 !important;
+    }
+  }
+  .loginBtn{
+    color: #6ACB91 !important;
+    &:hover{
+      color: #65C58B !important;
+    }
+    &:active{
+      color: #3BAD69 !important;
+    }
+  }
+
+}

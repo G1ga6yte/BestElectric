@@ -1,0 +1,65 @@
+@import "../../../source/styles/mixin.scss";
+
+.HomeProductsServices{
+  margin: 180px auto;
+  padding: 0 16px;
+  @include screen($wide) {
+    margin: 100px auto;
+  }
+  @include screen($tablet-l) {
+    margin: 80px auto;
+  }
+
+
+  .underHeader{
+    font-size: 40px;
+    line-height: 130%;
+    font-family: 'Nexa-Light', sans-serif;
+    margin-bottom: 40px;
+
+    @include screen($tablet-l){
+      font-size: 28px;
+    }
+
+
+  }
+
+  .contentBlock{
+    @include screen($wide){
+      flex-direction: column;
+    }
+  }
+
+  .advantagesBlock{
+    padding-left: 50px;
+    flex-grow: 1;
+
+    @include screen($wide-l){
+      padding-left: 30px;
+    }
+
+    @include screen($wide){
+      padding: 0;
+      margin-top: 24px;
+    }
+    @include screen($tablet){
+      display: none;
+    }
+
+    .headerPrgCont{
+      @include screen($wide){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        div{
+          width: 48%;
+        }
+      }
+    }
+
+
+
+  }
+
+}

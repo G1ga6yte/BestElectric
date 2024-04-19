@@ -1,0 +1,224 @@
+@import "../../source/styles/mixin.scss";
+
+.Footer{
+  border-radius: 24px 24px 0 0;
+
+
+  .footerCont{
+    padding: 20px 16px 60px;
+    @include screen($tablet-m){
+      padding: 20px 16px;
+    }
+    .footerBlock{
+      max-width: 1720px;
+      width: 100%;
+      margin: 0 auto;
+      @include screen($tablet-m){
+        flex-direction: column;
+      }
+
+      .leftSide{
+        padding-right: 55px;
+        border-right: 1px solid #E4E4E4;
+        @include screen($tablet-m){
+          border: none;
+          padding: 0;
+        }
+
+        a{
+          text-decoration: none;
+          cursor: pointer;
+        }
+        .infoText{
+          max-width: 320px;
+          font-size: 16px;
+          font-family: 'Inter-Regular', sans-serif;
+          color: #B6B6B6;
+          line-height: normal;
+        }
+
+        .lngBlock{
+          cursor: pointer;
+          position: relative;
+          width: max-content;
+          z-index: 3;
+
+
+          .lngMenu{
+            flex-direction: column;
+            position: absolute;
+            left: 0;
+            top: 25px;
+            align-items: start;
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            padding: 4px 8px;
+
+            button{
+              border-radius: 3px;
+              padding: 2px 6px;
+              background-color: transparent;
+              border: none;
+              cursor: pointer;
+              transition: 0.2s ease-in-out all;
+              &:hover{
+                background-color: #B6B6B6;
+              }
+            }
+          }
+
+
+        }
+
+        .getInTouchBtn{
+          display: none;
+
+          @include screen($tablet-l){
+            display: flex;
+          }
+          @include screen($tablet-m){
+            width: 100%;
+            justify-content: center;
+          }
+        }
+
+      }
+
+      .getInTouchBtn{
+        width: max-content;
+        font-size: 24px;
+        font-family: 'Nexa-Regular', sans-serif;
+        color: black;
+        line-height: normal;
+        cursor: pointer;
+        border: none;
+        background-color: #EDFCF3;
+        border-radius: 8px;
+        padding: 16px;
+        transition: 0.2s ease-in-out all;
+        &:hover{
+          background-color: #c3efca;
+        }
+      }
+
+      .rightSide{
+        padding-left: 40px;
+        flex-grow: 1;
+        justify-content: space-between;
+        position: relative;
+        align-items: start;
+        @include screen($tablet-m){
+          padding: 0;
+        }
+
+
+        .links{
+          padding: 10px 0;
+          @include screen($tablet-m){
+            width: 100%;
+            align-items: center;
+          }
+            .link{
+              text-decoration: none;
+              cursor: pointer;
+              color: black;
+              @include screen($tablet-m){
+                margin-bottom: 16px !important;
+              }
+
+              .linkToPage{
+                width: max-content;
+                &:hover{
+                  .line{
+                    width: 100% !important;
+                  }
+                }
+
+                .lineBlock{
+                  height: 1px;
+                  width: 100%;
+
+                  .line{
+                    width: 0;
+                    transition: 0.3s ease-in-out all;
+                    height: 100%;
+                    background-color: black;
+                  }
+                }
+              }
+            }
+        }
+
+        .loginBlock{
+          padding-top: 12px;
+          @include screen($tablet-w){
+            display: none;
+          }
+          button{
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            margin-left: 24px;
+            transition: 0.2s ease-in-out;
+            &:hover{
+              opacity: 0.9;
+            }
+          }
+        }
+
+        .getInTouchBtn{
+          position: absolute;
+          right: 10px;
+          bottom: 10px;
+          @include screen($tablet-l){
+            display: none;
+          }
+        }
+
+
+      }
+
+
+    }
+  }
+
+  .termsCont{
+    width: 100%;
+    padding: 16px;
+    background-color: #F2F2F2;
+    .termsBlock{
+      margin: 0 auto;
+      max-width: 1720px;
+      @include screen($tablet-m){
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .rightGroup{
+        @include screen($tablet-m){
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+
+      .termsLink{
+        text-decoration: none;
+        color: #888585;
+        font-size: 16px;
+        font-family: "Inter-Light", sans-serif;
+        line-height: normal;
+        @include screen($tablet-m){
+          margin: 0 0 12px !important;
+        }
+      }
+
+      .copyrightLink{
+        @include screen($tablet-l){
+          display: none;
+        }
+      }
+
+    }
+  }
+
+}

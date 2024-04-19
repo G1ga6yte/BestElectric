@@ -1,0 +1,121 @@
+@import "../../../source/styles/mixin.scss";
+
+.HomeWhyChoose {
+  margin: 180px auto;
+  padding: 0 16px;
+  @include screen($wide) {
+    margin: 100px auto;
+  }
+  @include screen($tablet-l) {
+    margin: 80px auto;
+  }
+
+  .header {
+    @include screen($wide) {
+      margin-bottom: 0 !important;
+    }
+    @include screen($tablet-l) {
+      margin-bottom: 16px !important;
+    }
+  }
+
+  .prg {
+    font-size: 24px;
+    font-family: 'Nexa-Light', sans-serif;
+    color: black;
+    line-height: normal;
+    max-width: 870px;
+    margin-bottom: 40px !important;
+    @include screen($wide) {
+      font-family: 'Nexa-Light', sans-serif;
+    }
+    @include screen($tablet) {
+      font-size: 20px;
+    }
+  }
+
+
+  .imgStatuses {
+
+    width: 100%;
+
+
+    .statusesBlock {
+      max-width: 565px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      @include screen($wide) {
+        max-width: 500px;
+      }
+      @include screen($tablet-l) {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .statusBlock {
+        width: 275px;
+        border-bottom: 2px solid #6ACB91;
+        margin-bottom: 30px;
+        @include screen($wide) {
+          max-width: 240px;
+        }
+        @include screen($tablet-l) {
+          max-width: 50%;
+          width: 48%;
+          margin-bottom: 16px;
+        }
+        @include screen($tablet) {
+          max-width: 100%;
+          width: 100%;
+        }
+
+
+        .statusHeader {
+          font-size: 26px;
+          font-family: 'Nexa-Regular', sans-serif;
+          color: black;
+          line-height: normal;
+          @include screen($wide) {
+            font-size: 24px;
+          }
+          @include screen($tablet){
+            text-align: center;
+          }
+
+        }
+
+        .statusPrg {
+          min-height: 120px;
+          margin: 12px 0;
+          @include screen($wide) {
+            min-height: 100px;
+
+            @include screen($tablet) {
+              min-height: 20px;
+              text-align: center;
+            }
+          }
+
+        }
+
+
+      }
+
+
+    }
+
+
+  }
+
+  .img1 {
+    margin-right: -16px;
+    @include screen($wide) {
+      width: 400px;
+    }
+    @include screen($tablet-l) {
+      display: none;
+    }
+  }
+
+
+}

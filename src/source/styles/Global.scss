@@ -1,0 +1,280 @@
+@import "./mixin.scss";
+
+.G-CContainer {
+  width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
+}
+
+.G-Container{
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.G-flex-ACenter-JCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.G-flex-ACenter-JBetween{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.G-flex-ATop{
+  display: flex;
+  align-items: start;
+}
+
+.G-flex-ACenter{
+  display: flex;
+  align-items: center;
+}
+
+.G-flex-JCenter{
+  display: flex;
+  justify-content: center;
+}
+
+.G-flex-JStart{
+  display: flex;
+  justify-content: start;
+}
+
+.G-flex{
+  display: flex;
+}
+
+.G-flex-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.G-flex-Column{
+  display: flex;
+  flex-direction: column;
+}
+
+.G-flew-grow{
+  flex-grow: 1;
+}
+
+.G-Green-BCK{
+  background-color: #6ACB91;
+}
+
+.G-Green-Text{
+  color: #6ACB91;
+}
+
+.G-padding-24{
+  padding: 24px;
+}
+
+.G-padding-8{
+  padding: 8px;
+}
+
+.G-marginR-8{
+  margin-right: 8px;
+}
+.G-marginR-16{
+  margin-right: 16px;
+}
+.G-marginR-32{
+  margin-right: 32px;
+}
+
+.G-marginB-32{
+  margin-bottom: 32px;
+}
+
+.G-marginB-24{
+  margin-bottom: 24px;
+}
+
+.G-marginB-16{
+  margin-bottom: 16px;
+}
+.G-marginB-8{
+  margin-bottom: 8px;
+}
+
+
+.G-16-400-Inter{
+  font-size: 16px;
+  font-family: 'Inter-Regular', sans-serif;
+  line-height: normal;
+}
+.G-16-300-Inter{
+  font-size: 16px;
+  font-family: 'Inter-Light', sans-serif;
+  line-height: normal;
+}
+.G-14-400-Inter{
+  font-size: 14px;
+  font-family: 'Inter-Regular', sans-serif;
+  line-height: normal;
+}
+
+.G-20-300-Inter{
+  font-size: 20px;
+  font-family: 'Inter-Light', sans-serif;
+  line-height: normal;
+}
+
+.G-20-300-Nexa{
+  font-size: 20px;
+  font-family: "Nexa-Light", sans-serif;
+  line-height: normal;
+}
+
+.G-20-400-Nexa{
+  font-size: 20px;
+  font-family: 'Nexa-Regular', sans-serif;
+  line-height: normal;
+}
+
+.G-24-400-Nexa{
+  font-size: 24px;
+  font-family: 'Nexa-Regular', sans-serif;
+  line-height: normal;
+}
+
+.G-header-72{
+  font-size: 72px;
+  font-family: 'Nexa-Light', sans-serif;
+  line-height: 130%;
+  text-align: center;
+  padding: 0 10px;
+  @include screen($wide){
+    font-size: 40px;
+  }
+}
+
+.G-header-100{
+  font-size: 100px;
+  font-family: 'Nexa-Light', sans-serif;
+  line-height: 140%;
+  @include screen($wide){
+    font-size: 68px;
+  }
+  @include screen($tablet-l){
+    font-size: 40px;
+  }
+
+}
+.G-underHeader-40{
+  font-size: 40px;
+  font-family: 'Nexa-Light', sans-serif;
+  line-height: 130%;
+  text-align: center;
+  padding: 0 10px;
+  @include screen($wide){
+    font-size: 26px;
+  }
+  @include screen($tablet-m){
+    font-size: 24px;
+  }
+}
+
+.G-greenBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6ACB91 !important;
+  padding: 14px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out all !important;
+  &:hover{
+    background-color: #65C58B !important;
+  }
+  &:active{
+    background-color: #3BAD69 !important;
+  }
+
+}
+
+.G-margin-Center{
+  margin: 0 auto;
+}
+
+
+.G-white{
+  color: white;
+}
+.G-black{
+  color: black;
+}
+
+.G-transition-03{
+  transition: 0.3s ease-in-out all;
+}
+
+.G-transition-05{
+  transition: 0.5s ease-in-out all;
+}
+
+.G-transition-1{
+  transition: 1s ease-in-out all;
+}
+
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.G-isInView{
+  animation-name: isInViewAnim;
+  animation-duration: 1s;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+@keyframes isInViewAnim {
+  0%{
+    transform: translateY(30%);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

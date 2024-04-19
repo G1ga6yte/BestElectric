@@ -1,0 +1,202 @@
+@import "../../source/styles/mixin.scss";
+
+
+.ProductBigCard{
+  padding: 24px;
+  border-radius: 24px;
+  background-color: #FAFAFA;
+  @include screen($wide){
+    width: 100%;
+    justify-content: space-between;
+  }
+  @include screen($tablet-w){
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  .productBlock{
+
+    .productName{
+      margin-bottom: 8px;
+      .availablePrg{
+        padding: 2px 10px 2px 22px;
+        position: relative;
+        background-color: white;
+        border-radius: 30px;
+        white-space: nowrap;
+        &:before{
+          content: ' ';
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: #6ACB91;
+        }
+      }
+      .discountTag{
+        padding: 2px 10px;
+        background-color: #F5C7C7;
+        border-radius: 30px;
+        white-space: nowrap;
+        @include screen($tablet-m){
+          display: none;
+        }
+      }
+      .bestseller{
+        padding: 2px 10px;
+        background-color: #FFDE89;
+        border-radius: 30px;
+        white-space: nowrap;
+        @include screen($tablet-l){
+          display: none;
+        }
+      }
+    }
+
+    .oldPrice{
+      margin-left: 5px;
+      text-decoration: line-through;
+      font-size: 12px;
+      color: #D1D1D1;
+      line-height: normal;
+      font-family: 'Inter-Regular', sans-serif;
+    }
+
+    .carCont{
+      background-color: white;
+      width: 500px;
+      min-width: 500px;
+      height: 500px;
+      border-radius: 8px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      @include screen($tablet-l){
+        width: 400px;
+        min-width: 400px;
+        height: 400px;
+      }
+      @include screen($tablet-w){
+
+        margin: 0 auto;
+      }
+
+      @include screen($tablet-m){
+        width: 100%;
+        height: 500px;
+        min-width: 100%;
+      }
+
+    }
+
+
+  }
+  .infoBlock{
+    padding: 0 20px 0 40px;
+    @include screen($wide-l){
+      padding: 0 15px 0 30px;
+    }
+    @include screen($tablet){
+      padding: 10px 20px;
+    }
+    @include screen($tablet-m){
+      padding: 10px 0;
+    }
+
+    .countButtons{
+      justify-content: end;
+      width: 100%;
+
+      button{
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-right: 8px;
+        border: 1px solid black;
+        background-color: transparent;
+        transition: 0.2s ease-in-out all;
+      }
+    }
+
+    .statisticBlock{
+      margin: 80px auto;
+      @include screen($tablet-l){
+        margin: 20px auto;
+      }
+
+      .statisticLine{
+        margin-bottom: 12px;
+
+        img{
+          margin-right: 12px;
+        }
+
+        .statusName{
+          margin-right: 40px;
+          text-align: start;
+        }
+
+        .status{
+          text-align: end;
+        }
+
+      }
+
+    }
+
+    .buttonsBlock{
+      @include screen($tablet-l){
+        flex-direction: column;
+      }
+      @include screen($tablet-w){
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      @include screen($tablet-m){
+        flex-direction: column;
+      }
+
+      button{
+        min-width: 180px;
+        text-align: center;
+        @include screen($tablet-l){
+          width: 100%;
+          margin: 0 0 16px !important;
+        }
+        @include screen($tablet-w){
+          padding: 8px 14px;
+          width: 49%;
+        }
+        @include screen($tablet-m){
+          width: 100%;
+        }
+      }
+
+      .learnMoreBtn{
+        background-color: white !important;
+        &:hover{
+          background-color: #F2F2F2 !important;
+        }
+        &:active{
+          background-color: #E4E4E4 !important;
+        }
+      }
+
+
+    }
+    .prg{
+      font-size: 14px;
+      font-family: 'Inter-Light', sans-serif;
+      line-height: normal;
+      margin-top: 40px;
+    }
+
+  }
+
+}

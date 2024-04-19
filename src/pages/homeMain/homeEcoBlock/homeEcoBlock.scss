@@ -1,0 +1,82 @@
+@import "../../../source/styles/mixin.scss";
+
+.HomeEcoBlock{
+  margin: 180px auto;
+  @include screen($wide) {
+    margin: 100px auto;
+  }
+  @include screen($tablet-l) {
+    margin: 80px auto;
+  }
+
+
+  .HomeEcoCont{
+    margin: 0 auto;
+    max-width: 1720px;
+    width: 100%;
+    border-radius: 24px;
+    background: radial-gradient(62.2% 62.2% at 50% 37.8%, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.70) 100%) lightgray 50% / cover no-repeat;
+    padding: 112px 0;
+    @include screen($tablet-l){
+      padding: 112px 0 72px;
+    }
+    @include screen($tablet-m){
+      padding: 16px 0;
+    }
+    .innerCont{
+      padding: 0 16px;
+
+
+
+      .header{
+        font-size: 68px;
+        line-height: 130%;
+        font-family: 'Nexa-Light', sans-serif;
+        margin-bottom: 8px;
+        text-align: center;
+        @include screen($tablet-l){
+          font-size: 40px;
+        }
+      }
+
+      .underHeader{
+        font-size: 28px;
+        line-height: 130%;
+        font-family: 'Nexa-Light', sans-serif;
+        margin-bottom: 96px;
+        text-align: center;
+        @include screen($tablet-l){
+          margin-bottom: 36px;
+        }
+
+
+      }
+
+      .artsCont{
+        width: 100%;
+        justify-content: space-between;
+        @include screen($tablet-w){
+          flex-direction: column;
+        }
+
+        .artBlock{
+          width: 32%;
+          padding: 8px 8px 32px 8px;
+          border-radius: 8px;
+          background: rgba(141, 141, 141, 0.30);
+          @include screen($tablet-w){
+            width: 100%;
+            margin-bottom: 16px;
+          }
+        }
+
+      }
+
+    }
+
+
+  }
+
+
+
+}

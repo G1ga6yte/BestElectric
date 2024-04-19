@@ -1,0 +1,160 @@
+@import "../../../source/styles/mixin.scss";
+
+.HomeHeadBlock {
+
+  height: 1000px;
+  @include screen($wide-l) {
+    height: 800px;
+  }
+  @include screen($wide) {
+    height: 700px;
+  }
+
+  .HomeMainVideo {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    max-width: 1920px;
+    width: 100%;
+    overflow: hidden;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 40px 40px;
+    @include screen($wide-l) {
+      height: 800px;
+    }
+    @include screen($wide) {
+      height: 700px;
+    }
+
+    video {
+      scale: 1.01;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+    }
+  }
+
+  .overBlock {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    //.header {
+    //  margin-top: 100px;
+    //  @include screen($wide-l){
+    //    margin-top: 80px;
+    //  }
+    //  @include screen($wide){
+    //    margin-top: 70px;
+    //  }
+    //  @include screen($tablet-m){
+    //    margin: 50px auto 0;
+    //    max-width: 90%;
+    //  }
+    //}
+
+    .underHeader {
+      max-width: 1000px;
+      //margin: 24px auto 32px;
+      //@include screen($wide) {
+      //  margin: 24px auto;
+      //}
+      //@include screen($tablet) {
+      //  max-width: 570px;
+      //  margin: 16px auto;
+      //}
+      //@include screen($tablet-m) {
+      //  max-width: 310px;
+      //}
+    }
+
+    .articlesCont {
+      max-width: 1240px;
+      //margin: 180px auto 0;
+      overflow-x: auto;
+      margin: 0 auto;
+      width: 100%;
+      //@include screen($wide-l){
+      //  margin: 85px auto 0;
+      //}
+      //@include screen($wide){
+      //  margin: 65px auto 0;
+      //}
+      //@include screen($tablet-l){
+      //  margin: 110px auto 0;
+      //}
+      //@include screen($tablet-m){
+      //  margin: 75px auto 0;
+      //}
+
+      .articlesBlock {
+        align-items: start;
+
+        .article {
+          margin: 0 8px;
+          text-decoration: none;
+          min-width: 230px;
+          max-width: 230px;
+          background: rgba(44, 44, 44, 0.30);
+          border-bottom: 2px solid #6ACB91;
+          cursor: pointer;
+          border-radius: 8px;
+          transition: 0.2s ease-in-out all;
+
+          &:hover{
+            border-bottom: 8px solid #6ACB91;
+            border-radius: 8px 8px 16px 16px;
+          }
+          &:active{
+            border-bottom: 0 solid #6ACB91;
+            margin-top: 8px;
+          }
+
+          .prg{
+            @include screen($tablet-l){
+              display: none;
+            }
+          }
+
+
+          .innerBlock {
+            padding: 8px;
+            width: 100%;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @include screen($tablet-l){
+              min-height: 120px;
+            }
+          }
+
+
+          img {
+            width: 24px;
+          }
+        }
+
+      }
+
+
+    }
+
+
+  }
+
+
+}
