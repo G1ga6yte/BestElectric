@@ -1,0 +1,41 @@
+@import "../../source/styles/mixin.scss";
+
+.AboutUsMain{
+  padding: 100px 16px 0;
+
+
+  .header{
+    margin: 72px 0 40px;
+  }
+
+  .prg{
+    font-size: 40px;
+    line-height: 130%;
+    font-family: 'Nexa-Light', sans-serif;
+    max-width: 1200px;
+  }
+
+  .miniHeader{
+    margin: 176px 0 40px;
+    font-size: 40px;
+    line-height: 130%;
+    font-family: 'Nexa-Light', sans-serif;
+  }
+
+  .missionsCont{
+
+
+    .missionBlock{
+      margin-right: 48px;
+      padding: 16px;
+      background-color: #FAFAFA;
+      border-radius: 4px;
+      border-left: 1px solid #6ACB91;
+
+    }
+  }
+
+
+
+
+}

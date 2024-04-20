@@ -22,7 +22,7 @@ function CarCardBlock (){
          <p className="no-select G-marginB-8 G-16-400-Inter G-black"><TextInView text={t("main.price1", {price})}/></p>
        
          <div className="carCont">
-           {/*<CarModel/>*/}
+           <CarModel/>
          </div>
      
        </div>

@@ -6,6 +6,8 @@ import HomeMain from "./pages/homeMain/homeMain";
 import {useNavigate} from "react-router";
 import Footer from "./pages/footer/footer";
 import {useTranslation} from "react-i18next";
+import ProductsMain from "./pages/productsMain/productsMain";
+import AboutUsMain from "./pages/aboutUsMain/aboutUsMain";
 
 
 
@@ -21,7 +23,6 @@ function App() {
     }
     window.scrollTo(0, 0)
   }, [location])
-  
   useEffect(()=>{
     window.scrollTo(0, 0)
   }, [])
@@ -32,6 +33,8 @@ function App() {
        
        <Routes>
          <Route exact path="/home" element={<HomeMain/>}/>
+         <Route path="/products" element={<ProductsMain/>}/>
+         <Route path="/aboutUs" element={<AboutUsMain/>}/>
        </Routes>
        
        <Footer/>

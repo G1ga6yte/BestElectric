@@ -101,5 +101,26 @@
     "advDesc11": "Choose from a variety of sizes and wattages to fit your specific energy needs and roof space",
     "advDesc12": "Our panels are designed for simple installation, potentially reducing installation costs",
     "sectionHeader8": " Our customer testimonials"
+  },
+  "products": {
+    "header": "Our products",
+    "prg1": "Drive clean, live green. Our lineup offers a complete solution for the eco-conscious driver.  Behind the wheel of one of our electric cars, experience the smooth ride and zero emissions.  When it's time to recharge, power up conveniently at one of our charging stations, or take charge at home with our easy-to-install solar panels. We even offer wind turbines to generate your own clean energy, making your drive truly sustainable.",
+    "miniHeader1": "Electric cars",
+    "miniHeader2": "Charging stations",
+    "miniHeader3": "Solar panels",
+    "btn1": "Learn more"
+  },
+  "aboutUs": {
+    "header": "About us",
+    "prg1": "At Best electric, we've been shaping the sustainable future for the past two decades. With an unwavering commitment to innovation and customer satisfaction, we've established ourselves as a leading provider of electric vehicles, charging stations, solar panels, and wind turbines.",
+    "miniHeader1": "Our Mission:",
+    "mission1": "To empower individuals and businesses to adopt sustainable practices seamlessly",
+    "mission2": "To democratize access to clean energy solutions, making them accessible to all",
+    "mission3": "To foster a culture of innovation and continuous improvement, driving the development of sustainable technologies",
+    "miniHeader2": "Our portfolio",
+    "prg2": "Despite the challenges and complexities of operating in a dynamic market, we remain steadfast in our optimism for the future. We believe that innovation, collaboration, and a commitment to sustainability hold the key to a brighter, more harmonious world.",
+    "prg3": "Make your contribution to a cleaner future - switch to electric power!",
+    "btn1": "Contact us"
+
   }
 }

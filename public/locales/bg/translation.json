@@ -28,10 +28,10 @@
     "km": "км",
     "front": "Отпред",
     "electro": "Електро",
-    "btn3": "Книга",
+    "btn3": "Резервирам",
     "btn4": "Научете повече",
     "btn5": "Купува",
-    "btn6": "под наем",
+    "btn6": "Под наем",
     "prg2": "Наемането на електрически автомобил от bestelectric е лесно и удобно. Просто резервирайте колата си онлайн или по телефона и ние ще ви я доставим точно където имате нужда. Ние също така предлагаме различни опции за наем, които да отговарят на вашите нужди, включително:",
     "status2": "Спестете гориво",
     "status3": "Намалете емисиите на CO2",
@@ -100,5 +100,13 @@
     "advDesc11": "Изберете от разнообразие от размери и мощности, за да отговарят на вашите специфични енергийни нужди и покривно пространство",
     "advDesc12": "Нашите панели са проектирани за лесен монтаж, което потенциално намалява разходите за монтаж",
     "sectionHeader8": " Препоръки на нашите клиенти"
+  },
+  "products": {
+    "header": "Our products",
+    "prg1": "Drive clean, live green. Our lineup offers a complete solution for the eco-conscious driver.  Behind the wheel of one of our electric cars, experience the smooth ride and zero emissions.  When it's time to recharge, power up conveniently at one of our charging stations, or take charge at home with our easy-to-install solar panels. We even offer wind turbines to generate your own clean energy, making your drive truly sustainable.",
+    "miniHeader1": "Electric cars",
+    "miniHeader2": "Charging stations",
+    "miniHeader3": "Solar panels",
+    "btn1": "Learn more"
   }
 }

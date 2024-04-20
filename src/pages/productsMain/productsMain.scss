@@ -1,0 +1,106 @@
+@import "../../source/styles/mixin.scss";
+
+.ProductsMain{
+  padding: 100px 16px 0;
+
+
+  .headerBlock{
+    margin: 72px 0 56px;
+    justify-content: space-between;
+    @include screen($tablet-l){
+      flex-direction: column;
+      margin: 50px 0 32px;
+    }
+    @include screen($tablet-m){
+      margin: 50px 0 16px;
+    }
+
+    .prg{
+      max-width: 564px;
+      padding: 8px;
+      border-left: 1px solid #6ACB91;
+      margin-top: 130px;
+      @include screen($tablet-l){
+        margin-top: 0;
+        max-width: 650px;
+      }
+      @include screen($tablet-m){
+        margin-top: 16px;
+      }
+    }
+
+
+  }
+
+  .articlesCont{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 200px;
+
+    .artBlock{
+      width: 49%;
+      @include screen($tablet-w){
+        width: 100%;
+        margin-bottom: 16px;
+      }
+
+      .imgBlock{
+        width: 100%;
+        border-radius: 24px;
+        padding: 24px;
+        display: flex;
+        align-items: end;
+        justify-content: start;
+        height: 380px;
+        position: relative;
+        overflow-x: hidden;
+        &:hover{
+          .img{
+            scale: 1.1;
+          }
+        }
+
+        .img{
+          z-index: -1;
+          transition: 0.3s ease-in-out all;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .learnMoreBtn{
+          border-radius: 8px;
+          background: rgba(44, 44, 44, 0.30);
+          padding: 16px;
+          cursor: pointer;
+          font-size: 20px;
+          color: white;
+          font-family: 'Inter-Regular', sans-serif;
+          border: none;
+          transition: 0.2s ease-in-out;
+          &:hover{
+            background: rgba(44, 44, 44, 0.40);
+          }
+        }
+
+      }
+
+
+      .miniHeader{
+        font-size: 40px;
+        font-family: 'Nexa-Light', sans-serif;
+        line-height: 130%;
+      }
+
+    }
+
+
+
+  }
+
+}
