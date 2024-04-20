@@ -47,7 +47,8 @@ function HomeMainVideo (){
           controls={false}
           onLoadedData={handleVideoLoad}
           autoPlay
-          muted
+          muted={true}
+          playsInline={true}
           onEnded={handleVideoEnded}
        >
        <source src={video} type="video/webm"/>
