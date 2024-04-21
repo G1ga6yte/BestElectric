@@ -1,0 +1,79 @@
+@import "../../source/styles/mixin.scss";
+
+.ArticleMain{
+  padding: 100px 16px 200px;
+
+  .backBtn{
+    margin-top: 72px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 8px;
+    transition: 0.1s ease-in-out all;
+    &:hover{
+      opacity: 0.8;
+    }
+    @include screen($tablet-m){
+      margin-top: 56px;
+    }
+  }
+
+  .header{
+    margin: 40px 0;
+    font-size: 68px;
+    font-family: "Nexa-Light", sans-serif;
+    line-height: 130%;
+    @include screen($wide){
+      margin: 40px 0 24px;
+    }
+    @include screen($tablet-l){
+      margin: 32px 0 24px;
+      font-size: 40px;
+    }
+    @include screen($tablet-m){
+      font-size: 28px;
+    }
+  }
+
+  .prg{
+    @include screen($tablet-l){
+      margin-bottom: 16px;
+    }
+  }
+
+  .bigImg{
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .imgBlock{
+    @include screen($tablet){
+      flex-direction: column;
+    }
+    .halfImg{
+      width: 49%;
+      border-radius: 8px;
+      @include screen($tablet){
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+
+  .sectionHeader{
+    margin-top: 40px;
+  }
+
+  .productsCont{
+    overflow-x: auto;
+    max-width: 100%;
+
+    .productsBlock{
+      margin: 0 auto;
+      width: max-content;
+    }
+
+  }
+
+}

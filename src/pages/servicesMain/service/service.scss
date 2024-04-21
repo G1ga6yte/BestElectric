@@ -1,0 +1,70 @@
+@import "../../../source/styles/mixin.scss";
+
+.Service{
+  padding: 100px 16px 200px;
+
+
+  .header{
+    margin-top: 72px;
+    @include screen($tablet-l){
+      font-size: 68px;
+    }
+    @include screen($tablet-m){
+      font-size: 40px;
+    }
+  }
+
+  .underHeader{
+    @include screen($wide){
+      margin-bottom: 40px;
+    }
+    @include screen($tablet-l){
+      margin-bottom: 24px;
+    }
+  }
+
+  img{
+    width: 100%;
+    margin-bottom: 32px;
+    @include screen($tablet-l){
+      margin-bottom: 24px;
+    }
+  }
+
+  ul{
+    margin-bottom: 32px;
+    padding-left: 24px;
+  }
+
+  .consultationBlock{
+    padding: 80px 16px 120px;
+    background-color: #FAFAFA;
+    border-radius: 24px;
+    margin-top: 72px;
+    @include screen($wide){
+      padding: 80px 16px 60px;
+    }
+    @include screen($tablet-l){
+      padding: 50px 16px;
+    }
+
+
+    .miniHeader{
+      font-size: 68px;
+      font-family: 'Nexa-Light', sans-serif;
+      line-height: 130%;
+      margin-bottom: 48px;
+      text-align: center;
+      @include screen($wide){
+        margin-bottom: 24px;
+      }
+      @include screen($tablet-m){
+        font-size: 28px;
+      }
+    }
+
+
+
+  }
+
+}

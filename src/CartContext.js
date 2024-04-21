@@ -9,12 +9,19 @@ export const CartProvider = ({children}) => {
     return el === location.pathname
   }
   
- 
+  const [loginBlock, setLoginBlock] = useState(false)
+  const [authentication, setAuthentication] = useState(true)
+  
+  const [loginStep, setLoginStep] = useState(1)
+  
+  
   
   
   
   return (<CartContext.Provider value={{
-    Call
+    Call, loginBlock, setLoginBlock,
+    authentication, setAuthentication,
+    loginStep, setLoginStep
   }}>
     {children}
   </CartContext.Provider>);

@@ -101,6 +101,9 @@
 .G-marginB-8{
   margin-bottom: 8px;
 }
+.G-marginB-56{
+  margin-bottom: 56px;
+}
 
 
 .G-16-400-Inter{
@@ -125,6 +128,12 @@
   line-height: normal;
 }
 
+.G-20-400-Inter{
+  font-size: 20px;
+  font-family: 'Inter-Regular', sans-serif;
+  line-height: normal;
+}
+
 .G-20-300-Nexa{
   font-size: 20px;
   font-family: "Nexa-Light", sans-serif;
@@ -141,6 +150,15 @@
   font-size: 24px;
   font-family: 'Nexa-Regular', sans-serif;
   line-height: normal;
+}
+
+.G-28-300-Nexa{
+  font-size: 28px;
+  font-family: 'Nexa-Light', sans-serif;
+  line-height: normal;
+  @include screen($tablet-m){
+    font-size: 20px;
+  }
 }
 
 .G-header-72{

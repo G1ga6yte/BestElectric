@@ -11,7 +11,7 @@ function Model(props) {
   const mScale = 0.3
   const x = 2
   const y = 0
-  const z = 1
+  const z = 1.5
   
   return (
      <group {...props} dispose={null}>
@@ -53,7 +53,7 @@ function CarModel (){
               rotateSpeed={0.3}
               minPolarAngle={Math.PI / 2.6}
               maxPolarAngle={Math.PI / 2.6} // Restrict rotation to X-axis
-              autoRotate={true}
+              autoRotate={false}
               autoRotateSpeed={3}
            />
            <Model/>

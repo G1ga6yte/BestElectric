@@ -1,0 +1,98 @@
+@import "../../source/styles/mixin.scss";
+
+.CookiesBlock {
+  position: fixed;
+  bottom: 12px;
+  right: 12px;
+  padding: 24px 24px 40px;
+  border-radius: 12px;
+  max-width: 650px;
+  width: 100%;
+  z-index: 150;
+  background-color: white;
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
+
+  .header {
+    font-size: 40px;
+    font-family: 'Nexa-Light', sans-serif;
+    color: black;
+    line-height: 130%;
+  }
+
+  .settingsLine {
+
+
+    .statusPrg {
+      color: #B6B6B6;
+    }
+
+    .switcherBlock {
+      width: 51px;
+      height: 31px;
+      background-color: black;
+      border-radius: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      padding: 2.5px 3px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out all;
+
+      .switcher {
+        height: 26px;
+        width: 26px;
+        border-radius: 50%;
+        background-color: white;
+        transition: 0.2s ease-in-out all;
+        margin-left: 0;
+      }
+    }
+
+    .activeSwitcher {
+      //justify-content: end;
+      background-color: #6ACB91;
+
+      .switcher {
+        margin-left: 19px !important;
+      }
+    }
+
+
+  }
+
+  .buttonsBlock {
+    align-items: center;
+    justify-content: end;
+
+    button {
+      padding: 8px 12px !important;
+      margin-right: 24px;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: 0.2s ease-in-out;
+
+    }
+
+    .saveBtn {
+      background-color: white;
+      border-radius: 24px;
+      border: none;
+
+      &:hover {
+        background-color: #F2F2F2;
+      }
+
+      &:active {
+        background-color: #E4E4E4;
+      }
+    }
+
+    .acceptBtn {
+
+    }
+
+
+  }
+
+
+}

@@ -1,5 +1,5 @@
-import lightHomeIcon from "./lightHomeIcon.svg"
-import whiteHomeIcon from "./whiteHomeIcon.svg"
+import lightHomeIcon from "./Group-Green.svg"
+import whiteHomeIcon from "./Group-White.svg"
 import closeX from "./x-close.svg"
 import chevronDown from "./chevron-up.svg"
 import phone from "./phone.svg"

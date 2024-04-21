@@ -1,0 +1,127 @@
+@import "../../source/styles/mixin.scss";
+
+.BookingServiceBlock{
+  padding: 200px 16px;
+
+  @include screen($wide){
+    padding: 180px 16px;
+  }
+  @include screen($tablet){
+    padding: 150px 16px;
+  }
+
+
+  .header{
+    font-size: 68px;
+    font-family: 'Nexa-Light', sans-serif;
+    line-height: 130%;
+    margin-bottom: 40px;
+    @include screen($wide){
+      margin-bottom: 0;
+    }
+    @include screen($tablet-l){
+      font-size: 40px;
+    }
+  }
+
+  .prg{
+    margin-bottom: 80px;
+  }
+
+  .lightText{
+    font-size: 16px;
+    font-family: 'Inter-Regular', sans-serif;
+    color: black;
+  }
+
+  .inputsBlock{
+    max-width: 564px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .numberInput{
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid #E4E4E4;
+      background-color: #FAFAFA;
+      font-size: 20px;
+      font-family: 'Inter-Light', sans-serif;
+      line-height: 130%;
+      outline: none;
+      margin: 16px 0;
+      &:focus-visible{
+        border-color: #D1D1D1;
+      }
+    }
+
+    textarea{
+      margin-bottom: 16px;
+      width: 100%;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid #E4E4E4;
+      background-color: #FAFAFA;
+      font-size: 20px;
+      font-family: 'Inter-Light', sans-serif;
+      line-height: 130%;
+      outline: none;
+      min-height: 210px;
+      resize: none;
+      &:focus-visible{
+        border-color: #D1D1D1;
+      }
+    }
+
+    .sendBtn{
+      width: 100%;
+    }
+
+
+
+  }
+
+  .errorMessage{
+    padding: 150px 0 0;
+
+    @include screen($tablet){
+      padding: 100px 0 0;
+    }
+    p{
+      text-align: center;
+    }
+    .prg{
+      margin-bottom: 64px !important;
+    }
+
+
+    .numbersBlock{
+      flex-wrap: wrap;
+
+      p{
+        margin: 8px 13px;
+        font-size: 24px;
+        font-family: 'Inter-Regular', sans-serif;
+        color: black;
+      }
+    }
+
+  }
+
+
+
+
+}
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}

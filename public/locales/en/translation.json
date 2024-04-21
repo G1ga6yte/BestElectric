@@ -122,5 +122,107 @@
     "prg3": "Make your contribution to a cleaner future - switch to electric power!",
     "btn1": "Contact us"
 
+  },
+  "services": {
+    "header": "Services",
+    "underHeader": "Energy-Efficient Solutions for Your Home and Business",
+    "prg1": "Ready to save money on electricity bills?",
+    "btn1": "Get a free consultation!",
+    "artPrg1": "Green energy service",
+    "artPrg2": "Electric vehicle charger installation"
+  },
+  "service": {
+    "header1": "Green energy service",
+    "underHeader1": "Energy-Efficient Solutions for Your Home and Business",
+    "prg11": "Do you want to reduce your energy bills and shrink your carbon footprint? Solar panel installation is a great solution! Solar panels convert sunlight into clean electricity that powers your home, saving you money on energy bills.",
+    "miniHeader11": "Here are some benefits of installing solar panels:",
+    "miniHeader12": "Here are some benefits of installing solar panels:",
+    "miniHeader13": "We offer professional solar panel installation, which includes:",
+    "dotted11": "Lower energy bills: Solar panels generate electricity for your home, reducing your reliance on the grid and lowering your monthly expenses.",
+    "dotted12": "Environmental benefits: Solar energy is a renewable source of energy that doesn't pollute the environment, helping to combat climate change.",
+    "dotted13": "Increased property value: Homes with solar panels become more at",
+    "dotted14": "Lower energy bills: Solar panels generate electricity for your home, reducing your reliance on the grid and lowering your monthly expenses.",
+    "dotted15": "Environmental benefits: Solar energy is a renewable source of energy that doesn't pollute the environment, helping to combat climate change.",
+    "dotted16": "Increased property value: Homes with solar panels become more attractive to buyers, potentially increasing the value of your property.",
+    "dotted17": "Free consultation: Our specialists will assess your roof and energy needs to determine the best system for your home.",
+    "dotted18": "High-quality equipment: We use only reliable and efficient solar panels and related equipment.",
+    "dotted19": "Professional installation: Our qualified installers will quickly and neatly install your solar system.",
+    "prg12": "Ready to start saving money and helping the planet? Contact us today to learn more about solar panel installation!",
+
+    "header2": "Electric vehicle charger installation",
+    "underHeader2": "Energy-Efficient Solutions for Your Home and Business",
+    "prg21": "Do you own an electric vehicle? You need a convenient and reliable charging solution. Installing an electric vehicle charger at home or work is a simple and effective way to always have access to power.",
+    "miniHeader21": "Here are some benefits of installing an electric vehicle charger:",
+    "miniHeader22": "We offer professional installation of electric vehicle chargers, which includes:",
+    "miniHeader23": "Here are some additional benefits of installing an electric vehicle charger:",
+    "dotted21": "Convenience: Charge your electric vehicle at home or work, without wasting time looking for public charging stations.",
+    "dotted22": "Save time: Electric vehicle chargers provide faster charging than regular power outlets.",
+    "dotted23": "Save money: Charging at home or work can be cheaper than using public charging stations.",
+    "dotted24": "Be environmentally friendly: Electric vehicles are a more environmentally friendly form of transportation than gasoline or diesel-powered vehicles.",
+    "dotted25": "Free consultation: Our specialists will help you choose the right charger for your electric vehicle and your home.",
+    "dotted26": "High-quality equipment: We use only reliable and certified chargers.",
+    "dotted27": "Professional installation: Our qualified installers will quickly and neatly install your charger.",
+    "dotted28": "Increased property value: Homes with EV chargers are becoming more attractive to buyers, potentially increasing the value of your property.",
+    "dotted29": "Reduced reliance on fossil fuels: By charging your EV at home, you can reduce your reliance on fossil fuels and help to reduce your carbon footprint.",
+    "dotted30": "Government incentives: Many governments offer incentives to encourage the installation of EV chargers, such as tax credits or rebates.",
+    "prg22": "If you're considering installing an electric vehicle charger, contact us today to learn more about our services and how we can help you make the switch to electric driving. ",
+    "prg23": "Ready to take a step into the electric vehicle future? Contact us today to learn more about electric vehicle charger installation!"
+
+
+
+  },
+  "article": {
+    "btn1": "Back",
+    "header": "How to select a proper solar panel?",
+    "prg1": "Solar panels are a fantastic way to tap into renewable energy and power your home. But with so many options available, selecting the perfect panel can feel overwhelming. Fear not, future solar-powered citizen! This guide will illuminate the key factors to consider when choosing a solar panel for your needs.",
+    "prg2": "Efficiency is King: Solar panel efficiency refers to the percentage of sunlight converted into electricity. Higher efficiency panels generate more power per square foot, allowing you to potentially use fewer panels to meet your energy needs. This can be especially crucial if your roof space is limited.",
+    "prg3": "Location, Location, Location: Sunshine hours significantly impact panel output. Research average sunlight hours in your area to estimate potential energy generation. Shade also plays a role. Factor in nearby trees or buildings that might cast shadows on your panels throughout the day.",
+    "prg4": "Location, Location, Location: Sunshine hours significantly impact panel output. Research average sunlight hours in your area to estimate potential energy generation. Shade also plays a role. Factor in nearby trees or buildings that might cast shadows on your panels throughout the day. Location, Location, Location: Sunshine hours significantly impact panel output. Research average sunlight hours in your area to estimate potential energy generation. Shade also plays a role. Factor in nearby trees or buildings that might cast shadows on your panels throughout the day. Location, Location, Location: Sunshine hours significantly impact panel output. Research average sunlight hours in your area to estimate potential energy generation. Shade also plays a role. Factor in nearby trees or buildings that might cast shadows on your panels throughout the day. Location, Location, Location: Sunshine hours significantly impact panel output. Research average sunlight hours in your area to estimate potential energy generation. Shade also plays a role. Factor in nearby trees or buildings that might cast shadows on your panels throughout the day. Location, Location, Location: Sunshine hours significantly impact panel output. Research average sunlight hours in your area to estimate potential energy generation. Shade also plays a role. Factor in nearby trees or buildings that might cast shadows on your panels throughout the day.",
+    "prg5": "Efficiency is King: Solar panel efficiency refers to the percentage of sunlight converted into electricity. Higher efficiency panels generate more power per square foot, allowing you to potentially use fewer panels to meet your energy needs. This can be especially crucial if your roof space is limited.",
+    "prg6": "Location, Location, Location: Sunshine hours significantly impact panel output. Research average sunlight hours in your area to estimate potential energy generation. Shade also plays a role. Factor in nearby trees or buildings that might cast shadows on your panels throughout the day. Location, Location, Location: Sunshine hours significantly impact panel output. Research average sunlight hours in your area to estimate potential energy generation. Shade also plays a role. Factor in nearby trees or buildings that might cast shadows on your panels throughout the day. Location, Location, Location: Sunshine hours significantly impact panel output. Research average sunlight hours in your area to estimate potential energy generation. Shade also plays a role. Factor in nearby trees or buildings that might cast shadows on your panels throughout the day. Location, Location, Location: Sunshine hours significantly impact panel output. Research average sunlight hours in your area to estimate potential energy generation. Shade also plays a role. Factor in nearby trees or buildings that might cast shadows on your panels throughout the day. Location, Location, Location: Sunshine hours significantly impact panel output. Research average sunlight hours in your area to estimate potential energy generation. Shade also plays a role. Factor in nearby trees or buildings that might cast shadows on your panels throughout the day.",
+    "miniHeader1": "Shining a Light on Panel Efficiency:",
+    "miniHeader2": "Sizing Up Your Sunny Situation:",
+    "miniHeader3": "Shining a Light on Panel Efficiency:",
+    "miniHeader4": "Our recommendation"
+
+
+  },
+  "login": {
+    "login": "Log in",
+    "btn1": "Send code",
+    "or": "or",
+    "loginFacebook": "Log in with facebook",
+    "loginGoogle": "Log in with Google",
+    "prg1": "No account?",
+    "signup": "Sign up",
+    "prg2": "We sent a temporary sign in code to ",
+    "prg3": "Pleas type your 6-digit code",
+    "termsPrg1": "We will process your data as set forth in our ",
+    "termsPrg11": " Terms of Use",
+    "termsPrg12": " Privacy Policy ",
+    "termsPrg13": " Data Processing Agreement",
+    "termsPrg14": "and",
+    "termsPrg2": "I agree to the "
+  },
+  "cookies": {
+    "header": "We use cookies",
+    "prg1": "Not the delicious kind, our site uses web cookies to make it as useful and secure as possible for you. Some are necessary and can't be turned off. Other cookies are used for analysing performance, displaying relevant advertising, improving functionality and enabling you to access your rewards - you can accept, reject or manage these below.",
+    "settings1": "Strictly necessary",
+    "settings2": "Performance",
+    "settings3": "Marketing",
+    "settings4": "Functionality",
+    "settings5": "Your Rewards",
+    "status1": "Always on",
+    "btn1": "Save my choices",
+    "btn2": "Accept all cookies"
+  },
+  "booking": {
+    "header": "Booking for service and maintenance",
+    "prg1": "Voltex offers comprehensive maintenance services for solar panels and batteries, ensuring their uninterrupted operation and maximum efficiency throughout their lifetime.",
+    "btn1": "Send request",
+    "placeholder": "Write about your problem",
+    "prg2": "The system couldn't find any recent purchases",
+    "prg3": "If you have any problems contact support"
+
   }
 }

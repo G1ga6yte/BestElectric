@@ -6,6 +6,12 @@
 
   .header{
     margin: 72px 0 40px;
+    @include screen($wide){
+      margin: 50px 0 0;
+    }
+    @include screen($tablet-l){
+      font-size: 68px;
+    }
   }
 
   .prg{
@@ -13,6 +19,9 @@
     line-height: 130%;
     font-family: 'Nexa-Light', sans-serif;
     max-width: 1200px;
+    @include screen($tablet-m){
+      font-size: 24px;
+    }
   }
 
   .miniHeader{
@@ -20,9 +29,18 @@
     font-size: 40px;
     line-height: 130%;
     font-family: 'Nexa-Light', sans-serif;
+    @include screen($wide){
+      margin: 96px 0 40px;
+    }
+    @include screen($tablet-l){
+      margin: 80px 0 16px;
+    }
   }
 
   .missionsCont{
+    @include screen($tablet-l){
+      flex-direction: column;
+    }
 
 
     .missionBlock{
@@ -31,11 +49,100 @@
       background-color: #FAFAFA;
       border-radius: 4px;
       border-left: 1px solid #6ACB91;
-
+      max-width: 350px;
+      @include screen($tablet-l){
+        max-width: 100%;
+        width: 100%;
+        margin: 0 0 48px;
+      }
+      @include screen($tablet){
+        margin: 0 0 24px;
+      }
     }
   }
 
+  .portfolioCont{
+    overflow-x: auto;
+    width: 100%;
+    .portfolioBlock{
+      width: max-content;
+      .img{
+        height: 650px;
+        width: 1200px;
+        margin-right: 16px;
+        border-radius: 24px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @include screen($wide-l){
+          width: 1000px;
+          height: 550px;
+        }
+        @include screen($wide){
+          width: 800px;
+          height: 500px;
+        }
+        @include screen($tablet-l){
+          width: 600px;
+          height: 350px;
+        }
+        @include screen($tablet){
+          width: 350px;
+          height: 180px;
+        }
+        @include screen($tablet-m){
+          width: 280px;
+          height: 150px;
+        }
+      }
+    }
+  }
 
+  .miniPrg{
+    font-size: 28px;
+    font-family: 'Nexa-Light', sans-serif;
+    color: black;
+    max-width: 600px;
+    line-height: 130%;
+    margin-top: 72px;
+    @include screen($wide){
+      margin: 24px auto 0;
+    }
+    @include screen($tablet-l){
+      display: none;
+    }
+  }
+
+  .bottomHeader{
+    font-size: 72px;
+    font-family: 'Nexa-Light', sans-serif;
+    line-height: 130%;
+    margin-top: 180px;
+    text-align: start;
+    max-width: 1000px;
+    @include screen($wide){
+      margin-top: 96px;
+    }
+    @include screen($tablet-l){
+      font-size: 40px;
+      margin-top: 80px;
+    }
+    @include screen($tablet-m){
+      font-size: 28px;
+    }
+
+  }
+
+  .contactUsBtn{
+    margin: 40px 0 200px;
+    @include screen($tablet-l){
+      margin: 24px 0 200px;
+    }
+    @include screen($tablet-m){
+      margin: 16px 0 200px;
+      width: 100%;
+    }
+  }
 
 
 }

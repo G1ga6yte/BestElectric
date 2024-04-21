@@ -1,0 +1,141 @@
+@import "../../source/styles/mixin.scss";
+
+.ServicesMain{
+  padding: 100px 16px 200px;
+
+
+  .header{
+    margin-top: 72px;
+    @include screen($wide){
+      margin-top: 50px;
+    }
+    @include screen($tablet-l){
+      font-size: 68px;
+    }
+    @include screen($tablet-m){
+      font-size: 40px;
+    }
+  }
+
+  .prg{
+    margin-bottom: 56px;
+    font-size: 28px;
+    font-family: 'Nexa-Light', sans-serif;
+    line-height: 130%;
+
+
+    @include screen($wide){
+      margin-bottom: 24px;
+    }
+    @include screen($tablet-m){
+      margin-bottom: 16px;
+      font-size: 20px;
+    }
+  }
+
+  .articlesCont{
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .artBlock{
+      width: 49%;
+      @include screen($tablet-w){
+        width: 100%;
+        margin-bottom: 16px;
+      }
+
+      .imgBlock{
+        width: 100%;
+        border-radius: 24px;
+        padding: 24px;
+        display: flex;
+        align-items: end;
+        justify-content: start;
+        height: 380px;
+        position: relative;
+        overflow-x: hidden;
+        &:hover{
+          .img{
+            scale: 1.1;
+          }
+        }
+
+        .img{
+          z-index: -1;
+          transition: 0.3s ease-in-out all;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .learnMoreBtn{
+          border-radius: 8px;
+          background: rgba(44, 44, 44, 0.30);
+          padding: 16px;
+          cursor: pointer;
+          font-size: 20px;
+          color: white;
+          font-family: 'Inter-Regular', sans-serif;
+          border: none;
+          transition: 0.2s ease-in-out;
+          text-decoration: none;
+          &:hover{
+            background: rgba(44, 44, 44, 0.40);
+          }
+        }
+
+      }
+
+
+      .miniHeader{
+        font-size: 40px;
+        font-family: 'Nexa-Light', sans-serif;
+        line-height: 130%;
+        @include screen($tablet-m){
+          font-size: 28px;
+        }
+      }
+
+    }
+
+
+
+  }
+
+  .consultationBlock{
+    padding: 80px 16px 120px;
+    background-color: #FAFAFA;
+    border-radius: 24px;
+    margin-top: 72px;
+    @include screen($wide){
+      padding: 80px 16px 60px;
+    }
+    @include screen($tablet-l){
+      padding: 50px 16px;
+    }
+
+
+    .miniHeader{
+      font-size: 68px;
+      font-family: 'Nexa-Light', sans-serif;
+      line-height: 130%;
+      margin-bottom: 48px;
+      text-align: center;
+      @include screen($wide){
+        margin-bottom: 24px;
+      }
+      @include screen($tablet-m){
+        font-size: 28px;
+      }
+    }
+
+
+
+  }
+
+}

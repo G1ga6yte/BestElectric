@@ -110,16 +110,20 @@
           max-width: 230px;
           background: rgba(44, 44, 44, 0.30);
           border-bottom: 2px solid #6ACB91;
+          border-left: 1px solid transparent;
+          border-right: 1px solid transparent;
+          border-top: 1px solid transparent;
           cursor: pointer;
           border-radius: 8px;
           transition: 0.2s ease-in-out all;
 
           &:hover{
-            border-bottom: 8px solid #6ACB91;
             border-radius: 8px 8px 16px 16px;
+            border-left: 1px solid rgba(209, 209, 209, 0.2);
+            border-right: 1px solid rgba(209, 209, 209, 0.2);
+            border-top: 1px solid rgba(209, 209, 209, 0.2);
           }
           &:active{
-            border-bottom: 0 solid #6ACB91;
             margin-top: 8px;
           }
 

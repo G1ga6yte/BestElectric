@@ -1,0 +1,297 @@
+@import "../../source/styles/mixin.scss";
+
+.LoginBlock{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+
+
+  .backgroundBlock{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+
+}
+
+.loginDialog{
+  padding: 40px 60px;
+  border-radius: 12px;
+  background-color: white;
+  max-width: 564px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  margin: 0 auto 5vh;
+
+  @include screen($tablet){
+    margin: 0 auto 20vh;
+  }
+  @include screen($tablet-m){
+    padding: 20px;
+  }
+
+  .header{
+    font-size: 40px;
+    font-family: 'Nexa-Light', sans-serif;
+    line-height: 130%;
+    margin-bottom: 40px;
+  }
+
+  .numberInput{
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #E4E4E4;
+    background-color: #FAFAFA;
+    font-size: 20px;
+    font-family: 'Inter-Light', sans-serif;
+    line-height: 130%;
+    outline: none;
+    margin: 24px 0;
+    &:focus-visible{
+      border-color: #D1D1D1;
+    }
+  }
+
+  .sendBtn{
+    width: 100%;
+  }
+
+  .orLine{
+    margin: 32px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: normal;
+    font-family: 'Inter-Light', sans-serif;
+    color: #D1D1D1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    span{
+      padding: 0 20px;
+    }
+    div{
+      flex-grow: 1;
+      height: 1px;
+      background-color: #D1D1D1;
+    }
+  }
+
+  .socialBtn{
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-family: 'Inter-Regular', sans-serif;
+    line-height: normal;
+    cursor: pointer;
+    transition: 0.2s ease-in-out all;
+    outline: none;
+    border: none;
+    @include screen($tablet-m){
+      font-size: 16px;
+    }
+    &:hover{
+      opacity: 0.85;
+    }
+
+    img{
+      margin-right: 12px;
+    }
+  }
+
+  .facebookBtn{
+    background-color: #1877F2;
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+    color: white;
+  }
+
+  .googleBtn{
+    background-color: white;
+    border: 1px solid #D0D5DD;
+    color: black;
+    box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+  }
+
+  .underText{
+    margin-top: 48px;
+    .signUpBtn{
+      background-color: transparent;
+      border: none;
+      padding: 2px 6px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out all;
+      &:hover{
+        color: #65C58B;
+      }
+      &:active{
+        color: #3BAD69;
+      }
+    }
+  }
+
+  .prg{
+    text-align: center;
+  }
+
+  .digitPrg{
+    text-align: center;
+    margin: 24px auto;
+    color: #949494;
+    font-size: 16px;
+    font-family: 'Inter-Regular', sans-serif;
+  }
+
+  .digitInputCont{
+    input{
+      max-width: 42px;
+      padding: 8px;
+      width: 42px;
+      border-radius: 8px;
+      border: 1px solid #D1D1D1;
+      text-align: center;
+      outline: none;
+      height: 46px;
+      font-size: 24px;
+      font-family: 'Inter-Regular', sans-serif;
+      color: black;
+      line-height: normal;
+      margin: 0 4px;
+    }
+  }
+
+  .termsPrg{
+    max-width: 310px;
+    margin: 115px auto 0;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Inter-Regular', sans-serif;
+    line-height: normal;
+
+    a{
+      text-decoration: none;
+      color: #1877F2;
+      cursor: pointer;
+      margin-left: 6px;
+    }
+  }
+
+  .backBtn{
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FAFAFA;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out all;
+    border: none;
+    &:hover{
+      background-color: #e3e2e2;
+
+    }
+  }
+
+  .nameSurnameBlock{
+    flex-wrap: wrap;
+    .numberInput{
+      margin: 0 0 16px !important;
+    }
+
+    .halfInput{
+      margin-bottom: 16px;
+      width: 49% !important;
+    }
+  }
+
+  .acceptBlock{
+    margin-bottom: 24px;
+    align-items: start;
+
+    .checkbox{
+      margin-right: 12px;
+      width: 20px;
+      min-width: 20px;
+      height: 20px;
+      padding: 2px;
+      border: 1px solid #6ACB91;
+      border-radius: 5px;
+      background-color: transparent;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.1s ease-in-out all;
+      &:hover{
+        border-color: #65C58B;
+      }
+      img{
+        width: 16px;
+      }
+    }
+    .checked{
+      background-color: #3BAD69;
+      border-color: #3BAD69;
+    }
+
+
+    .termsPrgGreen{
+      font-size: 14px;
+      font-family: 'Inter-Regular', sans-serif;
+      color: black;
+      line-height: normal;
+      a{
+        cursor: pointer;
+        color: #6ACB91;
+        text-decoration: none;
+        margin-left: 6px;
+        &:hover{
+          color: #65C58B;
+        }
+        &:active{
+          color: #3BAD69;
+        }
+      }
+    }
+
+
+
+  }
+
+  .loginBtn{
+    width: 100%;
+  }
+
+  .noMargin{
+    margin: 0 !important;
+  }
+
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
