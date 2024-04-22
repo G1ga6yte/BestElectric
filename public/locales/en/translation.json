@@ -108,7 +108,18 @@
     "miniHeader1": "Electric cars",
     "miniHeader2": "Charging stations",
     "miniHeader3": "Solar panels",
-    "btn1": "Learn more"
+    "btn1": "Learn more",
+
+    "header2": "Order a car",
+    "prg2": "Experience the thrill of electric driving with our electric car rental fleet!  Whether you're looking for a short trip around town or a longer eco-adventure, we have the perfect electric vehicle to fit your needs.",
+    "sort": "Sort",
+    "btn2": "Show more",
+    "miniHeader4": "Rent an electric car",
+    "prg3": "Experience the thrill of electric driving with our electric car rental fleet!  Whether you're looking for a short trip around town or a longer eco-adventure, we have the perfect electric vehicle to fit your needs.",
+    "btn3": "Calculate the cost"
+
+
+
   },
   "aboutUs": {
     "header": "About us",
@@ -223,6 +234,47 @@
     "placeholder": "Write about your problem",
     "prg2": "The system couldn't find any recent purchases",
     "prg3": "If you have any problems contact support"
+
+  },
+  "privacy": {
+    "header1": "Delivery and payment",
+    "header2": "Privacy Policy",
+    "header3": "Terms of Use",
+    "dotted10": "Order Fulfillment:",
+    "dotted11": "Once you place an order, we will verify your information and process your payment.",
+    "dotted12": "We will then ship your order within the specified timeframe.",
+    "dotted13": "You will receive an email confirmation with tracking information once your order ships.",
+    "dotted14": "Shipping Options and Costs:",
+    "dotted15": "We offer various shipping options with corresponding delivery times and costs.",
+    "dotted16": "Shipping costs are calculated based on the weight, size, and destination of your order.",
+    "dotted17": "Accepted Payment Methods:",
+    "dotted18": "We accept various payment methods, such as credit cards, debit cards, and online payment platforms.",
+    "prg21": "Our Privacy Policy explains how we collect, use, and disclose your personal information.",
+    "prg22": "Key points to cover:",
+    "dotted20": "What information we collect (e.g., name, email address, browsing history).",
+    "dotted21": "How we use your information (e.g., to provide services, personalize your experience).",
+    "dotted22": "How we share your information (with third-party service providers, as required by law).",
+    "dotted23": "Your data protection rights (accessing, correcting, or deleting your information).",
+    "dotted24": "Data security measures (how we protect your information).",
+    "prg31": "This document outlines the terms and conditions that govern your use of our website/app/service (the \"Platform\"). By accessing or using the Platform, you agree to be bound by these Terms of Use.",
+    "prg32": "Key points to cover:",
+    "dotted30": "Your obligations as a user, including responsible use and prohibited activities.",
+    "dotted31": "Intellectual property rights (who owns the content on the platform).",
+    "dotted32": "Disclaimers and limitations of liability (what we are not responsible for).",
+    "dotted33": "Termination clause (how we can suspend or terminate your account).",
+    "dotted34": "Governing law and dispute resolution (where legal issues will be settled).",
+    "dotted35": "Intellectual Property:",
+    "dotted36": "The Company owns all intellectual property rights (including copyrights, trademarks, patents) associated with the Platform and its content.",
+    "dotted37": "Users are granted a limited, non-exclusive license to access and use the Platform for personal, non-commercial purposes.",
+    "dotted38": "Disclaimers and Limitations of Liability:",
+    "dotted39": "The Platform is provided \"as is\" and the Company makes no warranties, express or implied, regarding its operation or the information it contains.",
+    "dotted40": "The Company will not be liable for any damages arising out of your use of the Platform, including but not limited to, direct, indirect, incidental, consequential, or punitive damages.",
+    "dotted41": "Termination:",
+    "dotted42": "The Company reserves the right to suspend or terminate your access to the Platform at any time and for any reason, with or without notice.",
+    "dotted43": "You may also terminate your account at any time.",
+    "dotted44": "Governing Law and Dispute Resolution:",
+    "dotted45": "These Terms of Use will be governed by and construed in accordance with the laws of [State/Country].",
+    "dotted46": "Any dispute arising out of or relating to these Terms of Use will be settled by [arbitration/courts] located in [State/Country]."
 
   }
 }

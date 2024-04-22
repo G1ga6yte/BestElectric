@@ -61,7 +61,7 @@ function LoginStep2 ({inputs, setInputs, telNumber, handleLoginStep}){
          <TextInView text={t("login.termsPrg1")}/>
          <a href="/termsOfUse" target="_blank"><TextInView text={t("login.termsPrg11")}/></a>,
          <a href="/privacyPolicy" target="_blank"><TextInView text={t("login.termsPrg12")}/></a> <TextInView text={t("login.termsPrg14")}/>
-         <a href="/dataProcessingAgreement"><TextInView text={t("login.termsPrg13")}/></a>
+         <a href="/"><TextInView text={t("login.termsPrg13")}/></a>
        </p>
      </div>
   )

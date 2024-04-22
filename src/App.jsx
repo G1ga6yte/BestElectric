@@ -14,6 +14,11 @@ import ArticleMain from "./pages/articleMain/articleMain";
 import CookiesBlock from "./components/cookiesBlock/cookiesBlock";
 import BookingServiceBlock from "./pages/bookingServiceBlock/bookingServiceBlock";
 import LoginDialog from "./components/loginBlock/loginDialog";
+import Delivery from "./pages/terms&privacy/delivery";
+import Privacy from "./pages/terms&privacy/privacy";
+import Terms from "./pages/terms&privacy/terms";
+import ProductsCont from "./pages/productsCont/productsCont";
+import CarOrderBlock from "./pages/productsCont/carOrderBlock/carOrderBlock";
 
 
 function App() {
@@ -39,12 +44,20 @@ function App() {
        
        <Routes>
          <Route exact path="/home" element={<HomeMain/>}/>
-         <Route path="/products" element={<ProductsMain/>}/>
+         {/*<Route path="/ourProducts" element={<ProductsMain/>}/>*/}
          <Route path="/aboutUs" element={<AboutUsMain/>}/>
          <Route path="/services" element={<ServicesMain/>}/>
          <Route path="/service/:id" element={<Service/>}/>
          <Route path="/article/:id" element={<ArticleMain/>}/>
          <Route path="/bookingService" element={<BookingServiceBlock/>}/>
+         <Route path="/delivery&payment" element={<Delivery/>}/>
+         <Route path="/privacyPolicy" element={<Privacy/>}/>
+         <Route path="/termsOfUse" element={<Terms/>}/>
+         <Route path="/products" element={<ProductsCont/>}>
+           <Route path="/products/" element={<ProductsMain/>}/>
+           <Route path="/products/electricCars" element={<CarOrderBlock/>}/>
+         </Route>
+
        </Routes>
        
        <Footer/>

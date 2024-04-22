@@ -1,0 +1,36 @@
+@import "../../source/styles/mixin.scss";
+
+.termsPrivacyBlock{
+  padding: 200px 16px;
+
+  @include screen($wide){
+    padding: 180px 16px;
+  }
+  @include screen($tablet-l){
+    padding: 150px 16px;
+  }
+
+  .header{
+    font-size: 68px;
+    font-family: 'Nexa-Light', sans-serif;
+    line-height: normal;
+    @include screen($tablet-l){
+      font-size: 40px;
+    }
+  }
+
+  .insideUl{
+    padding-left: 32px;
+    @include screen($tablet){
+      padding-left: 24px;
+    }
+  }
+
+  ul{
+    padding-left: 32px;
+    @include screen($tablet){
+      padding-left: 24px;
+    }
+  }
+
+}

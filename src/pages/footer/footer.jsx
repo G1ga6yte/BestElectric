@@ -112,12 +112,12 @@ function Footer (){
        
        <div className="termsCont ">
           <div className="termsBlock G-flex-ACenter-JBetween">
-            <Link className="termsLink" to="/"><TextInView text={"Delivery and payment"}/></Link>
+            <Link className="termsLink" to="/delivery&payment"><TextInView text={"Delivery and payment"}/></Link>
             
             <div className="rightGroup G-flex-ACenter">
-              <Link className="termsLink copyrightLink G-marginR-32" to="/"><TextInView text={"Copyright © BestElectric . All Rights Reserved."}/></Link>
-              <Link className="termsLink G-marginR-32" to="/"><TextInView text={"Terms of Use"}/></Link>
-              <Link className="termsLink" to="/"><TextInView text={"Privacy Policy"}/></Link>
+              <p className="termsLink copyrightLink G-marginR-32"><TextInView text={"Copyright © BestElectric . All Rights Reserved."}/></p>
+              <Link className="termsLink G-marginR-32" to="/termsOfUse"><TextInView text={"Terms of Use"}/></Link>
+              <Link className="termsLink" to="/privacyPolicy"><TextInView text={"Privacy Policy"}/></Link>
             </div>
           </div>
        </div>
