@@ -1,15 +1,44 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import TextInView from "../TextInView/TextInView";
 import {Images} from "../../pages/homeMain/homeRentCar/images/images";
 import "./carCardBlock.scss"
 // import CarModel from "../carModel/carModel";
 import {useTranslation} from "react-i18next";
+import {carImages} from "./images/images"
 
 const CarModel = React.lazy(()=> import("../carModel/carModel"))
 
 function CarCardBlock (){
   const {t, i18n} = useTranslation()
   const price = 500
+  const [tablet, setTablet] = useState(false)
+  
+  const carImgArr = [
+     carImages.img1,
+     carImages.img2,
+     carImages.img3,
+     carImages.img4,
+     carImages.img5,
+     carImages.img6,
+     carImages.img7
+  ]
+  
+  const [activeImg, setActiveImg] = useState(0)
+  
+  useEffect(()=>{
+    setActiveImg(0)
+  }, [])
+  
+  
+  
+  useEffect(()=>{
+    if (window.innerWidth <= 992){
+      setTablet(true)
+    }
+  }, [])
+  
+  
+  
   
   return(
      <div className="carInfoBlock G-flex">
@@ -20,9 +49,30 @@ function CarCardBlock (){
            <p className="availablePrg"><TextInView className="G-16-300-Inter G-black" text={t("main.status1")}/></p>
          </div>
          <p className="no-select G-marginB-8 G-16-400-Inter G-black"><TextInView text={t("main.price1", {price})}/></p>
-       
-         <div className="carCont">
-           <CarModel/>
+         
+         {tablet ?
+            <div style={{backgroundImage: `url("${carImgArr[activeImg]}")`}} className="carImg">
+            </div>
+            : <div className="carCont">
+              <CarModel/>
+            </div>
+         }
+         
+         <div className="imgButtons">
+           <button onClick={()=>{
+             if (activeImg === 0){
+               setActiveImg(carImgArr.length-1)
+             } else {
+               setActiveImg(prev=> prev-1)
+             }
+           }} className="imgBtn"><img src={carImages.arrowLeft} alt=""/></button>
+           <button onClick={()=>{
+             if ((carImgArr.length -1) === activeImg){
+               setActiveImg(0)
+             } else {
+               setActiveImg(prev=> prev+1)
+             }
+           }} className="imgBtn"><img src={carImages.arrowRight} alt=""/></button>
          </div>
      
        </div>

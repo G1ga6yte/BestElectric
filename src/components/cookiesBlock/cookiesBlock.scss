@@ -12,18 +12,51 @@
   background-color: white;
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.3);
 
+  @include screen($wide){
+    max-width: 550px;
+  }
+  @include screen($tablet-m){
+    max-width: 96%;
+    width: 96%;
+    right: 2%;
+  }
+
   .header {
     font-size: 40px;
     font-family: 'Nexa-Light', sans-serif;
     color: black;
     line-height: 130%;
+    @include screen($wide){
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+  }
+
+  .prg{
+    @include screen($wide){
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
   }
 
   .settingsLine {
+    @include screen($wide){
+      margin-bottom: 8px;
+    }
+
+    .settingsName{
+      @include screen($wide){
+        font-size: 16px;
+      }
+    }
 
 
     .statusPrg {
       color: #B6B6B6;
+      @include screen($wide){
+        font-size: 16px;
+      }
     }
 
     .switcherBlock {
@@ -37,6 +70,10 @@
       padding: 2.5px 3px;
       cursor: pointer;
       transition: 0.2s ease-in-out all;
+
+      @include screen($wide){
+        scale: 0.8;
+      }
 
       .switcher {
         height: 26px;
@@ -60,9 +97,27 @@
 
   }
 
+  .cookieLink{
+    @include screen($wide){
+      font-size: 16px;
+    }
+  }
+
   .buttonsBlock {
     align-items: center;
     justify-content: end;
+
+    @include screen($tablet){
+      margin-top: 12px;
+    }
+    @include screen($tablet-m){
+      flex-direction: column;
+
+      button{
+        width: 100%;
+        margin-bottom: 8px;
+      }
+    }
 
     button {
       padding: 8px 12px !important;
@@ -70,6 +125,11 @@
       white-space: nowrap;
       cursor: pointer;
       transition: 0.2s ease-in-out;
+
+      @include screen($wide){
+        padding: 4px 8px !important;
+        font-size: 16px;
+      }
 
     }
 
