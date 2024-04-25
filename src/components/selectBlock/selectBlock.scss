@@ -1,0 +1,77 @@
+@import "../../source/styles/mixin.scss";
+
+.SelectBlock{
+  width: 100%;
+  position: relative;
+
+
+  .selectName{
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-family: 'Inter-Regular', sans-serif;
+    color: black;
+    line-height: normal;
+  }
+
+  .select{
+    position: relative;
+    width: 100%;
+
+    .selectedBlock{
+      width: 100%;
+      padding: 12px;
+      background-color: #FAFAFA;
+      border-radius: 12px;
+      border: 1px solid #E4E4E4;
+      cursor: pointer;
+      transition: 0.2s ease-in-out all;
+
+      &:hover{
+        border-color: #D1D1D1;
+      }
+      &:active{
+        border-color: #B6B6B6;
+      }
+
+      .selectedItem{
+        font-size: 20px;
+        font-family: "Inter-Light", sans-serif;
+        line-height: normal;
+      }
+      .placeholderItem{
+        color: #B6B6B6;
+      }
+      .activeItem{
+        color: black;
+      }
+
+
+    }
+
+    .optionBlock{
+      top: 52px;
+      width: 100%;
+      position: absolute;
+      z-index: 5;
+      background-color: #FAFAFA;
+      border-radius: 12px;
+      border: 1px solid #B6B6B6;
+      max-height: 180px;
+      overflow: auto;
+
+      .optionItem{
+        padding: 12px 8px;
+        width: 100%;
+        cursor: pointer;
+        transition: 0.2s ease-in-out all;
+        background-color: white;
+        &:hover{
+          background-color: #F2F2F2;
+        }
+      }
+    }
+
+  }
+
+
+}

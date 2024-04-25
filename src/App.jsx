@@ -6,7 +6,7 @@ import HomeMain from "./pages/homeMain/homeMain";
 import {useNavigate} from "react-router";
 import Footer from "./pages/footer/footer";
 import {useTranslation} from "react-i18next";
-import ProductsMain from "./pages/productsMain/productsMain";
+import ProductsMain from "./pages/productsCont/productsMain/productsMain";
 import AboutUsMain from "./pages/aboutUsMain/aboutUsMain";
 import ServicesMain from "./pages/servicesMain/servicesMain";
 import Service from "./pages/servicesMain/service/service";
@@ -19,6 +19,9 @@ import Privacy from "./pages/terms&privacy/privacy";
 import Terms from "./pages/terms&privacy/terms";
 import ProductsCont from "./pages/productsCont/productsCont";
 import CarOrderBlock from "./pages/productsCont/carOrderBlock/carOrderBlock";
+import ProductItemMain from "./pages/productsCont/productItemMain/productItemMain";
+import ChargerStationBlock from "./pages/productsCont/chargerStationBlock/chargerStationBlock";
+import SolarPanelsBlock from "./pages/productsCont/solarPanelsBlock/solarPanelsBlock";
 
 
 function App() {
@@ -56,6 +59,9 @@ function App() {
          <Route path="/products" element={<ProductsCont/>}>
            <Route path="/products/" element={<ProductsMain/>}/>
            <Route path="/products/electricCars" element={<CarOrderBlock/>}/>
+           <Route path="/products/chargerStation" element={<ChargerStationBlock/>}/>
+           <Route path="/products/solarPanels" element={<SolarPanelsBlock/>}/>
+           <Route path="/products/electricCars/product/:id" element={<ProductItemMain/>}/>
          </Route>
 
        </Routes>

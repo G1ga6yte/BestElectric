@@ -2,7 +2,7 @@ import React from "react";
 import "./servicesMain.scss"
 import {useTranslation} from "react-i18next";
 import TextInView from "../../components/TextInView/TextInView";
-import {Images} from "../productsMain/images/images";
+import {Images} from "../productsCont/productsMain/images/images";
 import {Link} from "react-router-dom";
 
 function ServicesMain (){

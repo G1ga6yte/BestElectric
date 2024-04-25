@@ -1,5 +1,5 @@
 {
-  "main": {
+  "main":  {
     "prg1": "Booking for service and maintenance",
     "link1": "Home",
     "link2": "Products",
@@ -116,7 +116,162 @@
     "btn2": "Show more",
     "miniHeader4": "Rent an electric car",
     "prg3": "Experience the thrill of electric driving with our electric car rental fleet!  Whether you're looking for a short trip around town or a longer eco-adventure, we have the perfect electric vehicle to fit your needs.",
-    "btn3": "Calculate the cost"
+    "btn3": "Calculate the cost",
+    "btn4": "Accept",
+    "selectName1": "Body type",
+    "selectName2": "Price",
+    "selectName3": "Manufacturer",
+    "selectName4": "Power",
+    "selectName5": "Charging type",
+    "selectName6": "Power reserve",
+    "selectName7": "Year of release",
+
+    "selectName8": "Charging station type",
+    "selectName9": "Power",
+    "selectName10": "Connector type",
+    "selectName11": "Power",
+    "selectName12": "Price",
+    "selectName13": "Manufacturer",
+    "selectName14": "Year of release",
+    "selectName15": "Number of devices simultaneously charged",
+    "selectName16": "Cable length",
+
+    "selectName17": "Wattage",
+    "selectName18": "Panel type",
+    "selectName19": "Voltage",
+    "selectName20": "Current",
+    "selectName21": "Cell Efficiency",
+    "selectName22": "Manufacturer",
+    "selectName23": "Power",
+
+
+
+
+
+    "overview1": "Mileage",
+    "overview2": "Body type",
+    "overview3": "Gearbox",
+    "overview4": "Doors",
+    "overview5": "Seats",
+    "overview6": "Manufacturer warranty",
+    "overview7": "Reg date",
+
+    "overview8": "Phases",
+    "overview9": "Stainless housing",
+    "overview10": "Leakage current protection",
+    "overview11": "Dimensions",
+    "overview12": "Manufactured",
+    "overview13": "Weight",
+    "overview14": "Impact resistance",
+    "overview15": "Life time",
+    "overview16": "RFID",
+    "overview17": "Cable length",
+    "overview18": "OCPP READY",
+
+
+
+    "settings1": "Battery type",
+    "settings2": "Power",
+    "settings3": "Acceleration to 100 km/h",
+    "settings4": "Power reserve",
+    "settings5": "Drive unit",
+    "settings6": "Engine",
+
+    "settings7": "Type",
+    "settings8": "Power",
+    "settings9": "Compatibility",
+    "settings10": "Additional Features",
+    "settings11": "Charging station type",
+
+
+    "calc1": "up to 100%",
+    "calc2": "up to 30 km",
+    "calc3": "hours",
+    "calc4": "minutes",
+    "calc5": "",
+    "calc6": "",
+    "calc7": "",
+
+    "question1": "How long will it take to charge?",
+    "answer1": "We have used data from the manufacturer to estimate these charging times, they are only a guide. Charging times for some speeds may not have been provided.",
+    "question2": "How often will I need to charge?",
+    "answer21": "Keyless entry",
+    "answer22": "Push-button start",
+    "answer23": "Climate control",
+    "answer24": "Heated seats",
+    "answer25": "Rain and light sensors",
+    "answer26": "Bluetooth multimedia system",
+    "answer27": "Rear view camera",
+    "answer28": "Parking sensors",
+    "question3": "Features and spec",
+    "answer3": "",
+    "question4": "Where to buy charging stations?",
+    "answer4": "",
+
+    "question5": "Are electric car safe?",
+    "answer5": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
+    "question6": "What is the cost of charging an electric car?",
+    "answer6": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
+    "question7": "Do electric car need to be charged every day?",
+    "answer7": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
+    "question8": "At what rate does the price of electric cars fall as they age?",
+    "answer8": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
+    "question9": "Is an electric car insurance cheaper?",
+    "answer9": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
+
+    "question10": "How long will it take to charge the car?",
+    "answer10": "We have used data from the manufacturer to estimate these charging times, they are only a guide. Charging times for some speeds may not have been provided.",
+
+    "question11": "How AC ev charger works?",
+    "answer11": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
+    "question12": "What ev charger do I need?",
+    "answer12": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
+    "question13": "How to use ev charger?",
+    "answer13": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
+    "question14": "What's the ABB?",
+    "answer14": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
+    "question15": "What is your terms of delivery?",
+    "answer15": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
+
+
+
+    "miniHeader5": "Home charging",
+    "miniHeader6": "Public charging",
+    "miniHeader7": "Overview",
+    "miniHeader8": "Frequently Asked Questions:",
+    "miniHeader9": "Pick up color",
+    "miniHeader10": "Description",
+    "miniHeader11": "Share",
+    "miniHeader12": "Power option",
+    "miniHeader13": "Manufacturer",
+    "miniHeader14": "Model",
+
+
+
+
+    "features1": "Keyless entry",
+    "features2": "Push-button start",
+    "features3": "Climate control",
+    "features4": "Heated seats",
+    "features5": "Rain and light sensors",
+    "features6": "Bluetooth multimedia system",
+    "features7": "Rear view camera",
+    "features8": "Parking sensors",
+
+    "desc1": "The car is in excellent condition, no accidents. Manufacturer's warranty until 2025. Regularly serviced. Two sets of keys. Negotiable price.",
+    "desc2": "Hailed as the most affordable German AC charging station on the market, the Webasto Pure is not only extremely affordable for its performance, but also offers a great design that will definitely make an impression in your garage",
+    "status1": "Delivery within {{delivery}} days",
+    "status2": "Discount {{discount}}%",
+
+    "overName1": "BRAND NEW - IN STOCK",
+    "deliveryTime1": "ORDER NOW 4 SEPTEMBER DELIVERY",
+    "btn5": "Add to cart",
+    "btn6": "Read more",
+    "header3": "Charging stations",
+    "underHeader2": "Our stations are certified by safety standards and come with features to prevent overheating and electrical shocks",
+    "header4": "How to select a proper Charging station?",
+    "header5": "Green energy",
+    "underHeader3": "Convert sunlight into electricity effectively, maximizing your power generation and return on investment"
 
 
 

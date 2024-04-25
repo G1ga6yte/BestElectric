@@ -1,6 +1,6 @@
 @import "../../../source/styles/mixin.scss";
 
-.CarOrderBlock{
+.productsMainBlock{
   padding: 200px 16px;
   max-width: 1724px;
   margin: 0 auto;
@@ -106,5 +106,116 @@
 
   }
 
+  .SortCont{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 180;
+    transition: 1s ease-in-out all;
 
+    .backgroundBlock{
+      background-color: rgba(0, 0, 0, 0.35);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      top: 0;
+    }
+
+    .sortBlock{
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      top: 0;
+      padding: 35px 32px;
+      background-color: white;
+      height: 100%;
+      border-radius: 16px;
+      max-width: 470px;
+      width: 100%;
+      @include screen($tablet-m){
+        max-width: 100%;
+        border-radius: 0;
+      }
+      @include screen($mobile-m){
+        padding: 24px 16px;
+      }
+
+
+      .closeBtn{
+        cursor: pointer;
+        padding: 8px;
+        background-color: transparent;
+        border: none;
+        margin-right: 60px;
+      }
+
+      .prg24{
+        font-size: 24px;
+        font-family: "Inter-Regular", sans-serif;
+        line-height: normal;
+        color: black;
+      }
+
+      .acceptBtn{
+        width: 100%;
+
+      }
+
+      .btnBlock{
+        padding-top: 32px;
+        background-color: white;
+        width: 100%;
+      }
+
+      .selectsCont{
+        overflow-x: auto;
+        flex-grow: 1;
+        position: relative;
+        z-index: 15;
+        padding: 10px 0 200px;
+      }
+
+
+
+
+
+    }
+
+  }
+
+  .sortBlockAnim{
+    animation-name: sortAnim;
+    animation-duration: 1s;
+    transition: 1s ease-in-out all;
+  }
+
+  .sortBlockAnim2{
+    animation-name: sortAnim2;
+    animation-duration: 1s;
+    transition: 1s ease-in-out all;
+  }
+
+
+}
+
+@keyframes sortAnim {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes sortAnim2 {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(100%);
+  }
 }

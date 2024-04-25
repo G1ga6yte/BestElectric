@@ -1,4 +1,4 @@
-@import "../../source/styles/mixin.scss";
+@import "../../../source/styles/mixin.scss";
 
 .ProductsMain{
   padding: 100px 16px 0;
@@ -74,6 +74,7 @@
         }
 
         .learnMoreBtn{
+          text-decoration: none;
           border-radius: 8px;
           background: rgba(44, 44, 44, 0.30);
           padding: 16px;

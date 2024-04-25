@@ -1,8 +1,9 @@
 import React from "react";
 import "./productsMain.scss"
-import TextInView from "../../components/TextInView/TextInView";
+import TextInView from "../../../components/TextInView/TextInView";
 import {useTranslation} from "react-i18next";
 import {Images} from "./images/images";
+import {Link} from "react-router-dom";
 
 
 function ProductsMain (){
@@ -22,10 +23,10 @@ function ProductsMain (){
          
          <div className="artBlock G-marginB-24">
            <div className="imgBlock G-marginB-24" >
-             <button className="learnMoreBtn G-flex-ACenter-JCenter">
+             <Link to="/products/electricCars" className="learnMoreBtn G-flex-ACenter-JCenter">
                <TextInView className={"G-marginR-8"} text={t("products.btn1")}/>
                <img src={Images.arrowRight} alt=""/>
-             </button>
+             </Link>
              <div className="img" style={{backgroundImage: `url("${Images.art1Img}")`}}></div>
            </div>
            
@@ -34,10 +35,10 @@ function ProductsMain (){
   
          <div className="artBlock G-marginB-24">
            <div className="imgBlock G-marginB-24">
-             <button className="learnMoreBtn G-flex-ACenter-JCenter">
+             <Link to="/products/chargerStation" className="learnMoreBtn G-flex-ACenter-JCenter">
                <TextInView text={t("products.btn1")}/>
                <img src={Images.arrowRight} alt=""/>
-             </button>
+             </Link>
              <div className="img" style={{backgroundImage: `url("${Images.art2Img}")`}}></div>
            </div>
     
@@ -46,10 +47,10 @@ function ProductsMain (){
   
          <div className="artBlock G-marginB-24">
            <div className="imgBlock G-marginB-24" >
-             <button className="learnMoreBtn G-flex-ACenter-JCenter">
+             <Link to="/products/solarPanels" className="learnMoreBtn G-flex-ACenter-JCenter">
                <TextInView text={t("products.btn1")}/>
                <img src={Images.arrowRight} alt=""/>
-             </button>
+             </Link>
              <div className="img" style={{backgroundImage: `url("${Images.art3Img}")`}}></div>
            </div>
     

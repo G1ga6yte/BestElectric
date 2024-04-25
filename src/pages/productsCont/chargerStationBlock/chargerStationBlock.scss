@@ -1,0 +1,110 @@
+@import "../../../source/styles/mixin.scss";
+
+
+.properChargingBlock{
+  min-height: 450px;
+  margin: 16px 0;
+  border-radius: 24px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 50px;
+  @include screen($tablet-l){
+    min-height: 300px;
+  }
+  @include screen($tablet-m){
+    padding: 30px 16px;
+  }
+
+  .miniHeader{
+    font-size: 68px;
+    text-align: center;
+    font-family: 'Nexa-Light', sans-serif;
+    line-height: 130%;
+    color: white;
+    margin-bottom: 32px;
+    @include screen($tablet-l){
+      font-size: 40px;
+      margin-bottom: 64px;
+    }
+  }
+
+}
+
+.articlesCont {
+  max-width: 1240px;
+  //margin: 180px auto 0;
+  overflow-x: auto;
+  margin: 0 auto;
+  width: 100%;
+  //@include screen($wide-l){
+  //  margin: 85px auto 0;
+  //}
+  //@include screen($wide){
+  //  margin: 65px auto 0;
+  //}
+  //@include screen($tablet-l){
+  //  margin: 110px auto 0;
+  //}
+  //@include screen($tablet-m){
+  //  margin: 75px auto 0;
+  //}
+
+  .articlesBlock {
+    align-items: start;
+
+    .article {
+      margin: 0 8px;
+      text-decoration: none;
+      min-width: 230px;
+      max-width: 230px;
+      background: rgba(44, 44, 44, 0.30);
+      border-bottom: 2px solid #6ACB91;
+      border-left: 1px solid transparent;
+      border-right: 1px solid transparent;
+      border-top: 1px solid transparent;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: 0.2s ease-in-out all;
+
+      &:hover{
+        border-radius: 8px 8px 16px 16px;
+        border-left: 1px solid rgba(209, 209, 209, 0.2);
+        border-right: 1px solid rgba(209, 209, 209, 0.2);
+        border-top: 1px solid rgba(209, 209, 209, 0.2);
+      }
+      &:active{
+        margin-top: 8px;
+      }
+
+      .prg{
+        @include screen($tablet-l){
+          display: none;
+        }
+      }
+
+
+      .innerBlock {
+        padding: 8px;
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include screen($tablet-l){
+          min-height: 120px;
+        }
+      }
+
+
+      img {
+        width: 24px;
+      }
+    }
+
+  }
+
+
+}
+

@@ -1,0 +1,418 @@
+@import "../../../source/styles/mixin.scss";
+
+
+.ProductItemMain{
+  padding: 200px 16px;
+  justify-content: space-between;
+  align-items: start;
+
+
+
+
+  .leftBlock{
+    width: 59%;
+    @include screen($tablet-l){
+      width: 100%;
+    }
+
+    .imgBlock{
+      margin-bottom: 8px;
+      width: 100%;
+      min-height: 430px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 12px;
+      height: 430px;
+      @include screen($tablet){
+        height: 350px;
+        min-height: 350px;
+      }
+      @include screen($tablet-m){
+        height: 260px;
+        min-height: 260px;
+      }
+
+      .contentBlock{
+        padding: 24px;
+        height: 100%;
+        @include screen($tablet){
+          padding: 16px;
+        }
+        .availablePrg{
+          padding: 2px 10px 2px 22px;
+          position: relative;
+          background-color: white;
+          border-radius: 30px;
+          white-space: nowrap;
+          width: max-content;
+          margin-bottom: 8px;
+          &:before{
+            content: ' ';
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: #6ACB91;
+          }
+        }
+
+        .deliveryPrg{
+          margin-bottom: 8px;
+          padding: 2px 10px;
+          width: max-content;
+          background-color: white;
+          font-size: 16px;
+          font-family: 'Inter-Light', sans-serif;
+          color: black;
+          line-height: normal;
+          border-radius: 24px;
+        }
+        .discountPrg{
+          margin-bottom: 8px;
+          padding: 2px 10px;
+          width: max-content;
+          background-color: #F5C7C7;
+          font-size: 16px;
+          font-family: 'Inter-Light', sans-serif;
+          color: black;
+          line-height: normal;
+          border-radius: 24px;
+        }
+
+
+        .buttonsBlock{
+          .changeImgBtn{
+            background-color: transparent;
+            border: none;
+            margin: 0 6px;
+            cursor: pointer;
+            &:hover{
+
+            }
+          }
+        }
+
+      }
+
+    }
+    .imagesBlock{
+      margin: -4px;
+      flex-wrap: wrap;
+      width: 90%;
+      margin-bottom: 16px;
+      @include screen($tablet-m){
+        width: 100%;
+      }
+      .image{
+        margin: 4px;
+        width: 100px;
+        height: 80px;
+        border-radius: 8px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: brightness(0.75);
+        transition: 0.2s ease-in-out all;
+        cursor: pointer;
+        &:hover{
+          filter: brightness(1);
+        }
+      }
+      .activeImg{
+        filter: brightness(1) !important;
+      }
+
+    }
+    .overviewBlock{
+      padding: 16px;
+      width: 100%;
+      background-color: #FAFAFA;
+      border-radius: 8px;
+      margin-bottom: 16px;
+
+      .grayText{
+        color: #B6B6B6;
+        text-align: end;
+        white-space: nowrap;
+      }
+
+      .overviewName{
+        text-align: start;
+      }
+
+      .G-marginB-8{
+        margin-bottom: 10px;
+      }
+
+      .miniHeader{
+        font-size: 24px;
+        font-family: 'Inter-Regular', sans-serif;
+        color: black;
+        line-height: normal;
+      }
+
+    }
+    .calculatorBlock{
+      padding: 16px;
+      width: 100%;
+      background-color: #FAFAFA;
+      border-radius: 8px;
+      margin-bottom: 16px;
+
+
+      .questionBlue{
+        font-size: 24px;
+        font-family: 'Inter-Regular', sans-serif;
+        color: #1877F2;
+        line-height: normal;
+        margin-bottom: 8px;
+      }
+
+      .selectsCont{
+        justify-content: space-between;
+
+        .selectBlock{
+          width: 49%;
+
+          .miniHeader{
+            min-height: 50px;
+            align-items: center;
+          }
+
+          .underSelectsBlock{
+            justify-content: space-between;
+
+            .underSelectBlock{
+              width: 49%;
+              padding: 8px;
+              border: 1px solid #E4E4E4;
+              background-color: #FAFAFA;
+              border-radius: 12px;
+              .overText{
+                margin-bottom: 6px;
+                color: #B6B6B6;
+              }
+            }
+
+          }
+
+
+        }
+
+
+      }
+
+
+
+      .buyChargingStation{
+        text-decoration: none;
+        display: flex;
+        cursor: pointer;
+      }
+
+
+
+
+    }
+    .questionsCont{
+      padding: 16px;
+      width: 100%;
+      background-color: #FAFAFA;
+      border-radius: 8px;
+      margin-bottom: 16px;
+
+      .miniHeader{
+        font-size: 24px;
+        font-family: 'Inter-Regular', sans-serif;
+        color: black;
+        line-height: normal;
+      }
+
+    }
+
+
+    .questionBlock{
+      border-left: 0 solid white;
+      padding-left: 0;
+      transition: 0.2s ease-in-out all;
+
+      .questionPrg{
+        cursor: pointer;
+        img{
+          transition: 0.2s ease-in-out all;
+        }
+      }
+      .answersBlock{
+        margin-top: 8px;
+        ul{
+          padding-left: 24px;
+        }
+      }
+
+    }
+
+    .activeQuestion{
+      border-left: 2px solid #2E85EC;
+      padding-left: 8px;
+    }
+
+  }
+
+  .rightBlock{
+    width: 39%;
+    @include screen($tablet-l){
+      display: none;
+    }
+
+
+
+
+  }
+
+  .tabletShow{
+    display: none;
+    @include screen($tablet-l){
+      display: block;
+    }
+  }
+
+  /////////////global
+  .name{
+    font-size: 40px;
+    font-family: 'Nexa-Light', sans-serif;
+    line-height: 130%;
+    color: black;
+  }
+
+  .priceBlock{
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #FAFAFA;
+
+
+    .oldPrice{
+      color: black;
+      font-size: 26px;
+      font-family: 'Nexa-Regular', sans-serif;
+      line-height: normal;
+      text-decoration-line: line-through;
+    }
+    .newPrice{
+      color: #6ACB91;
+      font-size: 40px;
+      font-family: 'Nexa-Light', sans-serif;
+      line-height: 130%;
+    }
+    .miniHeader{
+      font-size: 24px;
+      font-family: 'Inter-Regular', sans-serif;
+      line-height: normal;
+      color: black;
+    }
+
+    .colorsBlock{
+      overflow-x: auto;
+      .colorBtn{
+        margin-right: 16px;
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 0.2s ease-in-out all;
+        border: none;
+        &:hover{
+          filter: brightness(0.9);
+        }
+      }
+
+      .activeColor{
+        border: 1px solid black;
+      }
+    }
+    .addToCartBtn{
+      width: 100%;
+      text-align: center;
+    }
+
+  }
+
+  .descriptionBlock{
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #FAFAFA;
+
+    .miniHeader{
+      font-size: 24px;
+      font-family: 'Inter-Regular', sans-serif;
+      color: black;
+      line-height: normal;
+    }
+
+    .prg{
+      margin: 10px 0;
+      width: 100%;
+    }
+
+    .readMoreBtn{
+      text-decoration: underline;
+      color: #1877F2;
+      font-size: 20px;
+      font-family: 'Inter-Regular', sans-serif;
+      cursor: pointer;
+    }
+
+
+  }
+
+  .settingsBlock{
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #FAFAFA;
+
+    .settingsLine{
+      margin-bottom: 12px;
+      img{
+        margin-right: 12px;
+      }
+      .namePrg{
+        text-align: start;
+      }
+      .graySettings{
+        color: #B6B6B6;
+        text-align: end;
+        white-space: nowrap;
+      }
+    }
+
+  }
+
+  .shareBlock{
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #FAFAFA;
+
+    .miniHeader{
+      margin-bottom: 10px;
+      font-size: 24px;
+      font-family: 'Inter-Regular', sans-serif;
+      color: black;
+      line-height: normal;
+    }
+
+    a{
+      margin-right: 16px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+
+
+  }
+
+
+}
