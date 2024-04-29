@@ -128,12 +128,14 @@
       }
 
       .rentBtn{
+        text-decoration: none;
         &:hover{
           color: #3BAD69;
         }
       }
 
       .buyBtn{
+        text-decoration: none;
         color: #D1D1D1;
         &:hover{
           color: #a1a1a1;

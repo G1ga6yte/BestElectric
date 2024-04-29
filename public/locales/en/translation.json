@@ -18,7 +18,6 @@
     "artHeader1": "How to operate an electric car in winter and summer",
     "artPrg1": "What an electric car owner needs to remember in both winter and summer",
     "btn2": "Get in touch",
-
     "sectionHeader1": "Rent electric car",
     "status1": "Available",
     "price1": "from BGN {{price}}/week",
@@ -100,7 +99,10 @@
     "advDesc10": "Built to withstand harsh weather conditions and ensure long-lasting performance",
     "advDesc11": "Choose from a variety of sizes and wattages to fit your specific energy needs and roof space",
     "advDesc12": "Our panels are designed for simple installation, potentially reducing installation costs",
-    "sectionHeader8": " Our customer testimonials"
+    "sectionHeader8": " Our customer testimonials",
+    "account": "Account",
+    "subtotal": "Subtotal",
+    "checkout": "Checkout"
   },
   "products": {
     "header": "Our products",
@@ -168,6 +170,17 @@
     "overview17": "Cable length",
     "overview18": "OCPP READY",
 
+    "overview19": "Panel type",
+    "overview20": "Voltage",
+    "overview21": "Coefficient of performance",
+    "overview22": "Area occupied by the panel",
+    "overview23": "Temperature range",
+    "overview24": "Manufacturer ",
+    "overview25": "Manufacturer warranty",
+    "overview26": "Cell type",
+    "overview27": "Protection class",
+    "overview28": "Availability of certificates",
+
 
 
     "settings1": "Battery type",
@@ -183,13 +196,19 @@
     "settings10": "Additional Features",
     "settings11": "Charging station type",
 
+    "settings12": "Type",
+    "settings13": "Cell Efficiency",
+    "settings14": "Power",
+    "settings15": "Additional Features",
+
+
 
     "calc1": "up to 100%",
     "calc2": "up to 30 km",
     "calc3": "hours",
     "calc4": "minutes",
-    "calc5": "",
-    "calc6": "",
+    "calc5": "100% efficiency",
+    "calc6": " per day",
     "calc7": "",
 
     "question1": "How long will it take to charge?",
@@ -233,6 +252,19 @@
     "question15": "What is your terms of delivery?",
     "answer15": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
 
+    "question16": "How much energy solar panels produce?",
+    "answer16": "We have used data from the manufacturer to estimate energy produce by the solar panel",
+
+    "question17": "Are electric car safe?",
+    "answer17": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
+    "question18": "What is the cost of charging an electric car?",
+    "answer18": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
+    "question19": "Do electric car need to be charged every day?",
+    "answer19": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
+    "question20": "At what rate does the price of electric cars fall as they age?",
+    "answer20": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
+    "question201": "Is an electric car insurance cheaper?",
+    "answer201": "The answer to the question \"Are electric cars safe for passengers?\" - positive. They are no less safe than regular cars, and according to some experts, even safer. This is because the battery, which is large and heavy, is usually integrated into the floor, providing additional body rigidity and better occupant protection in the event of an accident. Crash tests on the Euro NCAP website confirm that all electric vehicles tested received the maximum 5 stars safety rating. Some people worry about the possibility of spontaneous combustion of lithium-ion batteries in electric cars, citing cases of similar incidents with laptops and mobile phones. However, automakers take a wide range of measures to prevent such situations, including the use of heavy-duty steel casings for batteries, separating them into individual cells (to prevent the spread of fire), and multiple fuses, switches and cooling systems. In fact, research shows that electric cars, which do not use flammable fuels, are much less likely to catch fire than conventional cars.",
 
 
     "miniHeader5": "Home charging",
@@ -245,8 +277,31 @@
     "miniHeader12": "Power option",
     "miniHeader13": "Manufacturer",
     "miniHeader14": "Model",
+    "miniHeader15": "Sun hours per day",
+    "miniHeader16": "Order your dream electric car from anywhere in the world",
+    "miniHeader17": "Rental period",
+    "miniHeader18": "Rental price",
+    "miniHeader19": "Rental rules",
+    "miniHeader20": "Calculate the cost",
 
+    "rules1": "Included mileage",
+    "rules2": "Deposit",
+    "rules3": "Minimum experience",
+    "rules4": "Minimum age",
+    "years": "years",
+    "yearsOld": "years old",
 
+    "rentalPriceType1": "From 1 day",
+    "rentalPriceType2": "From 4 day",
+    "rentalPriceType3": "From 7 day",
+    "rentalPriceType4": "From 14 day",
+    "rentalPriceType5": "From 21 day",
+
+    "sort1": "Solar panels",
+    "sort2": "Inverters",
+    "sort3": "Storage",
+    "sort4": "Installation systems",
+    "sort5": "Accessories",
 
 
     "features1": "Keyless entry",
@@ -260,6 +315,7 @@
 
     "desc1": "The car is in excellent condition, no accidents. Manufacturer's warranty until 2025. Regularly serviced. Two sets of keys. Negotiable price.",
     "desc2": "Hailed as the most affordable German AC charging station on the market, the Webasto Pure is not only extremely affordable for its performance, but also offers a great design that will definitely make an impression in your garage",
+    "desc3": "A top performer in the EU solar panel market, the UE Solar Panel isn't just about exceptional efficiency – it's about empowering.",
     "status1": "Delivery within {{delivery}} days",
     "status2": "Discount {{discount}}%",
 
@@ -271,8 +327,46 @@
     "underHeader2": "Our stations are certified by safety standards and come with features to prevent overheating and electrical shocks",
     "header4": "How to select a proper Charging station?",
     "header5": "Green energy",
-    "underHeader3": "Convert sunlight into electricity effectively, maximizing your power generation and return on investment"
+    "underHeader3": "Convert sunlight into electricity effectively, maximizing your power generation and return on investment",
+    "header6": "Rent an electric car",
+    "underHeader4": "Experience the thrill of electric driving with our electric car rental fleet!  Whether you're looking for a short trip around town or a longer eco-adventure, we have the perfect electric vehicle to fit your needs.",
+    "prg4": "With us you can:",
+    "detailName1": "Choose a model from an extensive catalog of electric cars",
+    "detailName2": "Get detailed advice",
+    "detailName3": "Place an order",
+    "detailPrg1": "Tesla, Audi e-tron, BMW i3, Nissan Leaf and many others",
+    "detailPrg2": "from our specialists who will help you choose an electric car that perfectly suits your needs",
+    "detailPrg3": "without any hassle. We will take care of all the hassle of finding, buying, transporting and registering your electric car",
+    "btn7": "Calculate the cost",
+    "btn8": "View prices (PDF)",
+    "week": "week",
+    "btn9": "Book now",
+    "btn10": "Rent now",
+    "from" : "from",
+    "to": "to",
 
+    "month1": "January",
+    "month2": "February",
+    "month3": "March",
+    "month4": "April",
+    "month5": "May",
+    "month6": "June",
+    "month7": "July",
+    "month8": "August",
+    "month9": "September",
+    "month10": "October",
+    "month11": "November",
+    "month12": "December",
+
+    "total": "Total",
+    "totalDays": "Rent {{totalDays}} days",
+    "delivery1": "Without delivery",
+    "delivery2": "To adress",
+    "delivery3": "To airport",
+    "underHeader5": "Leave a request",
+    "placeholder1": "Your name",
+    "prg5": "For individual consultation",
+    "btn11": "Send code"
 
 
   },
@@ -431,5 +525,92 @@
     "dotted45": "These Terms of Use will be governed by and construed in accordance with the laws of [State/Country].",
     "dotted46": "Any dispute arising out of or relating to these Terms of Use will be settled by [arbitration/courts] located in [State/Country]."
 
+  },
+  "rent": {
+    "miniHeader1": "Upload documents",
+    "underHeader11": "Documents are necessary for the contract, deed and possible insurance. Your data is protected by ",
+    "underHeader12": " and will not be accessible to third parties",
+    "privacy": "the privacy policy",
+    "placeholder1": "Driver license number*",
+    "prg1": "Photo of driver's license face",
+    "prg2": "Photo of driver's license back",
+    "btn1": "SUBMIT FOR APPROVAL",
+
+    "miniHeader2": "Reservation",
+    "pickUpLocation": "Pick up location",
+    "dropOff": "Drop off",
+    "miniHeader3": "Rental period",
+    "days": " days",
+    "priceType1": "Rental cost",
+    "priceType2": "Deposit",
+    "priceType3": "VAT",
+    "priceType4": "Total price:",
+    "btn2": "Reservation",
+    "payment1": "Payment by credit/debit card",
+    "payment2": "Cash",
+    "placeholder2": "Card number",
+    "placeholder3": "CVV Code",
+    "placeholder4": "Expiry",
+    "prg3": "Payment is protected. Card data is transmitted only in encrypted form via the SSL protocol, protected and processed according to the PCI DSS security standard.",
+
+    "prg4": "Your reservation has been approved!",
+    "prg5": "We will send you more information by email",
+    "btn3": "Continue shopping"
+
+
+
+  },
+  "cart": {
+    "prg1": "Subtotal",
+    "total": "Total",
+    "checkout": "Checkout",
+    "all": "All",
+    "delivery": "Delivery",
+    "placeOrder": "Place order",
+    "policy1": "By clicking the ",
+    "policy2": "\"Place order\" ",
+    "policy3": "button, I agree to agree with ",
+    "policy4": "Terms of order and delivery ",
+    "policy5": ", as well as to the processing of personal data in accordance with the updated ",
+    "policy6": "Personal Data Processing Policy",
+    "prg2": "Any issue?",
+
+    "miniHeader1": "Delivery address",
+    "miniHeader2": "Recipient",
+    "miniHeader3": "Payment method",
+    "placeholder1": "City, street, house number*",
+    "placeholder2": "Entrance",
+    "placeholder3": "Floor",
+    "placeholder4": "Apartment",
+    "placeholder5": "Intercom",
+    "placeholder6": "Comment to courier to the order",
+    "placeholder7": "E-mail*",
+    "placeholder8": "Name*",
+    "placeholder9": "Surname*",
+    "placeholder10": "Additional phone number",
+    "prg3": "Save address",
+    "payment1": "Payment by credit/debit card",
+    "payment2": "Bank transfer",
+    "payment3": "Cash",
+    "prg4": "Bank transfer instructions:",
+    "transferType1": "Name of bank",
+    "transferType2": "Name of beneficiary",
+    "transferType3": "Account number",
+    "transferType4": "Address of beneficiary",
+    "transferType5": "SWIFT",
+    "prg5": "I want an invoice",
+    "transferRadio1": "Legal entity",
+    "transferRadio2": "Individual",
+    "placeholder11": "Company name*",
+    "placeholder12": "EIC*",
+    "placeholder13": "DDS no*",
+    "placeholder14": "Mall*",
+    "copied": "Copied",
+    "prg6": "Your order has been confirmed",
+    "prg7": "We will send you more information by email",
+    "btn1": "Continue shopping",
+    "prg8": "Perhaps you will be interested"
+
   }
+
 }

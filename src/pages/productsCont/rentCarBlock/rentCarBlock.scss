@@ -1,0 +1,440 @@
+@import "../../../source/styles/mixin.scss";
+
+
+.rentCarBlock{
+  padding: 72px 144px !important;
+  @include screen($wide){
+    padding: 56px 32px !important;
+  }
+  @include screen($tablet-l){
+    padding: 40px 16px 32px !important;
+  }
+
+}
+
+.detailsCont{
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 64px;
+  @include screen($tablet){
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
+
+  .detailsBlock{
+    width: 32%;
+    border-radius: 8px;
+    background: rgba(141, 141, 141, 0.30);
+    padding: 8px;
+    min-height: 130px;
+    @include screen($tablet){
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.buttonsBlock2{
+  @include screen($tablet){
+    flex-direction: column;
+    width: 100%;
+  }
+
+  button{
+    min-width: 250px;
+    margin: 0 15px;
+    @include screen($tablet){
+      width: 100%;
+      margin-bottom: 16px;
+    }
+  }
+
+  .viewPricesBtn{
+    background-color: white !important;
+    color: black;
+    &:hover{
+      background-color: #F2F2F2 !important;
+    }
+    &:active{
+      background-color: #E4E4E4 !important;
+    }
+  }
+
+}
+
+.RentSettingsBlock{
+  width: 100%;
+  margin-bottom: 16px;
+
+  .selectBlock{
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid #E4E4E4;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out all;
+    position: relative;
+    &:hover{
+      border-color: #D1D1D1;
+    }
+    &:active{
+      border-color: #B6B6B6;
+    }
+
+    .grayText{
+      color: #B6B6B6 !important;
+    }
+
+    .calendarCont{
+      position: absolute;
+      top: 55px;
+      left: -1px;
+      width: max-content;
+      z-index: 15;
+      @include screen($wide){
+        flex-direction: column;
+      }
+      @include screen($tablet-l){
+        flex-direction: row;
+      }
+      @include screen($tablet-m){
+        flex-direction: column;
+      }
+      @include screen(400px){
+        scale: 0.9;
+        top: 20px;
+        left: -20px;
+      }
+      @include screen(360px){
+        scale: 0.8;
+        top: -10px;
+        left: -30px;
+      }
+
+      .calendarBlock{
+        border: 1px solid #E4E4E4;
+        border-radius: 12px;
+        background: #FFF;
+        overflow: hidden;
+        width: max-content;
+        @include screen($wide){
+          margin-bottom: 8px;
+        }
+        .react-calendar {
+          border: none;
+          position: relative;
+          width: 340px;
+
+
+
+          .react-calendar__navigation{
+            padding: 15px 10px 5px!important;
+          }
+          .react-calendar__viewContainer{
+            padding: 8px;
+          }
+
+          .react-calendar__navigation__label {
+            font-size: 15px;
+            font-family: 'Inter-Medium', sans-serif;
+            color: black;
+            pointer-events: none;
+
+            span {
+              width: 100%;
+              display: block;
+              text-align: start;
+            }
+          }
+          .react-calendar__month-view__weekdays__weekday{
+            margin-bottom: 15px !important;
+            text-align: center;
+            abbr{
+              text-decoration: none;
+              font-family: 'Inter-Light', sans-serif !important;
+              font-size: 16px !important;
+              font-weight: 400 !important;
+              color: black;
+            }
+          }
+          .react-calendar__month-view__days__day--weekend{
+            color: black;
+            font-size: 14px;
+            font-family: 'Inter-Regular', sans-serif;
+          }
+          .react-calendar__tile--now{
+            background-color: transparent;
+            color: black !important;
+          }
+          .react-calendar__tile--active{
+            color: white !important;
+            background-color: #6ACB91 !important;
+          }
+          .react-calendar__tile{
+            border-radius: 50%;
+            background-color: transparent;
+            border: none;
+            margin: 6px 2px;
+            width: 40px;
+            max-width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.1s ease-in-out all;
+            &:hover{
+              background-color: #D0D5DD;
+            }
+          }
+          .react-calendar__month-view__days{
+            justify-content: space-between !important;
+          }
+          .react-calendar__month-view__days__day--neighboringMonth, .react-calendar__decade-view__years__year--neighboringDecade, .react-calendar__century-view__decades__decade--neighboringCentury{
+            color: rgba(24, 24, 25, 0.32) !important;
+          }
+          .react-calendar__navigation{
+            display: flex;
+            justify-content: space-between;
+          }
+          .react-calendar__navigation__label{
+            border: none;
+            text-align: center;
+            width: max-content !important;
+            background-color: transparent;
+            white-space: nowrap;
+            flex-grow: 0 !important;
+            span{
+              white-space: nowrap;
+              width: max-content !important;
+              font-size: 20px;
+              font-family: 'Inter-Regular', sans-serif;
+              line-height: normal;
+              color: black;
+            }
+          }
+          .react-calendar__navigation__prev-button {
+            background-color: transparent;
+            border: none;
+            width: 30px;
+            font-family: 'Inter-Regular', sans-serif;
+            font-size: 30px;
+            transition: 0.1s ease-in-out all;
+            &:hover{
+              filter: brightness(0.8);
+            }
+          }
+          .react-calendar__navigation__next-button {
+            background-color: transparent;
+            border: none;
+            width: 30px;
+            font-family: 'Inter-Regular', sans-serif;
+            font-size: 30px;
+            transition: 0.1s ease-in-out all;
+            &:hover{
+              filter: brightness(0.8);
+            }
+          }
+          .react-calendar__navigation__prev2-button, .react-calendar__navigation__next2-button {
+            display: none;
+          }
+
+        }
+
+      }
+
+      .timesBlock{
+        margin-left: 8px;
+        border: 1px solid #E4E4E4;
+        border-radius: 12px;
+        background: #FFF;
+        max-height: 370px;
+        overflow: auto;
+        width: 100px;
+        padding: 8px;
+        @include screen($wide){
+          width: 340px;
+          display: flex;
+          flex-wrap: wrap;
+          max-height: 300px;
+          margin: 0;
+        }
+        @include screen($tablet-l){
+          max-height: 370px;
+          width: 100px;
+          display: block;
+          margin-left: 8px;
+        }
+        @include screen($tablet-m){
+          width: 340px;
+          display: flex;
+          flex-wrap: wrap;
+          max-height: 300px;
+          margin: 0;
+        }
+
+        .timeBtn{
+          width: 100%;
+          padding: 8px;
+          text-align: center;
+          background-color: transparent;
+          border: none;
+          border-radius: 4px;
+          color: black;
+          cursor: pointer;
+          margin-bottom: 4px;
+          transition: 0.1s ease-in-out all;
+          &:hover{
+            background-color: #D0D5DD;
+          }
+          &:active{
+            background-color: #6ACB91;
+          }
+          @include screen($wide){
+            width: 75px;
+            margin: 0 4px 4px 0;
+          }
+          @include screen($tablet-l){
+            width: 100%;
+            margin-bottom: 4px;
+          }
+          @include screen($tablet-m){
+            width: 75px;
+            margin: 0 4px 4px 0;
+          }
+        }
+        .activeTime{
+          background-color: #6ACB91 !important;
+          color: white !important;
+        }
+      }
+
+
+    }
+
+    .chevronDownImg{
+      transition: 0.2s ease-in-out all;
+    }
+  }
+
+  .activeSelectBlock{
+
+
+    .chevronDownImg{
+      transform: rotateX(180deg);
+    }
+  }
+
+  .deliveryTpeBlock{
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    border: 1px solid #E4E4E4;
+    background-color: white;
+    .deliveryType{
+      margin-right: 4px;
+      padding: 6px 16px;
+      border-radius: 32px;
+      border: 1px solid white;
+      cursor: pointer;
+      background-color: white;
+      transition: 0.2s ease-in-out all;
+    }
+    .activeDelivery{
+      border-color: #6ACB91 !important;
+    }
+  }
+
+
+}
+
+.calculateCont{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+
+  .backgroundBlock{
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+  .calculateBlock{
+    border-radius: 8px;
+    background-color: white;
+    position: relative;
+    z-index: 2;
+    padding: 40px 60px;
+    max-width: 560px;
+    width: 100%;
+    margin-top: -10vh;
+    @include screen($tablet-m){
+      padding: 20px;
+    }
+
+    .closeBtnBlock{
+      justify-content: end;
+      width: 100%;
+      .closeBtn{
+        border-radius: 50%;
+        padding: 8px;
+        background-color: #FAFAFA;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s ease-in-out all;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include screen($tablet-m){
+          scale: 0.8;
+        }
+        &:hover{
+          background-color: #D0D5DD;
+        }
+
+      }
+    }
+    .underHeader{
+      color: #949494;
+    }
+    .calcInput{
+      padding: 12px;
+      width: 100%;
+      border-radius: 12px;
+      background-color: white;
+      border: 1px solid #E4E4E4;
+      outline: none;
+      &:hover{
+        border-color: #D1D1D1;
+      }
+      &:active{
+        border-color: #B6B6B6;
+      }
+    }
+    .underInputPrg{
+      text-align: center;
+      color: #949494;
+    }
+    .sendCodeBtn{
+      width: 100%;
+      text-align: center;
+    }
+
+
+  }
+
+
+
+
+}

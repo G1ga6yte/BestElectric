@@ -1,0 +1,162 @@
+@import "../../source/styles/mixin.scss";
+
+.cardPaymentBlock{
+
+
+  .inputsCont{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 312px;
+
+    .inputBlock{
+      width: 49%;
+      position: relative;
+
+      .placeholder{
+        position: absolute;
+        font-size: 14px;
+        line-height: normal;
+        font-family: 'Inter-Regular', sans-serif;
+        color: #949494;
+        left: 16px;
+        top: 6px;
+        pointer-events: none;
+        z-index: 2;
+      }
+
+      input{
+        width: 100%;
+        border: 1px solid #D1D1D1;
+        outline: none;
+        border-radius: 12px;
+        background-color: white;
+        padding: 26px 16px 6px;
+        font-size: 16px;
+        font-family: 'Inter-Light', sans-serif;
+        line-height: normal;
+      }
+
+
+
+      &:nth-child(1){
+        width: 100%;
+        margin-bottom: 16px;
+      }
+    }
+
+  }
+
+  .paymentPrgBlock{
+    align-items: start;
+    .paymentPrg{
+      max-width: 360px;
+    }
+  }
+
+
+}
+
+.transferBlock{
+
+  .transferTypesBlock{
+    width: max-content;
+    background-color: #F2F2F2;
+    padding: 8px 50px 8px 8px;
+    border-radius: 8px;
+    max-width: 100%;
+    @include screen($tablet-m){
+      padding: 8px;
+    }
+
+    .value{
+      margin: 0 8px;
+    }
+  }
+
+  .allCheck{
+    cursor: pointer;
+    .checkbox{
+      margin-right: 12px;
+      width: 20px;
+      min-width: 20px;
+      height: 20px;
+      padding: 2px;
+      border-radius: 5px;
+      border: 1px solid #6ACB91;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.1s ease-in-out;
+      &:hover{
+        border-color: #3BAD69;
+      }
+      img{
+        opacity: 0;
+      }
+    }
+    .checked{
+      background-color: #6ACB91;
+      &:hover{
+        background-color: #3BAD69;
+      }
+      img{
+        opacity: 1;
+      }
+    }
+  }
+
+  .radioBlock{
+    label{
+      cursor: pointer;
+      width: fit-content;
+    }
+    .radioInput{
+      border:4px solid white;
+      box-shadow:0 0 0 1.5px #6ACB91;
+      appearance:none;
+      border-radius:50%;
+      width:20px;
+      height:20px;
+      min-width: 20px;
+      background-color:#fff;
+      transition:all ease-in 0.2s;
+      margin-right: 12px;
+      &:checked{
+        background-color: #6ACB91;
+      }
+    }
+  }
+}
+
+.copyBtn{
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  transition: 0.1s ease-in-out all;
+  &:hover{
+    filter: brightness(0.8);
+  }
+  .copiedText{
+    position: absolute;
+    left: 20px;
+    top: 0;
+    font-family: 'Inter-Regular', sans-serif;
+    font-size: 10px;
+    color: black;
+    opacity: 0;
+    transition: 2s ease-in-out all;
+    cursor: auto;
+    @include screen($mobile-m){
+      display: none;
+    }
+  }
+
+  .copiedTextAnim{
+    opacity: 1;
+    transition: 0s !important;
+  }
+
+
+}
+

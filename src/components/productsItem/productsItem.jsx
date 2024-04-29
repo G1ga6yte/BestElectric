@@ -4,7 +4,7 @@ import TextInView from "../TextInView/TextInView";
 import {useTranslation} from "react-i18next";
 import {Link} from "react-router-dom";
 
-function ProductsItem ({img, name, available, carInfo, price, discount, bestseller, id}){
+function ProductsItem ({img, name, available, carInfo, price, discount, bestseller, id, rent}){
   const {t, i18n} = useTranslation();
   
   return(
@@ -29,9 +29,11 @@ function ProductsItem ({img, name, available, carInfo, price, discount, bestsell
            )
          })}
        </div>
+  
+       {rent && <p className="priceWeek G-20-400-Inter G-black no-select G-marginB-16"><TextInView text={`BGN 1700/${t("products.week")}`}/></p>}
        
        <Link to={`/products/electricCars/product/${id}`} className="buyBtn G-20-400-Nexa G-black no-select">
-         <TextInView text={price}/>
+         {rent ? <TextInView text={t("products.btn9")}/> : <TextInView text={price}/>}
        </Link>
        
        

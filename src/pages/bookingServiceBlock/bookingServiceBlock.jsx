@@ -8,7 +8,7 @@ import LoginBlock from "../../components/loginBlock/loginBlock";
 function BookingServiceBlock (){
   const {t, i18n} = useTranslation();
   const {authentication, loginStep, setLoginStep} = useCartContext()
-  const [errorMessage, setErrorMessage] = useState(true)
+  const [errorMessage, setErrorMessage] = useState(false)
   
   return(
      <div className="BookingServiceBlock G-CContainer">

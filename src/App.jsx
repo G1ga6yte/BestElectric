@@ -22,6 +22,10 @@ import CarOrderBlock from "./pages/productsCont/carOrderBlock/carOrderBlock";
 import ProductItemMain from "./pages/productsCont/productItemMain/productItemMain";
 import ChargerStationBlock from "./pages/productsCont/chargerStationBlock/chargerStationBlock";
 import SolarPanelsBlock from "./pages/productsCont/solarPanelsBlock/solarPanelsBlock";
+import RentCarBlock from "./pages/productsCont/rentCarBlock/rentCarBlock";
+import CarRentProgress from "./pages/productsCont/carRentProgress/carRentProgress";
+import CartBlock from "./pages/cartBlock/cartBlock";
+import CartCheckoutBlock from "./pages/cartCheckoutBlock/cartCheckoutBlock";
 
 
 function App() {
@@ -39,6 +43,7 @@ function App() {
     window.scrollTo(0, 0);
   }, []);
   
+  
   return (
      <div className="App">
        <Navigation/>
@@ -47,7 +52,6 @@ function App() {
        
        <Routes>
          <Route exact path="/home" element={<HomeMain/>}/>
-         {/*<Route path="/ourProducts" element={<ProductsMain/>}/>*/}
          <Route path="/aboutUs" element={<AboutUsMain/>}/>
          <Route path="/services" element={<ServicesMain/>}/>
          <Route path="/service/:id" element={<Service/>}/>
@@ -56,13 +60,20 @@ function App() {
          <Route path="/delivery&payment" element={<Delivery/>}/>
          <Route path="/privacyPolicy" element={<Privacy/>}/>
          <Route path="/termsOfUse" element={<Terms/>}/>
+         
          <Route path="/products" element={<ProductsCont/>}>
            <Route path="/products/" element={<ProductsMain/>}/>
            <Route path="/products/electricCars" element={<CarOrderBlock/>}/>
            <Route path="/products/chargerStation" element={<ChargerStationBlock/>}/>
            <Route path="/products/solarPanels" element={<SolarPanelsBlock/>}/>
+           <Route path="/products/rentCar" element={<RentCarBlock/>}/>
            <Route path="/products/electricCars/product/:id" element={<ProductItemMain/>}/>
+           <Route path="/products/electricCars/rentProgress/:id" element={<CarRentProgress/>}/>
          </Route>
+         
+         <Route path="/cart" element={<CartBlock/>}/>
+         <Route path="/cart/checkout" element={<CartCheckoutBlock/>}/>
+
 
        </Routes>
        

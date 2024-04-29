@@ -20,11 +20,15 @@ import batteryCharging2 from "./battery-charging-column.svg"
 import chargerIcon from "./Charger.svg"
 import targetIcon from "./target-01.svg"
 import settingsIcon from "./settings-01.svg"
+import img3 from "./img3.png"
+import octaGrid from "./grid-01.svg"
+import octaDottedGrid from "./grid-dots-blank.svg"
+import sunIcon from "./sun.svg"
 
 
 export const Images = {
   img1, btnLeft, btnRight, homeIcon, lightingIcon, plus, xIcon, arrowRight,
   batteryIcon, lightingIcon2, speedIcon, batteryFullIcon, carX4, powerIcon,
   social1, social2, social3, img2, batteryCharging2, chargerIcon, targetIcon,
-  settingsIcon
+  settingsIcon, img3, octaGrid, octaDottedGrid, sunIcon
 }

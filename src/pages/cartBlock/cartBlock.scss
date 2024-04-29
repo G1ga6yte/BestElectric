@@ -1,0 +1,173 @@
+@import "../../source/styles/mixin.scss";
+
+.CartBlock{
+  padding: 200px 16px;
+  align-items: start;
+  justify-content: space-between;
+  @include screen($tablet-l){
+    padding: 150px 16px;
+  }
+  @include screen($tablet-w){
+    flex-direction: column;
+  }
+  @include screen($mobile-m){
+    padding: 150px 8px;
+  }
+
+
+  .leftBlock{
+    flex-grow: 1;
+    margin-right: 16px;
+    @include screen($tablet-w){
+      width: 100%;
+    }
+
+    .itemBlock{
+      justify-content: space-between;
+      position: relative;
+      background-color: #FAFAFA;
+      align-items: start;
+      border-radius: 8px;
+      padding: 8px;
+      width: 100%;
+      height: max-content;
+
+      .allCheck{
+        cursor: pointer;
+        width: max-content;
+      }
+
+      .itemCheckbox{
+        margin-top: 40px;
+        cursor: pointer;
+      }
+
+      .imgBlock{
+        height: 100px;
+        width: 115px;
+        min-width: 115px;
+        border-radius: 8px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-right: 8px;
+      }
+
+      .itemNameBlock{
+        span{
+          color: black !important;
+        }
+      }
+
+      .buttonsBlock3{
+        @include screen($tablet-m){
+          display: none;
+        }
+
+        .countBtn{
+          border: none;
+          background-color: white;
+          border-radius: 8px;
+          box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.04);
+          padding: 8px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          transition: 0.1s ease-in-out all;
+          &:hover{
+            filter: brightness(0.9);
+          }
+        }
+
+        .count{
+          color: black !important;
+          min-width: 50px;
+          text-align: center;
+          display: block;
+        }
+      }
+
+      .deleteBtn{
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        transition: 0.1s ease-in-out all;
+        position: absolute;
+        right: 8px;
+        bottom: 16px;
+      }
+
+    }
+
+    .checkbox{
+      margin-right: 12px;
+      width: 20px;
+      min-width: 20px;
+      height: 20px;
+      padding: 2px;
+      border-radius: 5px;
+      border: 1px solid #6ACB91;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.1s ease-in-out;
+      &:hover{
+        border-color: #3BAD69;
+      }
+      img{
+        opacity: 0;
+      }
+    }
+    .checked{
+      background-color: #6ACB91;
+      &:hover{
+        background-color: #3BAD69;
+      }
+      img{
+        opacity: 1;
+      }
+    }
+
+
+  }
+
+  .rightBlock{
+    width: 30%;
+    background-color: #FAFAFA;
+    border-radius: 8px;
+    padding: 24px;
+    @include screen($tablet-w){
+      width: 100%;
+    }
+    .G-greenBtn{
+      text-decoration: none;
+    }
+
+    .marginB12{
+      margin-bottom: 12px;
+    }
+    .grayText{
+      color: #B6B6B6;
+    }
+    .line{
+      width: 100%;
+      margin: 24px 0;
+      height: 1px;
+      background-color: #E4E4E4;
+    }
+
+    .G-greenBtn{
+      width: 100%;
+    }
+
+
+
+
+
+
+
+  }
+
+
+}

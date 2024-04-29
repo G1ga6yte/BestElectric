@@ -337,6 +337,23 @@
     .addToCartBtn{
       width: 100%;
       text-align: center;
+      text-decoration: none;
+    }
+
+  }
+
+  .rentalPriceBlock{
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid #6ACB91;
+    background-color: white;
+    .priceItem{
+      padding: 16px 0;
+      border-bottom: 1px solid #D1D1D1;
+      &:last-child{
+        border: none !important;
+      }
     }
 
   }
@@ -351,6 +368,14 @@
       font-family: 'Inter-Regular', sans-serif;
       color: black;
       line-height: normal;
+    }
+    .ruleName{
+      text-align: start;
+      margin-right: 8px;
+    }
+    .ruleVal{
+      text-align: end;
+      color: #B6B6B6;
     }
 
     .prg{

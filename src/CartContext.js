@@ -13,6 +13,7 @@ export const CartProvider = ({children}) => {
   const [authentication, setAuthentication] = useState(true)
   
   const [loginStep, setLoginStep] = useState(1)
+  const [cartBlock, setCartBlock] = useState(false)
   
   
   
@@ -21,7 +22,7 @@ export const CartProvider = ({children}) => {
   return (<CartContext.Provider value={{
     Call, loginBlock, setLoginBlock,
     authentication, setAuthentication,
-    loginStep, setLoginStep
+    loginStep, setLoginStep, cartBlock, setCartBlock
   }}>
     {children}
   </CartContext.Provider>);

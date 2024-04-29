@@ -87,6 +87,10 @@
   margin-right: 32px;
 }
 
+.G-marginB-40{
+  margin-bottom: 40px;
+}
+
 .G-marginB-32{
   margin-bottom: 32px;
 }
@@ -149,6 +153,11 @@
 .G-24-400-Nexa{
   font-size: 24px;
   font-family: 'Nexa-Regular', sans-serif;
+  line-height: normal;
+}
+.G-24-400-Inter{
+  font-size: 24px;
+  font-family: 'Inter-Regular', sans-serif;
   line-height: normal;
 }
 
@@ -247,6 +256,10 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+.G-width-100{
+  width: 100% !important;
 }
 
 

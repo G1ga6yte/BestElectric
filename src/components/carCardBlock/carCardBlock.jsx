@@ -5,6 +5,7 @@ import "./carCardBlock.scss"
 // import CarModel from "../carModel/carModel";
 import {useTranslation} from "react-i18next";
 import {carImages} from "./images/images"
+import {Link} from "react-router-dom";
 
 const CarModel = React.lazy(()=> import("../carModel/carModel"))
 
@@ -54,7 +55,7 @@ function CarCardBlock (){
             <div style={{backgroundImage: `url("${carImgArr[activeImg]}")`}} className="carImg">
             </div>
             : <div className="carCont">
-              <CarModel/>
+              {/*<CarModel/>*/}
             </div>
          }
          
@@ -79,8 +80,8 @@ function CarCardBlock (){
      
        <div className="infoBlock no-select">
          <div className="buyRentButtons G-flex-ACenter">
-           <button className="buyBtn G-marginR-8 G-20-300-Inter"><TextInView text={t("main.btn5")}/></button>
-           <button className="rentBtn G-20-300-Inter G-Green-Text"><TextInView text={t("main.btn6")}/></button>
+           <Link to="/products/electricCars" className="buyBtn G-marginR-8 G-20-300-Inter"><TextInView text={t("main.btn5")}/></Link>
+           <Link to="/products/rentCar" className="rentBtn G-20-300-Inter G-Green-Text"><TextInView text={t("main.btn6")}/></Link>
          </div>
        
          <div className="statisticBlock G-flex-Column">

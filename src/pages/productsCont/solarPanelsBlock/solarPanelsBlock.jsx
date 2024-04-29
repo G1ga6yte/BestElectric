@@ -30,7 +30,6 @@ function SolarPanelsBlock (){
     {
       name: t("main.settingsName2"),
       icon: Images.lightningIcon,
-      padding: 5,
       value: "400 Wp"
     },
     {
@@ -110,6 +109,16 @@ function SolarPanelsBlock (){
     }
   }, []);
   
+  ////////////////////// fast Buttons for Sort
+  const [fastSort, setFastSort] = useState()
+  const sortData = [
+    {name: t("products.sort1"), val: 22},
+    {name: t("products.sort2"), val: 42},
+    {name: t("products.sort3"), val: 23},
+    {name: t("products.sort4"), val: 65},
+    {name: t("products.sort5"), val: 12}
+  ]
+  
   return(
      <div className="productsMainBlock">
        <div className="G-CContainer">
@@ -118,10 +127,29 @@ function SolarPanelsBlock (){
        </div>
   
   
-       <button onClick={()=>{
-         setSortBlockActive(true)
-         setSortBlockVisible(true)
-       }} className={`sortBtn G-flex-ACenter-JCenter G-marginB-16 ${sortBlockActive ? "activeBtn" : ""}`}><img src={settingsIcon} className="G-marginR-8" alt=""/><TextInView className={"G-20-300-Inter G-black no-select"} text={t("products.sort")}/></button>
+       <div className="sortButtons G-flex-ACenter-JBetween">
+         <button onClick={()=>{
+           setSortBlockActive(true)
+           setSortBlockVisible(true)
+         }} className={`sortBtn G-flex-ACenter-JCenter G-marginB-16 ${sortBlockActive ? "activeBtn" : ""}`}><img src={settingsIcon} className="G-marginR-8" alt=""/><TextInView className={"G-20-300-Inter G-black no-select"} text={t("products.sort")}/></button>
+         
+         <div className="fastSortButtons G-flex">
+           {sortData.map((el, index)=>{
+             return(
+                <button onClick={()=>{
+                  if (fastSort === el.name){
+                    setFastSort(null)
+                  } else {
+                    setFastSort(el.name)
+                  }
+                }} key={index} className={`fastSortBtn ${el.name === fastSort ? "activeSortBtn" : ""}`}>
+                  <TextInView className="G-20-300-Inter no-select" text={el.name}/>
+                  <TextInView className="grayText G-20-300-Inter no-select" text={el.val}/>
+                </button>
+             )
+           })}
+         </div>
+       </div>
        {sortBlockVisible &&
           <div style={{opacity: sortBlockActive ? 1 : 0}} className="SortCont">
             <div onClick={()=>{handleCloseSortBlock()}} className="backgroundBlock"></div>
@@ -166,7 +194,7 @@ function SolarPanelsBlock (){
               if (index < 6){
                 return(
                    <ProductsItem
-                      img={Images.chargerImg}
+                      img={Images.panelImg}
                       name={"UE Solar Panel"}
                       available={true}
                       discount={45}
@@ -199,7 +227,7 @@ function SolarPanelsBlock (){
               if (index >= 6){
                 return(
                    <ProductsItem
-                      img={Images.chargerImg}
+                      img={Images.panelImg}
                       name={"UE Solar Panel"}
                       available={true}
                       discount={45}

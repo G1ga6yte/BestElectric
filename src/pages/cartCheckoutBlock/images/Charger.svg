@@ -1,0 +1,12 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Charger">
+<path id="Vector 16" d="M2 11.2828V7C2 4.79086 3.79086 3 6 3H18C20.2091 3 22 4.79086 22 7V11.2828C22 12.3792 21.5499 13.4276 20.755 14.1828L15.7895 18.9C15.0461 19.6062 14.0599 20 13.0345 20H10.9655C9.94014 20 8.95392 19.6062 8.21053 18.9L3.245 14.1828C2.45008 13.4276 2 12.3792 2 11.2828Z" stroke="black"/>
+<circle id="Ellipse 1" cx="7" cy="11" r="1.5" stroke="black"/>
+<circle id="Ellipse 2" cx="12" cy="11" r="1.5" stroke="black"/>
+<circle id="Ellipse 6" cx="9.5" cy="6.5" r="1" stroke="black"/>
+<circle id="Ellipse 7" cx="14.5" cy="6.5" r="1" stroke="black"/>
+<circle id="Ellipse 4" cx="9" cy="15" r="1.5" stroke="black"/>
+<circle id="Ellipse 5" cx="15" cy="15" r="1.5" stroke="black"/>
+<circle id="Ellipse 3" cx="17" cy="11" r="1.5" stroke="black"/>
+</g>
+</svg>

@@ -154,6 +154,25 @@
       }
 
     }
+
+    .AccountLink{
+      margin: 0 20px;
+      min-width: 110px;
+      cursor: pointer;
+      padding: 8px;
+      text-decoration: none;
+      transition: 0.1s ease-in-out all;
+      &:hover{
+        filter: brightness(0.9);
+      }
+      @include screen($wide){
+        min-width: 80px;
+        margin: 0 16px;
+      }
+      @include screen($tablet-m){
+        display: none;
+      }
+    }
     .loginBtn{
       margin: 0 20px;
       min-width: 110px;
@@ -286,6 +305,18 @@
       padding: 16px 0 32px;
       width: 100%;
       background: rgba(244, 244, 244, 0.50);
+
+      .AccountLink{
+        cursor: pointer;
+        padding: 8px;
+        text-align: center;
+        text-decoration: none;
+        transition: 0.1s ease-in-out all;
+        color: black !important;
+        &:active{
+          filter: brightness(0.9);
+        }
+      }
       .loginBtn{
         cursor: pointer;
         padding: 8px;
@@ -358,6 +389,13 @@
 
   }
 
+
+  .closeAnim{
+    transition: 5s ease-in-out all !important;
+    opacity: 0;
+
+  }
+
 }
 
 .homeTheme{
@@ -375,8 +413,16 @@
     color: white !important;
   }
 
+  .AccountLink{
+    span{
+      color: white;
+    }
+  }
+
+
   .orderCarBtn{
     background-color: white !important;
+    text-decoration: none;
     span{
       color: black !important;
     }
@@ -397,6 +443,11 @@
     }
     &:active{
       color: #3BAD69 !important;
+    }
+  }
+  .AccountLinkTablet{
+    span{
+      color: black !important;
     }
   }
 }
@@ -431,6 +482,7 @@
 
   .orderCarBtn{
     background-color: #6ACB91 !important;
+    text-decoration: none;
     span{
       color: white !important;
     }
@@ -453,5 +505,127 @@
       color: #3BAD69 !important;
     }
   }
+
+}
+
+
+.CartMenuBlock{
+  position: absolute;
+  z-index: 40;
+  right: 8px;
+  top: 70px;
+  background-color: white;
+  max-width: 480px;
+  width: 95%;
+  transition: 0.5s ease-in-out all;
+  opacity: 1;
+  padding: 16px;
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+
+  .bottomBlock{
+    padding-top: 16px;
+    .totalPrg{
+      @include screen($tablet-m){
+        font-size: 16px;
+      }
+      span{
+        color: black !important;
+      }
+    }
+    .G-greenBtn{
+      text-decoration: none;
+      padding: 8px 12px;
+
+      span{
+        color: white !important;
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .itemsCont{
+    max-height: 300px;
+    overflow: auto;
+    padding-right: 4px;
+
+    -ms-overflow-style: auto !important;  /* IE 10+ */
+    &::-webkit-scrollbar-thumb{
+      background-color: #6ACB91 !important;
+      border-radius: 15px;
+      border: 2px solid white;
+    }
+    &::-webkit-scrollbar {
+      width: 8px !important;
+      background: white !important;
+    }
+
+    .itemBlock{
+      justify-content: space-between;
+      position: relative;
+      align-items: start;
+      padding-bottom: 24px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #E4E4E4;
+
+      .imgBlock{
+        height: 100px;
+        width: 115px;
+        border-radius: 8px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-right: 8px;
+      }
+
+      .itemNameBlock{
+        span{
+          color: black !important;
+        }
+      }
+
+      .buttonsBlock3{
+
+        .countBtn{
+          border: none;
+          background-color: white;
+          border-radius: 8px;
+          box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.04);
+          padding: 8px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          cursor: pointer;
+          transition: 0.1s ease-in-out all;
+          &:hover{
+            filter: brightness(0.9);
+          }
+        }
+
+        .count{
+          color: black !important;
+          min-width: 50px;
+          text-align: center;
+          display: block;
+        }
+      }
+
+      .deleteBtn{
+        border: none;
+        cursor: pointer;
+        background-color: white;
+        transition: 0.1s ease-in-out all;
+        position: absolute;
+        right: 8px;
+        bottom: 16px;
+      }
+
+    }
+
+  }
+
+
+
+
 
 }

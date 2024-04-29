@@ -1,6 +1,48 @@
 @import "../../../source/styles/mixin.scss";
 
 
-.SolarPanelsBlock{
+.sortButtons {
+  @include screen($wide){
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .fastSortButtons{
+    @include screen($wide){
+      max-width: 100%;
+      margin-bottom: 16px;
+      overflow: auto;
+    }
+  }
+
+  .fastSortBtn {
+    padding: 8px 16px;
+    border-radius: 32px;
+    border: 1px solid #E4E4E4;
+    background-color: white;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+    margin: 0 8px;
+    span{
+      white-space: nowrap;
+    }
+
+    .grayText {
+      color: #D1D1D1;
+      margin-left: 6px;
+    }
+  }
+
 
 }
+
+.activeSortBtn {
+  border-color: #353535 !important;
+  background-color: #353535 !important;
+
+  span {
+    color: white !important;
+
+  }
+}
+
