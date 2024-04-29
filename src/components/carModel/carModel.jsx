@@ -2,7 +2,10 @@ import React, {useRef, Suspense} from "react";
 import {Canvas, extend} from "@react-three/fiber";
 import {OrbitControls, useGLTF} from "@react-three/drei";
 import "./carModel.scss"
+import img1 from "./1352.png"
+
 extend({ OrbitControls });
+
 
 function Model(props) {
   const { nodes, materials } = useGLTF('/Renault_Zoe_V3.glb')
@@ -39,9 +42,9 @@ function CarModel (){
   
   return(
      <div className="Model">
-       
+       <Suspense fallback={<img src={img1} alt=""/>}>
+  
        <Canvas camera={{fov:70, position: [50, 0, 0]}}>
-         <Suspense fallback={null}>
            <ambientLight />
            <directionalLight intensity={20} position={[0, 1, 0]}/>
            <OrbitControls
@@ -59,9 +62,10 @@ function CarModel (){
            <Model/>
            
            
-         </Suspense>
        </Canvas>
-     </div>
+     </Suspense>
+
+</div>
   )
 }
 

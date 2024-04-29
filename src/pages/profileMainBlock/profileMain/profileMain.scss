@@ -1,0 +1,35 @@
+@import "../../../source/styles/mixin.scss";
+
+.ProfileMain{
+  width: 100%;
+  overflow: auto;
+
+
+  .textUnderlined{
+    text-decoration: underline;
+  }
+
+  .carReservationBlock{
+    max-width: 1024px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: #FAFAFA;
+
+
+
+  }
+
+  .status{
+    padding: 4px 12px;
+    border-radius: 32px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Inter-Light', sans-serif;
+    line-height: normal;
+  }
+  .paid{
+    background-color: #6acb91;
+  }
+
+}

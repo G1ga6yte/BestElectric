@@ -611,6 +611,29 @@
     "btn1": "Continue shopping",
     "prg8": "Perhaps you will be interested"
 
+  },
+  "profile": {
+    "sectionName1": "Profile",
+    "sectionName2": "Orders",
+    "sectionName3": "Addresses and payments",
+    "sectionName4": "Car reservations",
+    "sectionName5": "Invoices",
+    "sectionName6": "Service and maintenance",
+    "customerId": "Customer ID:",
+    "miniHeader1": "Car reservations",
+    "miniHeader2": "Recent orders",
+    "miniHeader3": "Profile",
+    "miniHeader4": "Password change",
+    "archive": "Archive",
+    "allOrders": "All orders",
+    "color": "Color",
+    "pickUp": "Pick up location ",
+    "dropOff": "Drop off ",
+    "status1": "Paid",
+    "status2": "Delivered",
+    "status3": "In process",
+    "status4": "Cancelled"
+
   }
 
 }

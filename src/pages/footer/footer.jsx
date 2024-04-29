@@ -1,6 +1,6 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import "./footer.scss"
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import TextInView from "../../components/TextInView/TextInView";
 import {Images} from "./images/images";
 import {useTranslation} from "react-i18next";
@@ -9,6 +9,17 @@ import LinkToPage from "../navigation/LinkToPage";
 function Footer (){
   const {t, i18n} = useTranslation()
   const [lngMenu, setLngMenu] = useState(false)
+  const location = useLocation()
+  
+  const [footerBlock, setFooterBlock] = useState(true) //def True
+  
+  useEffect(()=>{
+    if (location.pathname.includes("profile")){
+      setFooterBlock(false)
+    } else {
+      setFooterBlock(true)
+    }
+  }, [location])
   
   const locales = {
     en: {title: "English"},
@@ -16,7 +27,7 @@ function Footer (){
   };
   
   return(
-     <div className="Footer G-Container">
+     footerBlock && <div className="Footer G-Container">
        
        <div className="footerCont">
           <div className="footerBlock G-flex">

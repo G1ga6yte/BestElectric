@@ -1,0 +1,77 @@
+@import "../../source/styles/mixin.scss";
+
+.ProfileMainBlock{
+  max-width: 1720px;
+  max-height: 100vh;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0 16px;
+  align-items: start;
+
+  .navBlock{
+    margin-right: 16px;
+    padding: 180px 0 35px;
+    height: 100%;
+    @include screen($tablet-l){
+      padding: 150px 0 20px;
+    }
+
+    .sectionLink{
+      padding: 8px 24px;
+      cursor: pointer;
+      transition: 0.2s ease-in-out all;
+      background-color: white;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+
+      svg{
+        margin-right: 24px;
+        stroke: #B6B6B6;
+        transition: 0.2s ease-in-out all;
+        path{
+          stroke: #B6B6B6;
+          transition: 0.2s ease-in-out all;
+        }
+      }
+
+      span{
+        font-size: 16px;
+        font-family: 'Inter-Regular', sans-serif;
+        line-height: normal;
+        color: #B6B6B6;
+        transition: 0.2s ease-in-out all;
+      }
+
+      &:hover{
+        background-color: #FAFAFA;
+      }
+    }
+
+    .activeSection{
+      background-color: #FAFAFA !important;
+
+      path{
+        stroke: black !important;
+      }
+      svg{
+        stroke: black !important;
+      }
+      span{
+        color: black !important;
+      }
+    }
+
+
+  }
+
+  .mainCont{
+    padding-top: 180px;
+    flex-grow: 1;
+    @include screen($tablet-l){
+      padding-top: 150px;
+    }
+  }
+}

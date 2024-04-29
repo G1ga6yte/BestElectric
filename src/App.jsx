@@ -26,6 +26,9 @@ import RentCarBlock from "./pages/productsCont/rentCarBlock/rentCarBlock";
 import CarRentProgress from "./pages/productsCont/carRentProgress/carRentProgress";
 import CartBlock from "./pages/cartBlock/cartBlock";
 import CartCheckoutBlock from "./pages/cartCheckoutBlock/cartCheckoutBlock";
+import ProfileMainBlock from "./pages/profileMainBlock/profileMainBlock";
+import ProfileMain from "./pages/profileMainBlock/profileMain/profileMain";
+import ProfileOrders from "./pages/profileMainBlock/profileOrders/profileOrders";
 
 
 function App() {
@@ -73,6 +76,11 @@ function App() {
          
          <Route path="/cart" element={<CartBlock/>}/>
          <Route path="/cart/checkout" element={<CartCheckoutBlock/>}/>
+         
+         <Route path="/profile" element={<ProfileMainBlock/>}>
+           <Route path="/profile/" element={<ProfileMain/>}/>
+           <Route path="/profile/orders" element={<ProfileOrders/>}/>
+         </Route>
 
 
        </Routes>

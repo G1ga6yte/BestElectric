@@ -1,10 +1,16 @@
 @import "../../../source/styles/mixin.scss";
 
+.G-20-400-Inter{
+  @include screen($mobile-m){
+    font-size: 16px;
+  }
+}
 
 .ProductItemMain{
   padding: 200px 16px;
   justify-content: space-between;
   align-items: start;
+
 
 
 
@@ -134,10 +140,13 @@
       border-radius: 8px;
       margin-bottom: 16px;
 
+      .overviewLine{
+        align-items: start;
+      }
+
       .grayText{
         color: #B6B6B6;
         text-align: end;
-        white-space: nowrap;
       }
 
       .overviewName{
@@ -410,7 +419,6 @@
       .graySettings{
         color: #B6B6B6;
         text-align: end;
-        white-space: nowrap;
       }
     }
 

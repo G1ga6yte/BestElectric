@@ -4,12 +4,19 @@
   width: 100%;
   max-width: 1420px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .G-Container{
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+  overflow: hidden;
+
+}
+
+.G-block{
+  display: block;
 }
 
 .G-flex-ACenter-JCenter{
