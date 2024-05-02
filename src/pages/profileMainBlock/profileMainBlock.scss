@@ -9,13 +9,38 @@
   margin: 0 auto;
   padding: 0 16px;
   align-items: start;
+  @include screen($wide){
+    flex-direction: column;
+  }
 
   .navBlock{
     margin-right: 16px;
     padding: 180px 0 35px;
     height: 100%;
-    @include screen($tablet-l){
-      padding: 150px 0 20px;
+    @include screen($wide){
+      overflow: auto;
+      max-width: 100%;
+      height: max-content;
+      padding: 130px 0 10px;
+    }
+
+    .links{
+      height: 100%;
+      @include screen($wide){
+        display: flex;
+      }
+    }
+
+    .idText{
+      @include screen($wide){
+        display: none;
+      }
+    }
+
+    .G-flew-grow{
+      @include screen($wide){
+        display: none;
+      }
     }
 
     .sectionLink{
@@ -43,6 +68,7 @@
         line-height: normal;
         color: #B6B6B6;
         transition: 0.2s ease-in-out all;
+        white-space: nowrap;
       }
 
       &:hover{
@@ -68,10 +94,27 @@
   }
 
   .mainCont{
+    overflow: auto !important;
+    position: relative;
     padding-top: 180px;
+    height: 100%;
     flex-grow: 1;
-    @include screen($tablet-l){
-      padding-top: 150px;
+
+    @include screen($wide){
+      padding: 0;
+      width: 100%;
     }
+
+    .whiteBlock{
+      width: 100%;
+      height: 120px;
+      background: rgb(255,255,255);
+      background: linear-gradient(0deg, rgba(255,255,255,0.7959558823529411) 0%, rgba(255,255,255,0.9023984593837535) 15%, rgba(255,255,255,1) 30%, rgba(255,255,255,1) 100%);
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 5;
+    }
+
   }
 }

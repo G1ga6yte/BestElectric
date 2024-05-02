@@ -1,0 +1,108 @@
+@import "../../../source/styles/mixin.scss";
+
+.ProfileInvoices{
+  max-width: 1000px;
+  width: 100%;
+
+
+  .invoicesCont{
+
+    width: 100%;
+
+
+    .headerCont{
+      width: 100%;
+      padding: 16px;
+      align-items: start;
+      justify-content: space-between;
+      border-radius: 8px;
+      background-color: #FAFAFA;
+      @include screen($tablet-w){
+        display: none;
+      }
+    }
+
+    .itemsCont{
+      display: none;
+      @include screen($tablet-w){
+        display: flex;
+      }
+    }
+
+    .itemBlock{
+      padding: 16px;
+      align-items: start;
+      border-radius: 8px;
+      background-color: #FAFAFA;
+      display: flex;
+      flex-direction: column;
+      margin: 0 12px 16px 0;
+
+      .sectionHeaderBtn{
+        margin-bottom: 12px;
+        padding: 0;
+      }
+
+
+
+    }
+
+    .G-14-300-Inter{
+      font-size: 14px;
+      font-family: 'Inter-Light', sans-serif;
+      line-height: normal;
+    }
+    .itemsPrg{
+      max-width: 160px;
+      white-space: nowrap; /* Prevent text wrapping */
+      overflow: hidden; /* Hide overflowed text */
+      text-overflow: ellipsis; /* Add ellipsis for overflowed text */
+      display: block;
+    }
+
+    .sectionHeaderBtn{
+      border: none;
+      background-color: transparent;
+      padding: 2px 4px;
+      cursor: pointer;
+
+    }
+    .GMarginR4{
+      margin-right: 4px;
+    }
+
+    tr{
+      vertical-align: center !important;
+      align-items: center;
+    }
+
+    .status1, .status2, .status3{
+      padding: 0 10px;
+      border-radius: 32px;
+      font-size: 14px;
+      font-family: 'Inter-Light', sans-serif;
+      line-height: normal;
+      max-width: max-content !important;
+
+    }
+
+    .status1{
+      color: white;
+      background-color: #6acb91;
+    }
+    .status2{
+      background-color: #F5C7C7;
+      color: black;
+      padding: 4px 10px;
+    }
+    .status3{
+      background-color: #FFDE89;
+      color: black;
+      padding: 4px 10px;
+    }
+
+
+  }
+
+
+}

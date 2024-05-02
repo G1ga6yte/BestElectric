@@ -29,6 +29,10 @@ import CartCheckoutBlock from "./pages/cartCheckoutBlock/cartCheckoutBlock";
 import ProfileMainBlock from "./pages/profileMainBlock/profileMainBlock";
 import ProfileMain from "./pages/profileMainBlock/profileMain/profileMain";
 import ProfileOrders from "./pages/profileMainBlock/profileOrders/profileOrders";
+import ProfileAddresses from "./pages/profileMainBlock/profileAddresses/profileAddresses";
+import CarReservation from "./pages/profileMainBlock/carReservation/carReservation";
+import ProfileInvoices from "./pages/profileMainBlock/profileInvoices/profileInvoices";
+import ProfileServices from "./pages/profileMainBlock/profileServices/profileServices";
 
 
 function App() {
@@ -80,6 +84,10 @@ function App() {
          <Route path="/profile" element={<ProfileMainBlock/>}>
            <Route path="/profile/" element={<ProfileMain/>}/>
            <Route path="/profile/orders" element={<ProfileOrders/>}/>
+           <Route path="/profile/addresses&payment" element={<ProfileAddresses/>}/>
+           <Route path="/profile/carReservation" element={<CarReservation/>}/>
+           <Route path="/profile/invoices" element={<ProfileInvoices/>}/>
+           <Route path="/profile/service&maintenance" element={<ProfileServices/>}/>
          </Route>
 
 

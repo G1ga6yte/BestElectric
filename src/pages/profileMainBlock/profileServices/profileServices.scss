@@ -1,0 +1,73 @@
+@import "../../../source/styles/mixin.scss";
+
+
+.ProfileServices{
+  max-width: 1300px;
+  width: 100%;
+  padding-bottom: 64px;
+
+  .applicationBlock{
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #FAFAFA;
+    width: 100%;
+
+    .grayText{
+      color: #B6B6B6;
+    }
+
+    .completeMessage{
+      padding: 8px;
+    }
+
+    .canceledMessageBlock{
+      padding: 8px;
+      background: rgba(203, 87, 87, 0.10);
+      ul{
+        padding-left: 32px;
+      }
+    }
+
+    .CancelBtn{
+      min-width: 140px;
+      padding: 8px 12px;
+      border-radius: 32px;
+      cursor: pointer;
+      border: none;
+      background-color: white;
+      transition: 0.1s ease-in-out all;
+      &:hover{
+        background-color: #F2F2F2;
+      }
+      &:active{
+        background-color: #E4E4E4;
+      }
+    }
+
+    .status{
+      padding: 4px 8px;
+      text-align: center;
+      min-width: 90px;
+      border-radius: 32px;
+    }
+    .New{
+      background-color: #1877F2;
+    }
+    .InProgress{
+      background-color: #FF9D43;
+    }
+    .Pending{
+      background-color: #FF9D43;
+    }
+    .Completed{
+      background-color: #6acb91;
+    }
+    .Canceled{
+      background-color: #CB5757;
+    }
+
+
+
+  }
+
+}

@@ -612,6 +612,7 @@
     "prg8": "Perhaps you will be interested"
 
   },
+
   "profile": {
     "sectionName1": "Profile",
     "sectionName2": "Orders",
@@ -632,8 +633,94 @@
     "status1": "Paid",
     "status2": "Delivered",
     "status3": "In process",
-    "status4": "Cancelled"
+    "status4": "Cancelled",
+    "total": "Total",
+    "placeholder1": "Name",
+    "placeholder2": "Surname",
+    "placeholder3": "email",
+    "placeholder4": "Current password",
+    "placeholder5": "New password",
+    "placeholder6": "New password again",
+    "miniHeader5": "Driver license"
+
+  },
+  "orders": {
+    "miniHeader1": "Orders",
+    "prg1": "Order id:",
+    "cancel": "Cancel",
+    "report": "Report",
+    "status1": "Pick up",
+    "status2": "On transit",
+    "status3": "On delivery",
+    "status4": "Order received",
+    "estimate": "day estimate",
+    "days": "Days",
+    "miniHeader2": "Order information",
+    "miniHeader3": "Location",
+    "infoHeader1": "Pick up date",
+    "infoHeader2": "Drop off estimate",
+    "infoHeader3": "Insurance",
+    "infoHeader4": "Pick up location",
+    "infoHeader5": "Drop off location"
+
+
+
+  },
+  "address": {
+    "miniHeader1": "Addresses",
+    "miniHeader2": "Payment method",
+    "miniHeader3": "Edit address",
+    "miniHeader4": "Contact",
+    "miniHeader5": "Delivery address",
+    "miniHeader6": "Company",
+    "miniHeader7": "Add new address",
+    "btn1": "Add new address",
+    "btn2": "Add a payment method",
+    "prg1": "Address",
+    "prg2": "Primary for payment",
+    "prg3": "Main for delivery",
+    "address1": "Legal entity",
+    "address2": "Individual",
+    "placeholder1": "",
+    "placeholder2": "E-mail*",
+    "placeholder3": "Name*",
+    "placeholder4": "Surname*",
+    "placeholder5": "Additional phone number",
+    "placeholder6": "City, street, house number*",
+    "placeholder7": "Postal code*",
+    "placeholder8": "Entrance",
+    "placeholder9": "Floor",
+    "placeholder10": "Apartment",
+    "placeholder11": "Intercom",
+    "placeholder12": "Comment to courier to the order",
+    "placeholder13": "Company name*",
+    "placeholder14": "EIC*",
+    "placeholder15": "DDS no*",
+    "placeholder16": "Mall*",
+    "btn3": "Save"
+  },
+  "invoice": {
+    "miniHeader1": "Invoices",
+    "sectionHeader1": "Issued on",
+    "sectionHeader2": "Due Date",
+    "sectionHeader3": "Items",
+    "sectionHeader4": "Total",
+    "sectionHeader5": "Status",
+    "status1": "Confirmed",
+    "status2": "Overdue",
+    "status3": "Pending",
+    "miniHeader2": "Applications",
+    "btn1": "New application",
+    "application": "Application",
+    "btn2": "Cancel",
+    "status4": "New",
+    "status5": "In progress",
+    "status6": "Pending",
+    "status7": "Completed",
+    "status8": "Canceled"
 
   }
+
+
 
 }

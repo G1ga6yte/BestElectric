@@ -11,7 +11,7 @@ export const CartProvider = ({children}) => {
   
   const [loginBlock, setLoginBlock] = useState(false)
   
-  const [authentication, setAuthentication] = useState(true)
+  const [authentication, setAuthentication] = useState(false)
   
   const [loginStep, setLoginStep] = useState(1)
   const [cartBlock, setCartBlock] = useState(false)

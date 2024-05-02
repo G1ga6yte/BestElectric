@@ -42,7 +42,7 @@ function CarCardBlock (){
   
   
   return(
-     <div className="carInfoBlock G-flex">
+     <div className="carInfoBlock G-flex no-select">
      
        <div className="carBlock">
          <div className="carName G-flex-ACenter no-select">

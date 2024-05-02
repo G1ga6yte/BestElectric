@@ -2,21 +2,49 @@
 
 .ProfileMain{
   width: 100%;
-  overflow: auto;
+  max-width: 100%;
+
 
 
   .textUnderlined{
     text-decoration: underline;
   }
 
-  .carReservationBlock{
-    max-width: 1024px;
+  .ordersCont{
     width: 100%;
-    border-radius: 8px;
-    padding: 8px;
+    max-width: 100%;
+    overflow: auto;
+  }
+
+  .inputsCont{
+    @include screen($tablet){
+      .G-flex{
+        flex-direction: column;
+      }
+    }
+  }
+
+  .G-input{
+    min-width: 275px;
+    padding: 12px;
     background-color: #FAFAFA;
-
-
+    border: 1px solid #E4E4E4;
+    border-radius: 12px;
+    transition: 0.1s ease-in-out all;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Inter-Light', sans-serif;
+    color: black;
+    line-height: normal;
+    @include screen($tablet){
+      width: 100%;
+    }
+    &:hover{
+      border-color: #D1D1D1;
+    }
+    &:focus-visible{
+      border-color: #B6B6B6;
+    }
 
   }
 
@@ -27,9 +55,19 @@
     font-size: 16px;
     font-family: 'Inter-Light', sans-serif;
     line-height: normal;
+    width: max-content;
   }
   .paid{
     background-color: #6acb91;
+  }
+  .Delivered{
+    background-color: #6ACB91;
+  }
+  .process{
+    background-color: #FF9D43;
+  }
+  .Cancelled{
+    background-color: #CB5757;
   }
 
 }

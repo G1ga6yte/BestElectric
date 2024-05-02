@@ -1,0 +1,35 @@
+@import "../../../../source/styles/mixin.scss";
+
+.RecentOrderBlock {
+  min-width: 275px;
+  background-color: #FAFAFA;
+  padding: 8px;
+  border-radius: 8px;
+  margin-right: 16px;
+
+  .imgBlock{
+    width: 100%;
+    .itemImg{
+      margin-right: 4px;
+      border-radius: 4px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-width: 40px;
+      width: 40px;
+      height: 35px;
+    }
+  }
+
+  .grayText{
+    color: #949494;
+  }
+
+  .line{
+    width: 100%;
+    height: 1px;
+    background-color: #D1D1D1;
+    margin: 8px 0;
+  }
+
+}

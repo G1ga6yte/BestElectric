@@ -19,13 +19,19 @@ function CarRentProgress (){
   const [licenseBackImg, setLicenseBackImg] = useState(null)
   
   function handleLicenseFaceImg (e){
-    let img = e.target.files[0]
-    setLicenseFaceImg(URL.createObjectURL(img))
+    let imgFile = e.target.files[0];
+    if (imgFile) {
+      let imgBlob = new Blob([imgFile], { type: imgFile.type });
+      setLicenseFaceImg(URL.createObjectURL(imgBlob));
+    }
   }
   
   function handleLicenseBackImg (e){
-    let img = e.target.files[0]
-    setLicenseBackImg(URL.createObjectURL(img))
+    let imgFile = e.target.files[0];
+    if (imgFile) {
+      let imgBlob = new Blob([imgFile], { type: imgFile.type });
+      setLicenseBackImg(URL.createObjectURL(imgBlob));
+    }
   }
   
   const [paymentType, setPaymentType] = useState("card")
