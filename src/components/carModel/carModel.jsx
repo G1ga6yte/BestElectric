@@ -2,7 +2,7 @@ import React, {useRef, Suspense} from "react";
 import {Canvas, extend} from "@react-three/fiber";
 import {OrbitControls, useGLTF} from "@react-three/drei";
 import "./carModel.scss"
-import img1 from "./1352.png"
+import img1 from "./carImgSuspense.png"
 
 extend({ OrbitControls });
 
