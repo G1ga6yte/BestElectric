@@ -7,19 +7,21 @@ import TextInView from "../../../components/TextInView/TextInView";
 import SelectBlock from "../../../components/selectBlock/selectBlock";
 import {Link} from "react-router-dom";
 import RentSettingsBlock from "../rentCarBlock/rentSettingsBlock";
+import {useCartContext} from "../../../CartContext";
 
 
 function ProductItemMain() {
   const {t, i18n} = useTranslation();
   const {id} = useParams();
   const [render, setRender] = useState(false);
+  const {addToCart, setCartBlock} = useCartContext()
   
   const data1 = {
     delivery   : "30-50",
     discount   : 45,
     available  : false,
-    imgData    : [Images.img1, Images.img2, Images.img3, Images.img1, Images.img2, Images.img3, Images.img1,
-                  Images.img2],
+    imgData    : [Images.img1, Images.img1, Images.img1, Images.img1, Images.img1, Images.img1, Images.img1,
+                  Images.img1],
     overview   : [
       {name: t("products.overview1"), value: "15,000 km"},
       {name: t("products.overview2"), value: "SUV"},
@@ -101,8 +103,8 @@ function ProductItemMain() {
     delivery   : false,
     discount   : 45,
     available  : true,
-    imgData    : [Images.img2, Images.img3, Images.img1, Images.img2, Images.img3, Images.img1, Images.img2,
-                  Images.img3],
+    imgData    : [Images.img2, Images.img2, Images.img2, Images.img2, Images.img2, Images.img2, Images.img2,
+                  Images.img2],
     overview   : [
       {name: t("products.overview8"), value: "1 phase, 3 phases"},
       {name: t("products.overview9"), value: "Plastic"},
@@ -184,8 +186,8 @@ function ProductItemMain() {
     delivery   : true,
     discount   : 45,
     available  : false,
-    imgData    : [Images.img3, Images.img1, Images.img2, Images.img3, Images.img1, Images.img2, Images.img3,
-                  Images.img1],
+    imgData    : [Images.img3, Images.img3, Images.img3, Images.img3, Images.img3, Images.img3, Images.img3,
+                  Images.img3],
     overview   : [
       {name: t("products.overview19"), value: "Mono PERC"},
       {name: t("products.overview20"), value: "24 V, 12 A"},
@@ -253,8 +255,8 @@ function ProductItemMain() {
     delivery   : "30-50",
     discount   : 45,
     available  : false,
-    imgData    : [Images.img1, Images.img2, Images.img3, Images.img1, Images.img2, Images.img3, Images.img1,
-                  Images.img2],
+    imgData    : [Images.img1, Images.img1, Images.img1, Images.img1, Images.img1, Images.img1, Images.img1,
+                  Images.img1],
     overview   : [
       {name: t("products.overview1"), value: "15,000 km"},
       {name: t("products.overview2"), value: "SUV"},
@@ -540,7 +542,15 @@ function ProductItemMain() {
                 <Link to={`/products/electricCars/rentProgress/${id}`} className="rentNowBtn addToCartBtn G-greenBtn G-20-400-Nexa G-white no-select"><TextInView
                    text={t("products.btn10")}/></Link>
                 :
-                <button className="addToCartBtn G-greenBtn G-20-400-Nexa G-white no-select"><TextInView
+                <button onClick={()=>{
+                  addToCart({
+                    name: activeDate.name,
+                    img: activeDate.imgData[0],
+                    price: activeDate.price,
+                    id: id
+                  })
+                  setCartBlock(true)
+                }} className="addToCartBtn G-greenBtn G-20-400-Nexa G-white no-select"><TextInView
                    text={t("products.btn5")}/></button>
              }
            </div>
@@ -939,7 +949,15 @@ function ProductItemMain() {
               <Link to={`/products/electricCars/rentProgress/${id}`} className="rentNowBtn addToCartBtn G-greenBtn G-20-400-Nexa G-white no-select"><TextInView
                  text={t("products.btn10")}/></Link>
               :
-              <button className="addToCartBtn G-greenBtn G-20-400-Nexa G-white no-select"><TextInView
+              <button onClick={()=>{
+                addToCart({
+                  name: activeDate.name,
+                  img: activeDate.imgData[0],
+                  price: activeDate.price,
+                  id: id
+                })
+                setCartBlock(true)
+              }} className="addToCartBtn G-greenBtn G-20-400-Nexa G-white no-select"><TextInView
                  text={t("products.btn5")}/></button>
            }
          </div>

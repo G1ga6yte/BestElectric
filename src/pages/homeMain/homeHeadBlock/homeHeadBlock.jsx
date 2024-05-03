@@ -45,10 +45,10 @@ function HomeHeadBlock () {
           <div></div>
           <p className="header G-header-72 G-white"><TextInView text={t("main.header")}/></p>
           <p className="underHeader G-underHeader-40 G-white"><TextInView text={t("main.underHeader")}/></p>
-          <button className="G-greenBtn G-margin-Center">
+          <Link to="/services" className="G-greenBtn G-margin-Center">
             <TextInView text={t("main.btn1")} className={`G-20-300-Nexa G-white`}/>
             <img src={Images.arrowRight} alt=""/>
-          </button>
+          </Link>
           
           <div ref={divRef} className="articlesCont">
             <div className="articlesBlock G-flex">

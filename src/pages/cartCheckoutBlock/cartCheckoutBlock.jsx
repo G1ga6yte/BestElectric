@@ -6,10 +6,12 @@ import {Images} from "./images/images";
 import PaymentBlock from "../../components/paymentBlock/paymentBlock";
 import ProductsItem from "../../components/productsItem/productsItem";
 import {Link} from "react-router-dom";
+import {useCartContext} from "../../CartContext";
 
 function CartCheckoutBlock (){
   const {t, i18n} = useTranslation();
   const [checkoutStep, setCheckoutStep] = useState(1)
+  const {cart} = useCartContext()
   
   ////////////////// inputs Val /////////////////////
   
@@ -59,6 +61,17 @@ function CartCheckoutBlock (){
       value: "Wi-Fi, consumption monitoring"
     }
   ]
+  
+  let totalPrice = 0
+  let totalCount = 0
+  cart.map((el)=>{
+    
+    if (el.checked){
+      totalPrice = totalPrice + (el.count * el.price)
+      totalCount = totalCount + el.count
+    }
+    
+  })
   
   
   return(
@@ -123,8 +136,8 @@ function CartCheckoutBlock (){
             <div className="rightBlock">
        
               <div className="mainBlock G-marginB-16">
-                <p className="G-16-400-Inter G-black no-select G-marginB-12"><TextInView text={`${t("cart.prg1")} (2)`}/></p>
-                <p className="grayText G-16-400-Inter no-select"><TextInView text={t("BGN 17000")}/></p>
+                <p className="G-16-400-Inter G-black no-select G-marginB-12"><TextInView text={`${t("cart.prg1")} (${totalCount})`}/></p>
+                <p className="grayText G-16-400-Inter no-select"><TextInView text={t(`BGN ${totalPrice}`)}/></p>
                 <div className="line"></div>
                 
                 
@@ -135,7 +148,7 @@ function CartCheckoutBlock (){
                 
                 <p className="totalPrg G-marginB-12 G-16-400-Inter G-black no-select"><TextInView text={t("cart.total")}/></p>
                 
-                <p className="price G-marginB-24 G-24-400-Inter G-black no-select"><TextInView text={"BGN 17100"}/></p>
+                <p className="price G-marginB-24 G-24-400-Inter G-black no-select"><TextInView text={`BGN ${totalPrice + 100}`}/></p>
                 
                 <button onClick={()=>{
                   setCheckoutStep(2)

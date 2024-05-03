@@ -15,7 +15,7 @@ function HomeProductsServices (){
        
        
        <div className="contentBlock G-flex">
-         <CarCardBlock/>
+         <CarCardBlock type={"buy"}/>
          
          
          <div className="advantagesBlock G-flex-Column">

@@ -102,7 +102,12 @@
     "sectionHeader8": " Our customer testimonials",
     "account": "Account",
     "subtotal": "Subtotal",
-    "checkout": "Checkout"
+    "checkout": "Checkout",
+
+    "btn8": "Buy",
+    "seeMore": "See more",
+    "prg6": "Cart is empty",
+    "btn9": "Go to shop"
   },
   "products": {
     "header": "Our products",

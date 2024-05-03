@@ -53,6 +53,7 @@ function HomeSolarPanels (){
        <div className="contentBlock G-flex G-marginB-24">
     
          <ProductBigCard
+            type={"panel"}
             name={"UE Solar Panel"}
             status={t("main.status1")}
             discount={45}

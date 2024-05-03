@@ -14,7 +14,7 @@ function Model(props) {
   const mScale = 0.3
   const x = 2
   const y = 0
-  const z = 1.5
+  const z = 1.6
   
   return (
      <group {...props} dispose={null}>

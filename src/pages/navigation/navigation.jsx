@@ -14,7 +14,7 @@ function Navigation () {
   const [navTheme, setNavTheme] = useState("home")
   const [tabletMenu, setTabletMenu] = useState(false)
   const [inHeight, setInHeight] = useState(0)
-  const {loginBlock, setLoginBlock, authentication, cartBlock, setCartBlock} = useCartContext()
+  const {loginBlock, setLoginBlock, authentication, cartBlock, setCartBlock, addToCart, cart, deleteFromCart, increaseCount, decreaseCount, opacity, setOpacity} = useCartContext()
   const [render, setRender] = useState(false)
   const locales = {
     en: {title: "English"},
@@ -28,6 +28,8 @@ function Navigation () {
     } else {
       setNavTheme("else")
     }
+    
+    setCartBlock(false)
   }, [location])
   
   useEffect(()=>{
@@ -100,7 +102,7 @@ function Navigation () {
              <TextInView className={"G-20-400-Nexa G-black"} text={"+359 2 4343215"}/>
            </a>
   
-           <Link to="/products/electricCars" className="orderCarBtn G-flex-ACenter G-marginB-24">
+           <Link onClick={()=>setTabletMenu(false)} to="/products/electricCars" className="orderCarBtn G-flex-ACenter G-marginB-24">
              <svg className="G-marginR-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22M12 2C9.49872 4.73835 8.07725 8.29203 8 12C8.07725 15.708 9.49872 19.2616 12 22M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22M2.50002 9H21.5M2.5 15H21.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
              </svg>
@@ -118,19 +120,19 @@ function Navigation () {
     const [opacity, setOpacity] = useState(false)
     useEffect(() => {
       let timer;
-      
+    
       const handleMouseLeave = () => {
         timer = setTimeout(() => {
           handleState(false);
-        }, 5000);
+        }, 3000);
         setOpacity(true)
       };
-      
+    
       const handleMouseEnter = () => {
         clearTimeout(timer);
         setOpacity(false)
       };
-      
+    
       const block = document.getElementById('auto-close-block');
       if (block) {
         block.addEventListener('mouseenter', handleMouseEnter);
@@ -152,46 +154,89 @@ function Navigation () {
       }
     }, [state])
     
+    let totalPrice = 0
+    cart.map((el)=>totalPrice = totalPrice+(el.price * el.count))
+    
     return(
        state &&
        <div  id="auto-close-block" className={`CartMenuBlock ${opacity ? "closeAnim" : ""}`}>
          
          <div className="itemsCont">
-           {Array.from({length: 3}, (_, index)=>(
-              <div key={index} className="itemBlock G-flex">
-                <div style={{backgroundImage: `url("${Images.itemImg}")`}} className="imgBlock"></div>
-                
-                <div className="G-flex-ACenter-JBetween G-flew-grow G-flex-wrap">
-                  <div className="itemNameBlock">
-                    <p className="G-20-400-Inter G-black no-select G-marginB-8"><TextInView text={"Webasto Pure"}/></p>
-                    <p className="G-16-400-Inter G-black no-select"><TextInView text={`1 x BGN 17000`}/></p>
-                  </div>
+           {/*{Array.from({length: 3}, (_, index)=>(*/}
+           {/*   <div key={index} className="itemBlock G-flex">*/}
+           {/*     <div style={{backgroundImage: `url("${Images.itemImg}")`}} className="imgBlock"></div>*/}
+           
+           {/*     <div className="G-flex-ACenter-JBetween G-flew-grow G-flex-wrap">*/}
+           {/*       <div className="itemNameBlock">*/}
+           {/*         <p className="G-20-400-Inter G-black no-select G-marginB-8"><TextInView text={"Webasto Pure"}/></p>*/}
+           {/*         <p className="G-16-400-Inter G-black no-select"><TextInView text={`1 x BGN 17000`}/></p>*/}
+           {/*       </div>*/}
+           
+           {/*       <div className="buttonsBlock3 G-flex-ACenter">*/}
+           {/*         <button className="addBtn countBtn"><img src={Images.plusIcon} alt=""/></button>*/}
+           {/*         <span className="count G-24-400-Inter G-black no-select">1</span>*/}
+           {/*         <button className="minusBtn countBtn"><img src={Images.minusIcon} alt=""/></button>*/}
+           {/*       </div>*/}
+           {/*     </div>*/}
+           
+           {/*     <button className="deleteBtn"><img src={Images.deleteIcon} alt=""/></button>*/}
+           
+           {/*   </div>*/}
+           {/*))}*/}
   
-                  <div className="buttonsBlock3 G-flex-ACenter">
-                    <button className="addBtn countBtn"><img src={Images.plusIcon} alt=""/></button>
-                    <span className="count G-24-400-Inter G-black no-select">1</span>
-                    <button className="minusBtn countBtn"><img src={Images.minusIcon} alt=""/></button>
+           {cart.map((el, index)=>{
+             return(
+                <div key={index} className="itemBlock G-flex">
+                  <div style={{backgroundImage: `url("${el.img}")`}} className="imgBlock"></div>
+     
+                  <div className="G-flex-ACenter-JBetween G-flew-grow G-flex-wrap">
+                    <div className="itemNameBlock">
+                      <p className="G-20-400-Inter G-black no-select G-marginB-8"><TextInView text={el.name}/></p>
+                      <p className="G-16-400-Inter G-black no-select"><TextInView text={`${el.count}x BGN ${el.price}`}/></p>
+                    </div>
+       
+                    <div className="buttonsBlock3 G-flex-ACenter">
+                      <button onClick={()=>increaseCount(index)} className="addBtn countBtn"><img src={Images.plusIcon} alt=""/></button>
+                      <span className="count G-24-400-Inter G-black no-select">{el.count}</span>
+                      <button onClick={()=>decreaseCount(index)} className="minusBtn countBtn"><img src={Images.minusIcon} alt=""/></button>
+                    </div>
                   </div>
+     
+                  <button onClick={()=>deleteFromCart(index)} className="deleteBtn"><img src={Images.deleteIcon} alt=""/></button>
+   
                 </div>
-                
-                <button className="deleteBtn"><img src={Images.deleteIcon} alt=""/></button>
-                
-              </div>
-           ))}
+             )
+           })}
+  
+           {cart.length === 0 &&
+            <div className="emptyBlock G-flex-ACenter-JCenter G-flex-Column">
+              <p className="emptyPrg G-black no-select G-24-400-Inter G-marginB-16"><TextInView text={t("main.prg6")}/></p>
+              <Link onClick={()=>setCartBlock(false)} to="/products" className="goToShopBtn G-greenBtn G-white G-20-400-Nexa"><TextInView text={t("main.btn9")}/></Link>
+            </div>
+           }
+           
+           
            <div ref={endRef}/>
          </div>
-         
-         
-         <div className="bottomBlock G-flex-ACenter-JBetween">
-          <p className="totalPrg G-24-400-Inter G-black no-select"><TextInView text={`${t("main.subtotal")}: BGN 17000`}/></p>
-           <Link onClick={()=>setCartBlock(false)} to="/cart" className="G-greenBtn G-white no-select G-flex-ACenter">
-             <TextInView className={"G-20-300-Nexa"} text={t("main.checkout")}/>
-             <img src={Images.arrowRight} alt=""/>
-           </Link>
-         </div>
+  
+  
+         {cart.length > 0 &&
+            <div className="bottomBlock G-flex-ACenter-JBetween">
+              <p className="totalPrg G-24-400-Inter G-black no-select"><TextInView text={`${t("main.subtotal")}: BGN ${totalPrice}`}/></p>
+              <Link onClick={()=>setCartBlock(false)} to="/cart" className="G-greenBtn G-white no-select G-flex-ACenter">
+                <TextInView className={"G-20-300-Nexa"} text={t("main.checkout")}/>
+                <img src={Images.arrowRight} alt=""/>
+              </Link>
+            </div>
+         }
        </div>
     )
   }
+  
+  
+  
+  
+  
   
   return(
      <div className={`Navigation G-Container ${navTheme === "home" ? "homeTheme" : "lightTheme"}`}>
@@ -283,12 +328,12 @@ function Navigation () {
          
          
          <div className="G-flex-ACenter">
-           <button className="orderCarBtn G-flex-ACenter">
+           <Link to="/products/electricCars" className="orderCarBtn G-flex-ACenter">
              <svg className="G-marginR-8" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                <path d="M12 2C14.5013 4.73835 15.9228 8.29203 16 12C15.9228 15.708 14.5013 19.2616 12 22M12 2C9.49872 4.73835 8.07725 8.29203 8 12C8.07725 15.708 9.49872 19.2616 12 22M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22M2.50002 9H21.5M2.5 15H21.5" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
              </svg>
              <TextInView className={`G-20-300-Nexa`} text={t("main.link6")}/>
-           </button>
+           </Link>
   
            {authentication ?
               <Link to="/profile" className="AccountLink G-20-400-Nexa "><TextInView text={t("main.account")}/></Link>
@@ -300,7 +345,10 @@ function Navigation () {
              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                <path d="M2 2H3.30616C3.55218 2 3.67519 2 3.77418 2.04524C3.86142 2.08511 3.93535 2.14922 3.98715 2.22995C4.04593 2.32154 4.06333 2.44332 4.09812 2.68686L4.57143 6M4.57143 6L5.62332 13.7314C5.75681 14.7125 5.82355 15.2031 6.0581 15.5723C6.26478 15.8977 6.56108 16.1564 6.91135 16.3174C7.30886 16.5 7.80394 16.5 8.79411 16.5H17.352C18.2945 16.5 18.7658 16.5 19.151 16.3304C19.4905 16.1809 19.7818 15.9398 19.9923 15.6342C20.2309 15.2876 20.3191 14.8247 20.4955 13.8988L21.8191 6.94969C21.8812 6.62381 21.9122 6.46087 21.8672 6.3335C21.8278 6.22177 21.7499 6.12768 21.6475 6.06802C21.5308 6 21.365 6 21.0332 6H4.57143ZM10 21C10 21.5523 9.55228 22 9 22C8.44772 22 8 21.5523 8 21C8 20.4477 8.44772 20 9 20C9.55228 20 10 20.4477 10 21ZM18 21C18 21.5523 17.5523 22 17 22C16.4477 22 16 21.5523 16 21C16 20.4477 16.4477 20 17 20C17.5523 20 18 20.4477 18 21Z" stroke="white" strokeLinecap="round" strokeLinejoin="round"/>
              </svg>
-             <div className="noteDote"></div>
+  
+             {cart.length > 0 &&
+                <div className="noteDote"></div>
+             }
            </button>
            <CartMenuBlock state={cartBlock} handleState={setCartBlock}/>
 

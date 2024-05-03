@@ -53,6 +53,7 @@ function HomeChargingSolution (){
        <div className="contentBlock G-flex G-marginB-24">
   
          <ProductBigCard
+            type={"charger"}
             name={"Webasto Pure"}
             status={t("main.status1")}
             discount={45}

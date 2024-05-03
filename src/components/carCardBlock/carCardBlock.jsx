@@ -9,7 +9,7 @@ import {Link} from "react-router-dom";
 
 const CarModel = React.lazy(()=> import("../carModel/carModel"))
 
-function CarCardBlock (){
+function CarCardBlock ({type}){
   const {t, i18n} = useTranslation()
   const price = 500
   const [tablet, setTablet] = useState(false)
@@ -58,23 +58,27 @@ function CarCardBlock (){
               <CarModel/>
             </div>
          }
+  
+         {tablet &&
+            <div className="imgButtons">
+              <button onClick={()=>{
+                if (activeImg === 0){
+                  setActiveImg(carImgArr.length-1)
+                } else {
+                  setActiveImg(prev=> prev-1)
+                }
+              }} className="imgBtn"><img src={carImages.arrowLeft} alt=""/></button>
+              <button onClick={()=>{
+                if ((carImgArr.length -1) === activeImg){
+                  setActiveImg(0)
+                } else {
+                  setActiveImg(prev=> prev+1)
+                }
+              }} className="imgBtn"><img src={carImages.arrowRight} alt=""/></button>
+            </div>
+         }
          
-         <div className="imgButtons">
-           <button onClick={()=>{
-             if (activeImg === 0){
-               setActiveImg(carImgArr.length-1)
-             } else {
-               setActiveImg(prev=> prev-1)
-             }
-           }} className="imgBtn"><img src={carImages.arrowLeft} alt=""/></button>
-           <button onClick={()=>{
-             if ((carImgArr.length -1) === activeImg){
-               setActiveImg(0)
-             } else {
-               setActiveImg(prev=> prev+1)
-             }
-           }} className="imgBtn"><img src={carImages.arrowRight} alt=""/></button>
-         </div>
+         
      
        </div>
      
@@ -105,11 +109,22 @@ function CarCardBlock (){
              <p className="status G-16-300-Inter G-black"><TextInView text={t("main.electro")}/></p>
            </div>
          </div>
-       
-         <div className="buttonsBlock G-flex-ACenter">
-           <button className="bookBtn G-marginR-16 G-greenBtn G-white G-20-400-Nexa"><TextInView text={t("main.btn3")}/></button>
-           <button className="learnMoreBtn G-greenBtn G-black G-20-400-Nexa"><TextInView text={t("main.btn4")}/></button>
-         </div>
+  
+         {type === "rent" &&
+            <div className="buttonsBlock G-flex-ACenter">
+              <Link to={`/products/product/${444444}`} className="bookBtn G-marginR-16 G-greenBtn G-white G-20-400-Nexa"><TextInView text={t("main.btn3")}/></Link>
+              <Link to="/products/rentCar"  className="learnMoreBtn G-greenBtn G-black G-20-400-Nexa"><TextInView text={t("main.seeMore")}/></Link>
+            </div>
+         }
+  
+         {type === "buy" &&
+            <div className="buttonsBlock G-flex-ACenter">
+              <Link to={`/products/product/${111111}`} className="bookBtn G-marginR-16 G-greenBtn G-white G-20-400-Nexa"><TextInView text={t("main.btn8")}/></Link>
+              <Link to="/products/electricCars"  className="learnMoreBtn G-greenBtn G-black G-20-400-Nexa"><TextInView text={t("main.seeMore")}/></Link>
+            </div>
+         }
+  
+         
      
        </div>
    

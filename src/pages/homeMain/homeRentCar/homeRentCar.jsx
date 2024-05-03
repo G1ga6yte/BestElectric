@@ -13,7 +13,7 @@ function HomeRentCar (){
         <p className="no-select header G-header-100 G-black"><TextInView text={t("main.sectionHeader1")}/></p>
        
        <div className="contentBlock G-flex">
-         <CarCardBlock/>
+         <CarCardBlock type={"rent"}/>
   
   
   

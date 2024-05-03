@@ -104,6 +104,7 @@
     }
 
 
+
   }
   .infoBlock{
     padding: 0 20px 0 40px;
@@ -180,7 +181,7 @@
         flex-direction: column;
       }
 
-      button{
+      a{
         min-width: 180px;
         text-align: center;
         @include screen($tablet-l){
@@ -206,5 +207,7 @@
     }
 
   }
+
+
 
 }

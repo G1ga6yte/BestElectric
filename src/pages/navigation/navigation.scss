@@ -366,6 +366,7 @@
         border: none;
         transition: 0.2s ease-in-out all;
         background-color: #6ACB91 !important;
+        text-decoration: none;
         &:hover{
           background-color: #65C58B !important;
         }
@@ -624,6 +625,21 @@
       }
 
     }
+    .emptyBlock{
+      padding: 32px 0;
+
+      .emptyPrg{
+        span{
+          color: black !important;
+        }
+      }
+      .goToShopBtn{
+        span{
+          color: white !important;
+        }
+      }
+    }
+
 
   }
 

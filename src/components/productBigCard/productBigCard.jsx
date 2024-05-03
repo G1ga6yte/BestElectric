@@ -6,7 +6,8 @@ import "./productBigCard.scss"
 
 import leftArrow from "./arrow-narrow-left.svg"
 import rightArrow from "./arrow-narrow-right.svg"
-function ProductBigCard ({name, discount, prg, price, oldPrice, status, settingsData, img, bestseller}){
+import {Link} from "react-router-dom";
+function ProductBigCard ({name, discount, prg, price, oldPrice, status, settingsData, img, bestseller, type}){
   const {t, i18n} = useTranslation()
   
   
@@ -32,10 +33,10 @@ function ProductBigCard ({name, discount, prg, price, oldPrice, status, settings
        </div>
      
        <div className="infoBlock no-select">
-         <div className="countButtons G-flex-ACenter">
-            <button ><img src={leftArrow} alt=""/></button>
-           <button ><img src={rightArrow} alt=""/></button>
-         </div>
+         {/*<div className="countButtons G-flex-ACenter">*/}
+         {/*   <button ><img src={leftArrow} alt=""/></button>*/}
+         {/*  <button ><img src={rightArrow} alt=""/></button>*/}
+         {/*</div>*/}
        
          <div className="statisticBlock G-flex-Column">
            
@@ -49,11 +50,20 @@ function ProductBigCard ({name, discount, prg, price, oldPrice, status, settings
              )
            })}
          </div>
-       
-         <div className="buttonsBlock G-flex-ACenter">
-           <button className="bookBtn G-marginR-16 G-greenBtn G-white G-20-400-Nexa"><TextInView text={t("main.btn3")}/></button>
-           <button className="learnMoreBtn G-greenBtn G-black G-20-400-Nexa"><TextInView text={t("main.btn4")}/></button>
-         </div>
+  
+         {type === "charger" &&
+            <div className="buttonsBlock G-flex-ACenter">
+              <Link to={`/products/product/${222222}`}  className="bookBtn G-marginR-16 G-greenBtn G-white G-20-400-Nexa"><TextInView text={t("main.btn8")}/></Link>
+              <Link to="/products/chargerStation" className="learnMoreBtn G-greenBtn G-black G-20-400-Nexa"><TextInView text={t("main.seeMore")}/></Link>
+            </div>
+         }
+         {type === "panel" &&
+            <div className="buttonsBlock G-flex-ACenter">
+              <Link to={`/products/product/${333333}`} className="bookBtn G-marginR-16 G-greenBtn G-white G-20-400-Nexa"><TextInView text={t("main.btn8")}/></Link>
+              <Link  to="/products/solarPanels" className="learnMoreBtn G-greenBtn G-black G-20-400-Nexa"><TextInView text={t("main.seeMore")}/></Link>
+            </div>
+         }
+         
          
          <div className="prg G-black">
            <TextInView text={prg}/>

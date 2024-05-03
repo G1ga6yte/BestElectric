@@ -77,7 +77,7 @@ function App() {
            <Route path="/products/chargerStation" element={<ChargerStationBlock/>}/>
            <Route path="/products/solarPanels" element={<SolarPanelsBlock/>}/>
            <Route path="/products/rentCar" element={<RentCarBlock/>}/>
-           <Route path="/products/electricCars/product/:id" element={<ProductItemMain/>}/>
+           <Route path="/products/product/:id" element={<ProductItemMain/>}/>
            <Route path="/products/electricCars/rentProgress/:id" element={<CarRentProgress/>}/>
          </Route>
          

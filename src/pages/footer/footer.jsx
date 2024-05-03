@@ -5,11 +5,13 @@ import TextInView from "../../components/TextInView/TextInView";
 import {Images} from "./images/images";
 import {useTranslation} from "react-i18next";
 import LinkToPage from "../navigation/LinkToPage";
+import {useCartContext} from "../../CartContext";
 
 function Footer (){
   const {t, i18n} = useTranslation()
   const [lngMenu, setLngMenu] = useState(false)
   const location = useLocation()
+  const {setLoginBlock, authentication, setLoginStep} = useCartContext()
   
   const [footerBlock, setFooterBlock] = useState(true) //def True
   
@@ -93,7 +95,7 @@ function Footer (){
                 <Link className="link G-marginB-32" to="/products">
                   <LinkToPage text={t("main.link2")}/>
                 </Link>
-                <Link className="link G-marginB-32" to="/carRent">
+                <Link className="link G-marginB-32" to="/products/rentCar">
                   <LinkToPage text={t("main.link3")}/>
                 </Link>
                 <Link className="link G-marginB-32" to="/services">
@@ -103,16 +105,27 @@ function Footer (){
                   <LinkToPage text={t("main.link5")}/>
                 </Link>
               </div>
-              
-              <div className="loginBlock G-flex-ACenter">
-                <button className="signInBtn G-24-400-Nexa G-black"><TextInView text={t("main.link11")}/></button>
-                <button className="loginBtn G-24-400-Nexa G-Green-Text"><TextInView text={t("main.link7")}/></button>
-              </div>
   
-              <button className="getInTouchBtn G-flex-ACenter">
+              {!authentication &&
+                 <div className="loginBlock G-flex-ACenter">
+                   <button onClick={()=>{
+                    setLoginBlock(true)
+                   }} className="signInBtn G-24-400-Nexa G-black"><TextInView text={t("main.link11")}/></button>
+                   <button onClick={()=>{
+                     setLoginBlock(true)
+                   }} className="loginBtn G-24-400-Nexa G-Green-Text"><TextInView text={t("main.link7")}/></button>
+                 </div>
+              }
+              {authentication &&
+                 <div className="loginBlock G-flex-ACenter">
+                   <Link to="/profile" className="signInBtn G-24-400-Nexa G-black"><TextInView text={t("main.account")}/></Link>
+                 </div>
+              }
+  
+              <Link to="/products" className="getInTouchBtn G-flex-ACenter">
                 <TextInView className="G-marginR-8" text={t("main.btn2")}/>
                 <img src={Images.arrowRight} alt=""/>
-              </button>
+              </Link>
             
             </div>
             
