@@ -42,7 +42,7 @@ function CarModel (){
   
   return(
      <div className="Model">
-       <Suspense fallback={<img src={img1} alt=""/>}>
+       <Suspense fallback={<img className="suspenseImg" src={img1} alt=""/>}>
   
        <Canvas camera={{fov:70, position: [50, 0, 0]}}>
            <ambientLight />
