@@ -55,7 +55,7 @@ function CarCardBlock (){
             <div style={{backgroundImage: `url("${carImgArr[activeImg]}")`}} className="carImg">
             </div>
             : <div className="carCont">
-              <CarModel/>
+              {/*<CarModel/>*/}
             </div>
          }
          

@@ -60,6 +60,8 @@
     .productsBlock{
       margin: 0 auto;
       width: max-content;
+      min-width: 100%;
+      justify-content: space-between;
     }
 
   }

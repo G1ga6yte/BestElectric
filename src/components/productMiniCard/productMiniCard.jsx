@@ -3,13 +3,13 @@ import "./productMiniCard.scss"
 import {useTranslation} from "react-i18next";
 import TextInView from "../TextInView/TextInView";
 
-function ProductMiniCard ({status, img, name, desc, price, discount, bestseller}){
+function ProductMiniCard ({status, img, name, desc, price, discount, bestseller, marginR}){
   const {t, i18n} = useTranslation()
   
   
   
   return(
-     <div className="ProductMiniCard">
+     <div className="ProductMiniCard" style={{marginRight: `${marginR}`}}>
         <div className="imgBlock G-flex-Column G-marginB-16" style={{backgroundImage: `url("${img}")`}}>
   
           {status && <p className="availablePrg"><TextInView className="G-16-300-Inter G-black" text={status}/></p>}

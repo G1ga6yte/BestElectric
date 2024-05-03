@@ -96,6 +96,7 @@ function HomeSolarPanels (){
          <div className="productsBlock G-flex">
            {Array.from({length: 5}, (_, index)=>(
               <ProductMiniCard
+                 marginR={index < 4 ? "16px" : "0"}
                  status={t("main.status1")}
                  discount={45}
                  bestseller={true}
