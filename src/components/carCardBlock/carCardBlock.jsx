@@ -57,7 +57,9 @@ function CarCardBlock ({type}){
          {/*   : */}
          {/*}*/}
          <div className="carCont">
-           <CarModel/>
+           {<CarModel/> &&
+              <CarModel/>
+           }
          </div>
   
          {tablet &&
