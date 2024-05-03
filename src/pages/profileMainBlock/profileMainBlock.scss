@@ -100,9 +100,11 @@
     height: 100%;
     flex-grow: 1;
 
+
     @include screen($wide){
       padding: 0;
       width: 100%;
+      max-width: 100%;
     }
 
     .whiteBlock{
