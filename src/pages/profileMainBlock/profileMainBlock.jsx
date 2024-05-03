@@ -11,11 +11,11 @@ function ProfileMainBlock (){
   const {authentication} = useCartContext()
   const navigate = useNavigate()
   const location = useLocation()
-  useEffect(()=>{
-    if (!authentication){
-      navigate("/home")
-    }
-  }, [location])
+  // useEffect(()=>{
+  //   if (!authentication){
+  //     navigate("/home")
+  //   }
+  // }, [location])
   
   const [activeSection, setActiveSection] = useState("profile")
   

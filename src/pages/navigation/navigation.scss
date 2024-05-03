@@ -2,7 +2,10 @@
 .Navigation{
   position: absolute;
   z-index: 100;
-  top: 0;
+  top: 0 !important;
+  overflow: unset !important;
+  left: 50%;
+  transform: translateX(-50%);
 
   .topBlock{
     width: 100%;
@@ -510,7 +513,7 @@
 
 
 .CartMenuBlock{
-  position: absolute;
+  position: absolute !important;
   z-index: 40;
   right: 8px;
   top: 70px;

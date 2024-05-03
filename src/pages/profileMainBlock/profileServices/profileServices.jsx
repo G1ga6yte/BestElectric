@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "./profileServices.scss";
 import {useTranslation} from "react-i18next";
 import TextInView from "../../../components/TextInView/TextInView";
@@ -53,12 +53,41 @@ function ProfileServices() {
     },
   ];
   
+  const [newApplication, setNewApplication] = useState(false)
+  const [inputVal1, setInputVal1] = useState("") // New Application Number Input Value
+  const [inputVal2, setInputVal2] = useState("") // New Application TextArea Input Value
+  
   
   return (
      <div className="ProfileServices">
+  
+       {newApplication &&
+        <div className="applicationDialogCont">
+          <div onClick={()=>{setNewApplication(false)}} className="backgroundBlock"></div>
+        
+          <div className="dialogBlock">
+            
+            <div className="closeBtnBlock G-marginB-16 G-flex">
+              <button onClick={()=>{setNewApplication(false)}} className="closeBtn"><img src={Images.xCloseIcon} alt=""/></button>
+            </div>
+  
+            <p className="header G-20-400-Nexa G-marginB-16 G-black no-select"><TextInView text={t("invoice.miniHeader3")}/></p>
+  
+            <input className="G-input G-20-300-Inter G-marginB-16" value={inputVal1} onChange={(event)=>setInputVal1(event.target.value)} type="number" placeholder={"+359"}/>
+  
+            <textarea className="G-input G-marginB-16 G-20-300-Inter" value={inputVal2} onChange={(event)=>setInputVal2(event.target.value)} name="applicationMessage" cols="30" rows="10" placeholder={"I've checked the monitoring app and haven't noticed any error messages. I've also tried cleaning the panels myself to remove any dust or debris, but that hasn't made a difference."}></textarea>
+            
+            <button className="sendBtn G-greenBtn G-white G-20-400-Nexa"><TextInView text={t("invoice.btn3")}/></button>
+            
+          </div>
+          
+        </div>
+       }
+       
+       
        <div className="headerBlock G-marginB-24 G-flex-ACenter-JBetween">
          <p className="miniHeader G-24-400-Inter G-black no-select"><TextInView text={t("invoice.miniHeader2")}/></p>
-         <button className="G-greenBtn G-white G-20-300-Nexa no-select G-flex-ACenter">
+         <button onClick={()=>setNewApplication(true)} className="G-greenBtn G-white G-20-300-Nexa no-select G-flex-ACenter">
            <img src={Images.plusIcon} className="G-marginR-8" alt=""/>
            <TextInView text={t("invoice.btn1")}/>
          </button>

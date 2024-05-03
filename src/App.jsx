@@ -33,12 +33,15 @@ import ProfileAddresses from "./pages/profileMainBlock/profileAddresses/profileA
 import CarReservation from "./pages/profileMainBlock/carReservation/carReservation";
 import ProfileInvoices from "./pages/profileMainBlock/profileInvoices/profileInvoices";
 import ProfileServices from "./pages/profileMainBlock/profileServices/profileServices";
+import {useCartContext} from "./CartContext";
 
 
 function App() {
   const {t, i18n} = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
+  
+  const {authentication} = useCartContext()
   
   useEffect(() => {
     if (location.pathname === "/") {
@@ -80,15 +83,17 @@ function App() {
          
          <Route path="/cart" element={<CartBlock/>}/>
          <Route path="/cart/checkout" element={<CartCheckoutBlock/>}/>
-         
-         <Route path="/profile" element={<ProfileMainBlock/>}>
-           <Route path="/profile/" element={<ProfileMain/>}/>
-           <Route path="/profile/orders" element={<ProfileOrders/>}/>
-           <Route path="/profile/addresses&payment" element={<ProfileAddresses/>}/>
-           <Route path="/profile/carReservation" element={<CarReservation/>}/>
-           <Route path="/profile/invoices" element={<ProfileInvoices/>}/>
-           <Route path="/profile/service&maintenance" element={<ProfileServices/>}/>
-         </Route>
+  
+         {authentication &&
+            <Route path="/profile" element={<ProfileMainBlock/>}>
+              <Route path="/profile/" element={<ProfileMain/>}/>
+              <Route path="/profile/orders" element={<ProfileOrders/>}/>
+              <Route path="/profile/addresses&payment" element={<ProfileAddresses/>}/>
+              <Route path="/profile/carReservation" element={<CarReservation/>}/>
+              <Route path="/profile/invoices" element={<ProfileInvoices/>}/>
+              <Route path="/profile/service&maintenance" element={<ProfileServices/>}/>
+            </Route>
+         }
 
 
        </Routes>

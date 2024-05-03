@@ -717,7 +717,9 @@
     "status5": "In progress",
     "status6": "Pending",
     "status7": "Completed",
-    "status8": "Canceled"
+    "status8": "Canceled",
+    "miniHeader3": "New application",
+    "btn3": "Send request"
 
   }
 
