@@ -51,16 +51,13 @@ function CarCardBlock ({type}){
          </div>
          <p className="no-select G-marginB-8 G-16-400-Inter G-black"><TextInView text={t("main.price1", {price})}/></p>
          
-         {/*{tablet ?*/}
-         {/*   <div style={{backgroundImage: `url("${carImgArr[activeImg]}")`}} className="carImg">*/}
-         {/*   </div>*/}
-         {/*   : */}
-         {/*}*/}
-         <div className="carCont">
-           {<CarModel/> &&
+         {tablet ?
+            <div style={{backgroundImage: `url("${carImgArr[activeImg]}")`}} className="carImg">
+            </div>
+            : <div className="carCont">
               <CarModel/>
-           }
-         </div>
+            </div>
+         }
   
          {tablet &&
             <div className="imgButtons">
