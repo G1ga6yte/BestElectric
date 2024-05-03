@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, {Suspense, useEffect} from "react";
 import "./App.scss";
 import Navigation from "./pages/navigation/navigation";
 import {Route, Routes, useLocation} from "react-router-dom";
@@ -34,6 +34,7 @@ import CarReservation from "./pages/profileMainBlock/carReservation/carReservati
 import ProfileInvoices from "./pages/profileMainBlock/profileInvoices/profileInvoices";
 import ProfileServices from "./pages/profileMainBlock/profileServices/profileServices";
 import {useCartContext} from "./CartContext";
+import Loader from "./loader/loader";
 
 
 function App() {
@@ -55,52 +56,54 @@ function App() {
   
   
   return (
-     <div className="App">
-       <Navigation/>
-       <LoginDialog/>
-       <CookiesBlock/>
-       
-       <Routes>
-         <Route exact path="/home" element={<HomeMain/>}/>
-         <Route path="/aboutUs" element={<AboutUsMain/>}/>
-         <Route path="/services" element={<ServicesMain/>}/>
-         <Route path="/service/:id" element={<Service/>}/>
-         <Route path="/article/:id" element={<ArticleMain/>}/>
-         <Route path="/bookingService" element={<BookingServiceBlock/>}/>
-         <Route path="/delivery&payment" element={<Delivery/>}/>
-         <Route path="/privacyPolicy" element={<Privacy/>}/>
-         <Route path="/termsOfUse" element={<Terms/>}/>
-         
-         <Route path="/products" element={<ProductsCont/>}>
-           <Route path="/products/" element={<ProductsMain/>}/>
-           <Route path="/products/electricCars" element={<CarOrderBlock/>}/>
-           <Route path="/products/chargerStation" element={<ChargerStationBlock/>}/>
-           <Route path="/products/solarPanels" element={<SolarPanelsBlock/>}/>
-           <Route path="/products/rentCar" element={<RentCarBlock/>}/>
-           <Route path="/products/product/:id" element={<ProductItemMain/>}/>
-           <Route path="/products/electricCars/rentProgress/:id" element={<CarRentProgress/>}/>
-         </Route>
-         
-         <Route path="/cart" element={<CartBlock/>}/>
-         <Route path="/cart/checkout" element={<CartCheckoutBlock/>}/>
+     <Suspense fallback={<Loader/>}>
+       <div className="App">
+         <Navigation/>
+         <LoginDialog/>
+         <CookiesBlock/>
+    
+         <Routes>
+           <Route exact path="/home" element={<HomeMain/>}/>
+           <Route path="/aboutUs" element={<AboutUsMain/>}/>
+           <Route path="/services" element={<ServicesMain/>}/>
+           <Route path="/service/:id" element={<Service/>}/>
+           <Route path="/article/:id" element={<ArticleMain/>}/>
+           <Route path="/bookingService" element={<BookingServiceBlock/>}/>
+           <Route path="/delivery&payment" element={<Delivery/>}/>
+           <Route path="/privacyPolicy" element={<Privacy/>}/>
+           <Route path="/termsOfUse" element={<Terms/>}/>
+      
+           <Route path="/products" element={<ProductsCont/>}>
+             <Route path="/products/" element={<ProductsMain/>}/>
+             <Route path="/products/electricCars" element={<CarOrderBlock/>}/>
+             <Route path="/products/chargerStation" element={<ChargerStationBlock/>}/>
+             <Route path="/products/solarPanels" element={<SolarPanelsBlock/>}/>
+             <Route path="/products/rentCar" element={<RentCarBlock/>}/>
+             <Route path="/products/product/:id" element={<ProductItemMain/>}/>
+             <Route path="/products/electricCars/rentProgress/:id" element={<CarRentProgress/>}/>
+           </Route>
+      
+           <Route path="/cart" element={<CartBlock/>}/>
+           <Route path="/cart/checkout" element={<CartCheckoutBlock/>}/>
+      
+           {authentication &&
+              <Route path="/profile" element={<ProfileMainBlock/>}>
+                <Route path="/profile/" element={<ProfileMain/>}/>
+                <Route path="/profile/orders" element={<ProfileOrders/>}/>
+                <Route path="/profile/addresses&payment" element={<ProfileAddresses/>}/>
+                <Route path="/profile/carReservation" element={<CarReservation/>}/>
+                <Route path="/profile/invoices" element={<ProfileInvoices/>}/>
+                <Route path="/profile/service&maintenance" element={<ProfileServices/>}/>
+              </Route>
+           }
+    
+    
+         </Routes>
+    
+         <Footer/>
   
-         {authentication &&
-            <Route path="/profile" element={<ProfileMainBlock/>}>
-              <Route path="/profile/" element={<ProfileMain/>}/>
-              <Route path="/profile/orders" element={<ProfileOrders/>}/>
-              <Route path="/profile/addresses&payment" element={<ProfileAddresses/>}/>
-              <Route path="/profile/carReservation" element={<CarReservation/>}/>
-              <Route path="/profile/invoices" element={<ProfileInvoices/>}/>
-              <Route path="/profile/service&maintenance" element={<ProfileServices/>}/>
-            </Route>
-         }
-
-
-       </Routes>
-       
-       <Footer/>
-     
-     </div>
+       </div>
+     </Suspense>
   );
 }
 
