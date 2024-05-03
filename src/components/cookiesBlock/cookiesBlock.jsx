@@ -2,10 +2,11 @@ import React, {useEffect, useState} from "react";
 import "./cookiesBlock.scss"
 import TextInView from "../TextInView/TextInView";
 import {useTranslation} from "react-i18next";
+import {useCartContext} from "../../CartContext";
 
 function CookiesBlock (){
   const {t, i18n} = useTranslation();
-  const [cookiesBlock, setCookiesBlock] = useState(false)
+  const { handleDecline, handleAccept, cookiesBlock, setCookiesBlock} = useCartContext()
   const [settings1, setSettings1] = useState(true)
   const [settings2, setSettings2] = useState(false)
   const [settings3, setSettings3] = useState(true)
@@ -16,14 +17,7 @@ function CookiesBlock (){
   // }}
   
   
-  useEffect(()=>{
-    const newInterval = setTimeout(()=>{
-      setCookiesBlock(true)
-    }, 5000)
-    
-    
-    return ()=> clearTimeout(newInterval)
-  }, [])
+  
   
   
   return(
@@ -61,8 +55,8 @@ function CookiesBlock (){
        <a className="cookieLink G-marginB-32 G-20-400-Inter G-black" href="/cookiePolicy" target="_blank"><TextInView text={"cookie policy"}/></a>
        
       <div className="buttonsBlock G-flex">
-        <button onClick={()=>{setCookiesBlock(false)}} className="saveBtn G-20-400-Nexa G-black no-select"><TextInView text={t("cookies.btn1")}/></button>
-        <button onClick={()=>{setCookiesBlock(false)}} className="acceptBtn G-greenBtn G-20-400-Nexa G-white no-select"><TextInView text={t("cookies.btn2")}/></button>
+        <button onClick={()=>{handleDecline()}} className="saveBtn G-20-400-Nexa G-black no-select"><TextInView text={t("cookies.btn1")}/></button>
+        <button onClick={()=>{handleAccept()}} className="acceptBtn G-greenBtn G-20-400-Nexa G-white no-select"><TextInView text={t("cookies.btn2")}/></button>
 
       </div>
       
