@@ -28,15 +28,15 @@ function HomeProductsServices (){
              </div>
              <div>
                <p className="sectionHeader G-20-400-Nexa G-Green-Text G-marginB-16 no-select"><TextInView text={t("main.adv2")}/></p>
-               <p className="sectionPrg G-16-300-Inter G-black G-marginB-16 no-select"><TextInView text={t("main.advDesc1")}/></p>
+               <p className="sectionPrg G-16-300-Inter G-black G-marginB-16 no-select"><TextInView text={t("main.advDesc2")}/></p>
              </div>
              <div>
                <p className="sectionHeader G-20-400-Nexa G-Green-Text G-marginB-16 no-select"><TextInView text={t("main.adv3")}/></p>
-               <p className="sectionPrg G-16-300-Inter G-black G-marginB-16 no-select"><TextInView text={t("main.advDesc1")}/></p>
+               <p className="sectionPrg G-16-300-Inter G-black G-marginB-16 no-select"><TextInView text={t("main.advDesc3")}/></p>
              </div>
              <div>
                <p className="sectionHeader G-20-400-Nexa G-Green-Text G-marginB-16 no-select"><TextInView text={t("main.adv4")}/></p>
-               <p className="sectionPrg G-16-300-Inter G-black G-marginB-16 no-select"><TextInView text={t("main.advDesc1")}/></p>
+               <p className="sectionPrg G-16-300-Inter G-black G-marginB-16 no-select"><TextInView text={t("main.advDesc4")}/></p>
              </div>
            </div>
 
